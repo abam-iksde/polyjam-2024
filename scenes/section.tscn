@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxuwadbymmeay"]
+
+[ext_resource type="Texture2D" uid="uid://c3ly0nt2h0ifg" path="res://textures/test_ground.png" id="1_s1uvm"]
+
+[node name="section" type="Node2D"]
+
+[node name="ground" type="Sprite2D" parent="."]
+texture = ExtResource("1_s1uvm")
+centered = false
+
+[node name="obstacles" type="Node2D" parent="."]
