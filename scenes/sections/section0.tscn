@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/obstacle_rep.tscn" id="2_n5nr2"]
 [ext_resource type="Texture2D" uid="uid://ci4txge240ekp" path="res://textures/stone.png" id="3_5bf73"]
 
-[node name="section" instance=ExtResource("1_rdk24")]
+[node name="section2" instance=ExtResource("1_rdk24")]
 
 [node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("2_n5nr2")]
 position = Vector2(243, 636)

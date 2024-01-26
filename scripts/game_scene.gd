@@ -51,6 +51,9 @@ func spawn_obstacles() -> void:
 			return
 		var obstacle_instance = preload('res://scenes/obstacle.tscn').instantiate()
 		obstacle_instance.position.x = obstacle.position.x
+		var shape := (obstacle_instance.get_node('collision_shape').shape as BoxShape3D).duplicate()
+		shape.size = obstacle.size
+		obstacle_instance.get_node('collision_shape').shape = shape
 		obstacles.add_child(obstacle_instance)
 		next_obstacles.pop_front()
 
@@ -63,6 +66,6 @@ func get_section_obstacles(section_name: String) -> Array:
 		var result_obstacle = {}
 		result_obstacle.texture = obstacle.texture
 		result_obstacle.position = Vector2((obstacle.position.x-512.0)/512.0 * 4.0, obstacle.position.y/1024.0)
-		result_obstacle.size = Vector2(obstacle.get_node('collision').size.x/512.0 * 4, obstacle.get_node('collision').size.y/1024)
+		result_obstacle.size = Vector3(obstacle.get_node('collision').size.x/512.0 * 4, obstacle.size.z, obstacle.get_node('collision').size.y/1024)
 		result.append(result_obstacle)
 	return result
