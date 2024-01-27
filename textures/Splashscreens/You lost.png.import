@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://77kfgpxx16mo"
-path="res://.godot/imported/Intro.png-dbac6e00c4054d83e1e9f942df4d122f.ctex"
+uid="uid://bjtwpyr25k4w3"
+path="res://.godot/imported/You lost.png-2605069d506196f7ebea3cd476545948.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Cover arty (credits, you lost,intro)/Intro.png"
-dest_files=["res://.godot/imported/Intro.png-dbac6e00c4054d83e1e9f942df4d122f.ctex"]
+source_file="res://textures/Splashscreens/You lost.png"
+dest_files=["res://.godot/imported/You lost.png-2605069d506196f7ebea3cd476545948.ctex"]
 
 [params]
 
