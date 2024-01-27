@@ -20,7 +20,6 @@ albedo_texture = ExtResource("4_mtklb")
 script = ExtResource("1_gyvbi")
 
 [node name="camera" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
 current = true
 fov = 35.0
 
