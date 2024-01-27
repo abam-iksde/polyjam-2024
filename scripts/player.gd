@@ -6,6 +6,8 @@ var run_frames := 7
 var texture_jump := preload('res://textures/player/jump1.png')
 var jump_frames := 4
 
+#jumping sound
+@export var jump_sfx = preload("res://audio/sfx/jump_SFX.wav")
 
 const POSITION_LIMIT = 1.5
 const HIT_COOLDOWN = 1.0
@@ -49,6 +51,7 @@ func _physics_process(delta: float) -> void:
 		on_ground = true
 	
 	if Input.is_action_just_pressed('jump') and on_ground:
+		Audio.spawn_sound_effect( "SFX" , jump_sfx ,[18] )
 		y_velocity = JUMP_FORCE
 		on_ground = false
 		animation_frame = 0.0

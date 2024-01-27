@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://74won0hahnpu"]
+[gd_scene load_steps=5 format=3 uid="uid://74won0hahnpu"]
 
 [ext_resource type="Script" path="res://scripts/mini_games/pie.gd" id="1_p5s2k"]
+[ext_resource type="Texture2D" uid="uid://c7ttwrvqjbkrb" path="res://textures/mini_games/Pie/crosshead.png" id="2_ynsxt"]
 
 [sub_resource type="Gradient" id="Gradient_eiy5b"]
 offsets = PackedFloat32Array(0, 0.5, 1)
@@ -31,6 +32,12 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 color = Color(1, 0.556863, 0.764706, 1)
+
+[node name="background2" type="TextureRect" parent="game"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_ynsxt")
 
 [node name="bar" type="TextureRect" parent="game"]
 layout_mode = 1

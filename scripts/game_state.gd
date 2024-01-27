@@ -10,3 +10,11 @@ var score := 0:
 			score_label.text = 'SCORE   %s' % [str(score)]
 
 var score_label: Label = null
+
+
+var main_menu_option := 0
+
+
+func restart():
+	score = 0
+	lost = false
