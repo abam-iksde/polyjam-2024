@@ -4,6 +4,7 @@ extends KeepAspect
 const GAMES = {
 	'soap': preload('res://scenes/mini_games/soap.tscn'),
 	'dance': preload('res://scenes/mini_games/dance.tscn'),
+	'pie': preload('res://scenes/mini_games/pie.tscn'),
 }
 
 
@@ -37,6 +38,8 @@ func _physics_process(delta: float) -> void:
 			#start_game('soap')
 		#if Input.is_key_pressed(KEY_9):
 			#start_game('dance')
+		#if Input.is_key_pressed(KEY_0):
+			#start_game('pie')
 		return
 	if game.state == 'started':
 		view_position -= delta * 2.0
