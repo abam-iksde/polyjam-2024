@@ -11,7 +11,7 @@
 texture = ExtResource("2_48dxk")
 
 [node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("3_qo0mj")]
-position = Vector2(776, 515)
+position = Vector2(683, 533)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_mn7ai")
 size = Vector3(0.5, 0.2, 0.2)
