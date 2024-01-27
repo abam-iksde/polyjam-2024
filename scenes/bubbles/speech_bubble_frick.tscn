@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cwujgpfk2p642"]
+
+[ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_e80bf"]
+[ext_resource type="Texture2D" uid="uid://dh5p0p6bv5ksc" path="res://textures/speechbubbles/Bubbles right/Bublfuck.png" id="2_ycypp"]
+
+[node name="speech_bubble_frick" instance=ExtResource("1_e80bf")]
+texture_right = ExtResource("2_ycypp")
+texture_left = ExtResource("2_ycypp")
+
+[node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
+offset_left = -94.0
+offset_top = -288.0
+offset_right = 399.0
+offset_bottom = 47.0
+texture = ExtResource("2_ycypp")
+
+[node name="texture_left" parent="pivot_scale/pivot_rotation" index="1"]
+offset_left = -281.0
+offset_top = -295.0
+offset_right = 212.0
+offset_bottom = 40.0
+texture = ExtResource("2_ycypp")

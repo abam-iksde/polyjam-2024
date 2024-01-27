@@ -3,10 +3,18 @@ extends Control
 
 const BUBBLES = [
 	preload('res://scenes/speech_bubble.tscn'),
+	preload('res://scenes/bubbles/speech_bubble_frick.tscn'),
 ]
 
 const MINIGAME_BUBBLES = [
 	preload('res://scenes/bubbles/speech_bubble_dance2.tscn'),
+	preload('res://scenes/bubbles/speech_bubble_dance_3.tscn'),
+	preload('res://scenes/bubbles/speech_bubble_dance_1.tscn'),
+	preload('res://scenes/bubbles/speech_bubble_soap_3.tscn'),
+	preload('res://scenes/bubbles/speech_bubble_soap_4.tscn'),
+	preload('res://scenes/bubbles/speech_bubble_pie_1.tscn'),
+	preload('res://scenes/bubbles/speech_bubble_pie_2.tscn'),
+	preload('res://scenes/bubbles/speech_bubble_pie_3.tscn'),
 ]
 
 
