@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://dxxyja26q0q71" path="res://textures/Sillhouetes.png" id="5_viljx"]
 [ext_resource type="Script" path="res://scripts/keep_aspect_control.gd" id="7_06w7i"]
 [ext_resource type="Script" path="res://scripts/bubbles.gd" id="7_fo324"]
-[ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="8_uv83u"]
+[ext_resource type="PackedScene" path="res://scenes/speech_bubble.tscn" id="8_uv83u"]
 [ext_resource type="FontFile" uid="uid://ta70m3hrqwfv" path="res://fonts/WickedMouse-aGoK.ttf" id="9_8j41q"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_btefe"]
