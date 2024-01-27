@@ -1,0 +1,50 @@
+[gd_scene load_steps=5 format=3 uid="uid://kfpl372q24j0"]
+
+[ext_resource type="Script" path="res://scripts/keep_aspect.gd" id="1_7wxgv"]
+[ext_resource type="ArrayMesh" uid="uid://d2hfeu6n14lak" path="res://meshes/transition.obj" id="2_m80hi"]
+[ext_resource type="Script" path="res://scripts/transition.gd" id="3_qxscc"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpgp5"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+
+[node name="ui_scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="game_viewport_container" type="SubViewportContainer" parent="."]
+offset_right = 930.0
+offset_bottom = 529.0
+stretch = true
+script = ExtResource("1_7wxgv")
+
+[node name="game_viewport" type="SubViewport" parent="game_viewport_container"]
+handle_input_locally = false
+size = Vector2i(930, 529)
+render_target_update_mode = 4
+
+[node name="world" type="Node3D" parent="game_viewport_container/game_viewport"]
+
+[node name="camera" type="Camera3D" parent="game_viewport_container/game_viewport/world"]
+current = true
+fov = 35.0
+
+[node name="transition" type="MeshInstance3D" parent="game_viewport_container/game_viewport/world/camera"]
+unique_name_in_owner = true
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, -1)
+mesh = ExtResource("2_m80hi")
+surface_material_override/0 = SubResource("StandardMaterial3D_bpgp5")
+script = ExtResource("3_qxscc")

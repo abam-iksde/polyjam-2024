@@ -16,4 +16,4 @@ func _physics_process(delta: float):
 		%transition.target = true
 		accepted = true
 	if %transition.hidden and accepted:
-		get_tree().change_scene_to_file('res://scenes/main_scene.tscn')
+		get_tree().change_scene_to_file('res://scenes/main_menu.tscn')
