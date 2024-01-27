@@ -90,7 +90,7 @@ func _physics_process(delta: float) -> void:
 		var arrows = arrows_per_lane[i]
 		for arrow in arrows:
 			if is_instance_valid(arrow) and Box.collides(arrow, lanes[i].get_node('target/box')):
-				arrow.modulate = Color(1.0, 0.0, 0.0, 1.0)
+				arrow.modulate = Color(0.6, 0.6, 0.6, 1.0)
 	
 	arrow_timeout -= delta
 	if arrow_timeout > 0.0:
