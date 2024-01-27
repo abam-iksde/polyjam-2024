@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dwpq5bji37inr"]
+[gd_scene load_steps=7 format=3 uid="uid://dwpq5bji37inr"]
 
 [ext_resource type="Script" path="res://scripts/game_scene.gd" id="1_salqn"]
 [ext_resource type="ArrayMesh" uid="uid://b41r5iekmbsnj" path="res://meshes/ground.obj" id="1_w61uq"]
 [ext_resource type="PackedScene" uid="uid://chvr2qq4mcae" path="res://scenes/player.tscn" id="3_dgepj"]
+[ext_resource type="PackedScene" uid="uid://c36s17kr283aq" path="res://scenes/evil_face.tscn" id="4_wxxcx"]
 
 [sub_resource type="Shader" id="Shader_gqyho"]
 code = "// NOTE: Shader automatically converted from Godot Engine 4.2.1.stable's StandardMaterial3D.
@@ -86,3 +87,6 @@ fov = 35.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.349, 0.718)
 
 [node name="obstacles" type="Node3D" parent="."]
+
+[node name="evil_face" parent="." instance=ExtResource("4_wxxcx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.11866, -2.05686)

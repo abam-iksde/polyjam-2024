@@ -37,7 +37,10 @@ func _physics_process(delta: float) -> void:
 			game.state = 'going'
 			view_position = -1.0
 		return
-	if game.state == 'lost' or game.state == 'won':
+	if game.state == 'done' or game.state == 'lost' or game.state == 'won':
+		if game.state == 'won':
+			Motion.head_speed = 0.2
+		game.state = 'done'
 		view_position += delta * 2.0
 		if view_position >= 0.0:
 			game.queue_free()
