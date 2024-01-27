@@ -5,8 +5,7 @@ type="CompressedTexture2D"
 uid="uid://dhmi2ckh225oe"
 path="res://.godot/imported/Bubl.png-abe1e4cf3db4e7183eb7c1f04337c865.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
@@ -16,7 +15,7 @@ dest_files=["res://.godot/imported/Bubl.png-abe1e4cf3db4e7183eb7c1f04337c865.cte
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
