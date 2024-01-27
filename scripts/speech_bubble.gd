@@ -41,6 +41,9 @@ var used_texture_node: TextureRect
 
 @export var valid_thru := 1.0
 
+@export var sounds_left: Array[Resource] = []
+@export var sounds_right: Array[Resource] = []
+
 
 func _physics_process(delta: float) -> void:
 	if Engine.is_editor_hint():
@@ -80,11 +83,21 @@ func _ready() -> void:
 		used_texture_node = texture_left_node
 		if minigame != '':
 			texture_left_button.visible = true
+		if sounds_left and len(sounds_left) > 0:
+			Audio.spawn_sound_effect(
+				'SFX',
+				sounds_left[randi() % len(sounds_left)]
+			)
 	else:
 		texture_left_node.visible = false
 		used_texture_node = texture_right_node
 		if minigame != '':
 			texture_right_button.visible = true
+		if sounds_right and len(sounds_right) > 0:
+			Audio.spawn_sound_effect(
+				'SFX',
+				sounds_right[randi() % len(sounds_right)]
+			)
 	pivot_rotation.rotation_degrees = 180
 	used_texture_node.modulate.a = 0.0
 	
