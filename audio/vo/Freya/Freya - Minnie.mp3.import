@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://co5xviq6orngv"
+path="res://.godot/imported/Freya - Minnie.mp3-a5fc0f09d022bbc3bd10251dba7f1a4b.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - Minnie.mp3"
+dest_files=["res://.godot/imported/Freya - Minnie.mp3-a5fc0f09d022bbc3bd10251dba7f1a4b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

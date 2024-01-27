@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dms0vf8taylo0"
+path="res://.godot/imported/Freya - boat.mp3-5553b3bec96817b59c0ac202b5cfcb17.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - boat.mp3"
+dest_files=["res://.godot/imported/Freya - boat.mp3-5553b3bec96817b59c0ac202b5cfcb17.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

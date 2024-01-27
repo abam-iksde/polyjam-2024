@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bx2bqy10xl0yi"
+path="res://.godot/imported/Jeremy - instrument.mp3-66b5e38be5ff999765d9dc1e0f8a3880.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - instrument.mp3"
+dest_files=["res://.godot/imported/Jeremy - instrument.mp3-66b5e38be5ff999765d9dc1e0f8a3880.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

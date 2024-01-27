@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxg8qf0h2llsm"
+path="res://.godot/imported/Harry - little guy.mp3-768db243f9bace472bcc75caf35a87fb.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Harry/Harry - little guy.mp3"
+dest_files=["res://.godot/imported/Harry - little guy.mp3-768db243f9bace472bcc75caf35a87fb.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

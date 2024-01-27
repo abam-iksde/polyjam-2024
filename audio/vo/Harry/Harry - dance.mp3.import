@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bxmm763m2oqo8"
+path="res://.godot/imported/Harry - dance.mp3-daa841c46de21db6d8726a0bace63c4b.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Harry/Harry - dance.mp3"
+dest_files=["res://.godot/imported/Harry - dance.mp3-daa841c46de21db6d8726a0bace63c4b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

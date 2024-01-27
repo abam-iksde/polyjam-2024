@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dmn66vuho0818"
+path="res://.godot/imported/Freya - corporations.mp3-c6441255d067674d34644e73745c5538.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - corporations.mp3"
+dest_files=["res://.godot/imported/Freya - corporations.mp3-c6441255d067674d34644e73745c5538.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

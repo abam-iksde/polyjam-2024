@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b3gq6fcqm5ntf"
+path="res://.godot/imported/Jeremy - hurt.mp3-5dbf8e574d0f2a9c98ed21866b16a8c0.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - hurt.mp3"
+dest_files=["res://.godot/imported/Jeremy - hurt.mp3-5dbf8e574d0f2a9c98ed21866b16a8c0.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

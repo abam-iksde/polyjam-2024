@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bteokps3w4pvx"
+path="res://.godot/imported/Patrick - parrot.mp3-1035eb41f1b97a7967aab83e42d50113.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Patrick/Patrick - parrot.mp3"
+dest_files=["res://.godot/imported/Patrick - parrot.mp3-1035eb41f1b97a7967aab83e42d50113.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

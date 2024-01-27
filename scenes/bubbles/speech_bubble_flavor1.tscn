@@ -1,0 +1,25 @@
+[gd_scene load_steps=12 format=3 uid="uid://mwuv3ykd51wj"]
+
+[ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_qeryv"]
+[ext_resource type="AudioStream" uid="uid://dtvjirdm4ri1t" path="res://audio/vo/Freya/Freya - bucket.mp3" id="2_6qkgy"]
+[ext_resource type="AudioStream" uid="uid://ctytpdb1revke" path="res://audio/vo/Gigi/Gigi - bucket.mp3" id="3_cgbvo"]
+[ext_resource type="AudioStream" uid="uid://bslultp8v1w01" path="res://audio/vo/Harry/Harry - bucket.mp3" id="4_eer50"]
+[ext_resource type="AudioStream" uid="uid://ccr5maxnhkghu" path="res://audio/vo/Jeremy/Jeremy - bucket.mp3" id="5_04u44"]
+[ext_resource type="AudioStream" uid="uid://bqu6ml7vrs8r2" path="res://audio/vo/Patrick - bucket.mp3" id="6_uvk1v"]
+[ext_resource type="AudioStream" uid="uid://brgdchlpt3kh4" path="res://audio/vo/Freya/Freya - soap.mp3" id="7_uv4e5"]
+[ext_resource type="AudioStream" uid="uid://dc5i54q5d75kb" path="res://audio/vo/Gigi/Gigi - soap.mp3" id="8_bxtiy"]
+[ext_resource type="AudioStream" uid="uid://ds7tjedjd55ph" path="res://audio/vo/Harry/Harry - soap.mp3" id="9_80ynq"]
+[ext_resource type="AudioStream" uid="uid://c42hpxfkrp74v" path="res://audio/vo/Jeremy/Jeremy - soap.mp3" id="10_ndu0f"]
+[ext_resource type="AudioStream" uid="uid://bqkcxvtnj7ja8" path="res://audio/vo/Patrick/Patrick - soap.mp3" id="11_2lm7c"]
+
+[node name="speech_bubble" instance=ExtResource("1_qeryv")]
+sound_left_1 = ExtResource("2_6qkgy")
+sound_left_2 = ExtResource("3_cgbvo")
+sound_left_3 = ExtResource("4_eer50")
+sound_left_4 = ExtResource("5_04u44")
+sound_left_5 = ExtResource("6_uvk1v")
+sound_right_1 = ExtResource("7_uv4e5")
+sound_right_2 = ExtResource("8_bxtiy")
+sound_right_3 = ExtResource("9_80ynq")
+sound_right_4 = ExtResource("10_ndu0f")
+sound_right_5 = ExtResource("11_2lm7c")

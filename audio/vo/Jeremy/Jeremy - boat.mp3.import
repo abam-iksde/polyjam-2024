@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://onp62ft2wlr2"
+path="res://.godot/imported/Jeremy - boat.mp3-28ee7284f4ffd333c47986660f2f3e9f.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - boat.mp3"
+dest_files=["res://.godot/imported/Jeremy - boat.mp3-28ee7284f4ffd333c47986660f2f3e9f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

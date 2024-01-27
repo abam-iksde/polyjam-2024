@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dbe1j7flo0fvd"
+path="res://.godot/imported/Patrick - turkey.mp3-bf97b7bd6a0e62f531284983fa61ffec.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Patrick/Patrick - turkey.mp3"
+dest_files=["res://.godot/imported/Patrick - turkey.mp3-bf97b7bd6a0e62f531284983fa61ffec.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

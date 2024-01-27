@@ -1,13 +1,28 @@
-[gd_scene load_steps=4 format=3 uid="uid://cfr06bx174023"]
+[gd_scene load_steps=9 format=3 uid="uid://cfr06bx174023"]
 
 [ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_j61t3"]
 [ext_resource type="Texture2D" uid="uid://daai1w2c601sr" path="res://textures/speechbubbles/Bubbles right/Bubl_soap_text_nr4.png" id="2_vtpuw"]
 [ext_resource type="Texture2D" uid="uid://bvk2l45w2g0dx" path="res://textures/speechbubbles/Bubbles left/Bubl_soap_text_nr4(left).png" id="3_1y6u1"]
+[ext_resource type="AudioStream" uid="uid://btxq10ua540gj" path="res://audio/vo/Freya - hurt.mp3" id="4_ksd8s"]
+[ext_resource type="AudioStream" uid="uid://dnc453m0wyfit" path="res://audio/vo/Gigi/Gigi - hurt.mp3" id="5_g4efx"]
+[ext_resource type="AudioStream" uid="uid://dqyyno5l5828u" path="res://audio/vo/Harry/Harry - hurt.mp3" id="6_gd6vk"]
+[ext_resource type="AudioStream" uid="uid://donufecbpgtah" path="res://audio/vo/Patrick/Patrick - hurt.mp3" id="7_8v2fn"]
+[ext_resource type="AudioStream" uid="uid://b3gq6fcqm5ntf" path="res://audio/vo/Jeremy/Jeremy - hurt.mp3" id="8_vfo78"]
 
 [node name="speech_bubble_soap4" instance=ExtResource("1_j61t3")]
 texture_right = ExtResource("2_vtpuw")
 texture_left = ExtResource("3_1y6u1")
 minigame = "soap"
+sound_left_1 = ExtResource("4_ksd8s")
+sound_left_2 = ExtResource("5_g4efx")
+sound_left_3 = ExtResource("6_gd6vk")
+sound_left_4 = ExtResource("7_8v2fn")
+sound_left_5 = ExtResource("8_vfo78")
+sound_right_1 = ExtResource("4_ksd8s")
+sound_right_2 = ExtResource("5_g4efx")
+sound_right_3 = ExtResource("6_gd6vk")
+sound_right_4 = ExtResource("8_vfo78")
+sound_right_5 = ExtResource("7_8v2fn")
 
 [node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
 offset_left = -1.0

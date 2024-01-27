@@ -41,6 +41,22 @@ var used_texture_node: TextureRect
 
 @export var valid_thru := 1.0
 
+@export_group('sounds left')
+@export var sound_left_1: Resource
+@export var sound_left_2: Resource
+@export var sound_left_3: Resource
+@export var sound_left_4: Resource
+@export var sound_left_5: Resource
+@export_group('sounds right')
+@export var sound_right_1: Resource
+@export var sound_right_2: Resource
+@export var sound_right_3: Resource
+@export var sound_right_4: Resource
+@export var sound_right_5: Resource
+
+var sounds_left = []
+var sounds_right = []
+
 
 func _physics_process(delta: float) -> void:
 	if Engine.is_editor_hint():
@@ -71,6 +87,7 @@ func _physics_process(delta: float) -> void:
 func _ready() -> void:
 	if Engine.is_editor_hint():
 		return
+	build_sound_arrays()
 	position = Vector2(randf() * 1600.0, randf() * 50.0 + 700.0)
 	texture_left_button.visible = false
 	texture_right_button.visible = false
@@ -80,11 +97,21 @@ func _ready() -> void:
 		used_texture_node = texture_left_node
 		if minigame != '':
 			texture_left_button.visible = true
+		if sounds_left and len(sounds_left) > 0:
+			Audio.spawn_sound_effect(
+				'SFX',
+				sounds_left[randi() % len(sounds_left)]
+			)
 	else:
 		texture_left_node.visible = false
 		used_texture_node = texture_right_node
 		if minigame != '':
 			texture_right_button.visible = true
+		if sounds_right and len(sounds_right) > 0:
+			Audio.spawn_sound_effect(
+				'SFX',
+				sounds_right[randi() % len(sounds_right)]
+			)
 	pivot_rotation.rotation_degrees = 180
 	used_texture_node.modulate.a = 0.0
 	
@@ -106,3 +133,26 @@ func generate():
 	texture_left_button.visible = minigame != ''
 	texture_right_node.texture = texture_right
 	texture_left_node.texture = texture_left
+
+
+func build_sound_arrays():
+	if sound_left_1:
+		sounds_left.append(sound_left_1)
+	if sound_left_2:
+		sounds_left.append(sound_left_2)
+	if sound_left_3:
+		sounds_left.append(sound_left_3)
+	if sound_left_4:
+		sounds_left.append(sound_left_4)
+	if sound_left_5:
+		sounds_left.append(sound_left_5)
+	if sound_right_1:
+		sounds_right.append(sound_right_1)
+	if sound_right_2:
+		sounds_right.append(sound_right_2)
+	if sound_right_3:
+		sounds_right.append(sound_right_3)
+	if sound_right_4:
+		sounds_right.append(sound_right_4)
+	if sound_right_5:
+		sounds_right.append(sound_right_5)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dejxqfi7lih88"
+path="res://.godot/imported/Jeremy - gag.mp3-8c8a27a0ee6b4b379064a632bbad38ca.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/pie_2/gag/Jeremy - gag.mp3"
+dest_files=["res://.godot/imported/Jeremy - gag.mp3-8c8a27a0ee6b4b379064a632bbad38ca.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

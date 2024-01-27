@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b8wagalwo1ju8"
+path="res://.godot/imported/Gigi - pie.mp3-f689c675607c8d84adebaa0da05a6345.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Gigi/Gigi - pie.mp3"
+dest_files=["res://.godot/imported/Gigi - pie.mp3-f689c675607c8d84adebaa0da05a6345.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

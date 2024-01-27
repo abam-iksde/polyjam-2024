@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://chswuclcsl7tw"
+path="res://.godot/imported/Gigi - soap.mp3-d4080a2d241a8bd6c98d0078a04e5e6e.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/pie_3/soap/Gigi - soap.mp3"
+dest_files=["res://.godot/imported/Gigi - soap.mp3-d4080a2d241a8bd6c98d0078a04e5e6e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

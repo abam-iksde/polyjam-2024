@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnkrunxy7bgmo"
+path="res://.godot/imported/Patrick - ol days.mp3-039fc1ce313f3875f2c1f1c59fb80714.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Patrick/Patrick - ol days.mp3"
+dest_files=["res://.godot/imported/Patrick - ol days.mp3-039fc1ce313f3875f2c1f1c59fb80714.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

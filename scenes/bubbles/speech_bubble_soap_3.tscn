@@ -1,11 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://c67ex2a4jvbsm"]
+[gd_scene load_steps=14 format=3 uid="uid://c67ex2a4jvbsm"]
 
 [ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_8vfy0"]
 [ext_resource type="Texture2D" uid="uid://jkugkx4ttsra" path="res://textures/speechbubbles/Bubbles right/Bubl_soap_text_nr3.png" id="2_li0pv"]
+[ext_resource type="AudioStream" uid="uid://bslultp8v1w01" path="res://audio/vo/Harry/Harry - bucket.mp3" id="2_yssk6"]
 [ext_resource type="Texture2D" uid="uid://bu4iqq0dnpk4b" path="res://textures/speechbubbles/Bubbles left/Bubl_soap_text_nr3(left).png" id="3_17582"]
+[ext_resource type="AudioStream" uid="uid://ccr5maxnhkghu" path="res://audio/vo/Jeremy/Jeremy - bucket.mp3" id="3_quv1v"]
+[ext_resource type="AudioStream" uid="uid://bqu6ml7vrs8r2" path="res://audio/vo/Patrick - bucket.mp3" id="4_vpkwd"]
+[ext_resource type="AudioStream" uid="uid://byfk5iq8ousyw" path="res://audio/vo/pie_3/bucket/Freya - bucket.mp3" id="5_ajbf2"]
+[ext_resource type="AudioStream" uid="uid://eofucob6s06s" path="res://audio/vo/pie_3/bucket/Gigi - bucket.mp3" id="6_43knw"]
+[ext_resource type="AudioStream" uid="uid://brgdchlpt3kh4" path="res://audio/vo/Freya/Freya - soap.mp3" id="7_3mcoh"]
+[ext_resource type="AudioStream" uid="uid://dc5i54q5d75kb" path="res://audio/vo/Gigi/Gigi - soap.mp3" id="8_acgs2"]
+[ext_resource type="AudioStream" uid="uid://ds7tjedjd55ph" path="res://audio/vo/Harry/Harry - soap.mp3" id="9_dkgqx"]
+[ext_resource type="AudioStream" uid="uid://c42hpxfkrp74v" path="res://audio/vo/Jeremy/Jeremy - soap.mp3" id="10_3c3d2"]
+[ext_resource type="AudioStream" uid="uid://bqkcxvtnj7ja8" path="res://audio/vo/Patrick/Patrick - soap.mp3" id="11_bn1gi"]
 
 [node name="speech_bubble_soap3" instance=ExtResource("1_8vfy0")]
 minigame = "soap"
+sound_left_1 = ExtResource("2_yssk6")
+sound_left_2 = ExtResource("3_quv1v")
+sound_left_3 = ExtResource("4_vpkwd")
+sound_left_4 = ExtResource("5_ajbf2")
+sound_left_5 = ExtResource("6_43knw")
+sound_right_1 = ExtResource("7_3mcoh")
+sound_right_2 = ExtResource("8_acgs2")
+sound_right_3 = ExtResource("9_dkgqx")
+sound_right_4 = ExtResource("10_3c3d2")
+sound_right_5 = ExtResource("11_bn1gi")
 
 [node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
 offset_left = -2.0

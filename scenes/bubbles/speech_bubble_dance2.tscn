@@ -1,13 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://b2orqd0uuitpm"]
+[gd_scene load_steps=9 format=3 uid="uid://b2orqd0uuitpm"]
 
 [ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_eofrw"]
 [ext_resource type="Texture2D" uid="uid://pkfe0at5olmd" path="res://textures/speechbubbles/Bubbles right/Bubl_dance_text_nr2.png" id="2_u1fto"]
 [ext_resource type="Texture2D" uid="uid://br873eerpwrqn" path="res://textures/speechbubbles/Bubbles left/Bubl_dance_text_nr2(left).png" id="3_m2j74"]
+[ext_resource type="AudioStream" uid="uid://u5s6wnysmjig" path="res://audio/vo/Freya/Freya - turkey.mp3" id="4_fifta"]
+[ext_resource type="AudioStream" uid="uid://d1oq31exij0se" path="res://audio/vo/Gigi/Gigi - turkey.mp3" id="5_5qmgg"]
+[ext_resource type="AudioStream" uid="uid://chy15018chmkc" path="res://audio/vo/Harry/Harry - turkey.mp3" id="6_2ic02"]
+[ext_resource type="AudioStream" uid="uid://cfyolk5ps08tf" path="res://audio/vo/Jeremy/Jeremy - turkey.mp3" id="7_xg6y7"]
+[ext_resource type="AudioStream" uid="uid://dbe1j7flo0fvd" path="res://audio/vo/Patrick/Patrick - turkey.mp3" id="8_6bw0d"]
 
 [node name="speech_bubble" instance=ExtResource("1_eofrw")]
 texture_right = ExtResource("2_u1fto")
 texture_left = ExtResource("3_m2j74")
 minigame = "dance"
+sound_left_1 = ExtResource("4_fifta")
+sound_left_2 = ExtResource("5_5qmgg")
+sound_right_1 = ExtResource("6_2ic02")
+sound_right_2 = ExtResource("7_xg6y7")
+sound_right_3 = ExtResource("8_6bw0d")
 
 [node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
 offset_left = -14.0

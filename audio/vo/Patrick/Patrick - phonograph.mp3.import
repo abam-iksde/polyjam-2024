@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://fwmht0fj7ahv"
+path="res://.godot/imported/Patrick - phonograph.mp3-d65d1ecfdeb4682639562b4628a83bae.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Patrick/Patrick - phonograph.mp3"
+dest_files=["res://.godot/imported/Patrick - phonograph.mp3-d65d1ecfdeb4682639562b4628a83bae.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

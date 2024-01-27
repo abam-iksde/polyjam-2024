@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ccr5maxnhkghu"
+path="res://.godot/imported/Jeremy - bucket.mp3-64b6671424835365a9481aa41a75dd19.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - bucket.mp3"
+dest_files=["res://.godot/imported/Jeremy - bucket.mp3-64b6671424835365a9481aa41a75dd19.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

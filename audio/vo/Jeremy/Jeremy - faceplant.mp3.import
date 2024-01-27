@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7mx71tuukn4j"
+path="res://.godot/imported/Jeremy - faceplant.mp3-5e3b6e7205bf4d65f94cdc71ea82815d.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - faceplant.mp3"
+dest_files=["res://.godot/imported/Jeremy - faceplant.mp3-5e3b6e7205bf4d65f94cdc71ea82815d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
