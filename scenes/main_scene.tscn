@@ -8,7 +8,7 @@
 [ext_resource type="Script" path="res://scripts/people.gd" id="4_wrp1k"]
 [ext_resource type="Texture2D" uid="uid://dxxyja26q0q71" path="res://textures/Sillhouetes.png" id="5_viljx"]
 [ext_resource type="Script" path="res://scripts/keep_aspect_control.gd" id="7_06w7i"]
-[ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="8_uv83u"]
+[ext_resource type="PackedScene" path="res://scenes/speech_bubble.tscn" id="8_uv83u"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_btefe"]
 shader = ExtResource("3_ns5cs")
