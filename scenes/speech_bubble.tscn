@@ -1,0 +1,60 @@
+[gd_scene load_steps=5 format=3 uid="uid://djl2bvoktubb4"]
+
+[ext_resource type="Script" path="res://scripts/speech_bubble.gd" id="1_wcywj"]
+[ext_resource type="Texture2D" uid="uid://b5iph37oxd2cn" path="res://textures/speechbubbles/Bubbles right/Bubl #@!!.png" id="2_nb8nd"]
+[ext_resource type="Texture2D" uid="uid://blv7bgpmy1ne8" path="res://textures/speechbubbles/Bubbles left/Bubl #@!!(left).png" id="3_6g5n4"]
+[ext_resource type="Texture2D" uid="uid://diwfjijou2h2k" path="res://textures/buttons/a.png" id="4_2d0jd"]
+
+[node name="speech_bubble" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wcywj")
+
+[node name="pivot_scale" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="pivot_rotation" type="Control" parent="pivot_scale"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="texture_right" type="TextureRect" parent="pivot_scale/pivot_rotation"]
+layout_mode = 0
+offset_left = -47.0
+offset_top = -280.0
+offset_right = 446.0
+offset_bottom = 55.0
+texture = ExtResource("2_nb8nd")
+
+[node name="texture_left" type="TextureRect" parent="pivot_scale/pivot_rotation"]
+layout_mode = 0
+offset_left = -19.0
+offset_top = -287.0
+offset_right = 474.0
+offset_bottom = 48.0
+texture = ExtResource("3_6g5n4")
+flip_h = true
+
+[node name="button_right" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 17.0
+offset_top = -20.0
+offset_right = 57.0
+offset_bottom = 20.0
+texture = ExtResource("4_2d0jd")
+
+[node name="button_left" type="TextureRect" parent="."]
+visible = false
+layout_mode = 0
+offset_left = -57.0
+offset_top = -20.0
+offset_right = -17.0
+offset_bottom = 20.0
+texture = ExtResource("4_2d0jd")

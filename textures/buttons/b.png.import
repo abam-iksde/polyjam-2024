@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dh5p0p6bv5ksc"
-path="res://.godot/imported/Bublfuck.png-94d928110a52b56af240500108c5a432.ctex"
+uid="uid://ca0xn7dagdgal"
+path="res://.godot/imported/b.png-6d8b82c8b1ac8c4e97382ab09a9f31a9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/speechbubbles/Bubbles left/Bublfuck.png"
-dest_files=["res://.godot/imported/Bublfuck.png-94d928110a52b56af240500108c5a432.ctex"]
+source_file="res://textures/buttons/b.png"
+dest_files=["res://.godot/imported/b.png-6d8b82c8b1ac8c4e97382ab09a9f31a9.ctex"]
 
 [params]
 
