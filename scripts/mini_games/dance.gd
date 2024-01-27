@@ -1,6 +1,21 @@
 extends Control
 
 
+const SUCCESSFUL_SPRITES = [
+	preload('res://textures/mini_games/dance/dance1.png'),
+	preload('res://textures/mini_games/dance/dance3.png'),
+	preload('res://textures/mini_games/dance/dance2.png'),
+	preload('res://textures/mini_games/dance/dance4.png'),
+]
+
+const FAILED_SPRITES = [
+	preload('res://textures/mini_games/dance/dance5.png'),
+	preload('res://textures/mini_games/dance/dance7.png'),
+	preload('res://textures/mini_games/dance/dance6.png'),
+	preload('res://textures/mini_games/dance/dance8.png'),
+]
+
+
 var cooldown_after := 2.0
 
 
@@ -67,6 +82,9 @@ func _physics_process(delta: float) -> void:
 			if not hit:
 				lane_cooldown[i] = 1.0
 				lanes[i].get_node('target').modulate = Color(0.5, 0.5, 0.5, 1.0)
+				get_node('game/mouse').texture = FAILED_SPRITES[i]
+			else:
+				get_node('game/mouse').texture = SUCCESSFUL_SPRITES[i]
 	
 	for i in range(len(arrows_per_lane)):
 		var arrows = arrows_per_lane[i]
