@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bwxe4g4shy3nb"
+path="res://.godot/imported/Freya - phonograph.mp3-97fd4aafa2f5bb76518f833dfc70a6e9.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - phonograph.mp3"
+dest_files=["res://.godot/imported/Freya - phonograph.mp3-97fd4aafa2f5bb76518f833dfc70a6e9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

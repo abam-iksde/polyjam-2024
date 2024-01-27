@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c4ub8wpiw4pai"
+path="res://.godot/imported/Gigi - cow.mp3-70dfa215ca779ebe3ec946c057485be6.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Gigi/Gigi - cow.mp3"
+dest_files=["res://.godot/imported/Gigi - cow.mp3-70dfa215ca779ebe3ec946c057485be6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

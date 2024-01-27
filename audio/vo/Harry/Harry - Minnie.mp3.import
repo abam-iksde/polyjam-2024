@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bq56v8afc4bms"
+path="res://.godot/imported/Harry - Minnie.mp3-e01d75707612eb98487d63fd8a9f9eb3.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Harry/Harry - Minnie.mp3"
+dest_files=["res://.godot/imported/Harry - Minnie.mp3-e01d75707612eb98487d63fd8a9f9eb3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b61olxvgpa05n"
+path="res://.godot/imported/Harry - corporations.mp3-66d3c4c1a0a2cf775c391fec4eaf19f8.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Harry/Harry - corporations.mp3"
+dest_files=["res://.godot/imported/Harry - corporations.mp3-66d3c4c1a0a2cf775c391fec4eaf19f8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

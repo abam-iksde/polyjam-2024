@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dxffpfs71rj7m"
+path="res://.godot/imported/Jeremy - parrot.mp3-640c7a94b4134d3dbd1889d769add6e6.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/pie_2/parrot/Jeremy - parrot.mp3"
+dest_files=["res://.godot/imported/Jeremy - parrot.mp3-640c7a94b4134d3dbd1889d769add6e6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

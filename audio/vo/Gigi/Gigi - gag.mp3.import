@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dcbq7oyyxl3dl"
+path="res://.godot/imported/Gigi - gag.mp3-af1dd648de0d76e4638569f0d2d8c6cd.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Gigi/Gigi - gag.mp3"
+dest_files=["res://.godot/imported/Gigi - gag.mp3-af1dd648de0d76e4638569f0d2d8c6cd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

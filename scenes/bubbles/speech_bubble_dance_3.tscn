@@ -1,13 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://d1u5i0ac54ilt"]
+[gd_scene load_steps=9 format=3 uid="uid://d1u5i0ac54ilt"]
 
 [ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_ihj4c"]
 [ext_resource type="Texture2D" uid="uid://bvcmeg4cr6lji" path="res://textures/speechbubbles/Bubbles right/Bubl_dance_text_nr3.png" id="2_tbixi"]
 [ext_resource type="Texture2D" uid="uid://b8olyif32e2xe" path="res://textures/speechbubbles/Bubbles left/Bubl_dance_text_nr3(left).png" id="3_y4uiv"]
+[ext_resource type="AudioStream" uid="uid://xmka4r003hwq" path="res://audio/vo/Freya/Freya - dance.mp3" id="4_bi17n"]
+[ext_resource type="AudioStream" uid="uid://gnw7evg3lngs" path="res://audio/vo/Gigi/Gigi - dance.mp3" id="5_oe47y"]
+[ext_resource type="AudioStream" uid="uid://bxmm763m2oqo8" path="res://audio/vo/Harry/Harry - dance.mp3" id="6_p6e6i"]
+[ext_resource type="AudioStream" uid="uid://o3qojcfdo1qs" path="res://audio/vo/Jeremy/Jeremy - dance.mp3" id="7_thob5"]
+[ext_resource type="AudioStream" uid="uid://b1jqe3im7xc81" path="res://audio/vo/Patrick/Patrick - dance.mp3" id="8_1dmiw"]
 
 [node name="speech_bubble_dance3" instance=ExtResource("1_ihj4c")]
 texture_right = ExtResource("2_tbixi")
 texture_left = ExtResource("3_y4uiv")
 minigame = "dance"
+sound_left_1 = ExtResource("4_bi17n")
+sound_left_2 = ExtResource("5_oe47y")
+sound_right_1 = ExtResource("6_p6e6i")
+sound_right_2 = ExtResource("7_thob5")
+sound_right_3 = ExtResource("8_1dmiw")
 
 [node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
 offset_left = -9.0

@@ -1,13 +1,33 @@
-[gd_scene load_steps=4 format=3 uid="uid://cm2x0n5i0k81"]
+[gd_scene load_steps=14 format=3 uid="uid://cm2x0n5i0k81"]
 
 [ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_1nq3g"]
 [ext_resource type="Texture2D" uid="uid://oqo01mfxhu5u" path="res://textures/speechbubbles/Bubbles right/Bubl_pie_text_nr2.png" id="2_t7uxq"]
 [ext_resource type="Texture2D" uid="uid://d24moccajn8nd" path="res://textures/speechbubbles/Bubbles left/Bubl_pie_text_nr2(left).png" id="3_48p83"]
+[ext_resource type="AudioStream" uid="uid://chxv20cljw0fl" path="res://audio/vo/pie_2/parrot/Freya - parrot.mp3" id="4_lnhqa"]
+[ext_resource type="AudioStream" uid="uid://dwrejkrqgdvxa" path="res://audio/vo/pie_2/parrot/Gigi - parrot.mp3" id="5_pic6n"]
+[ext_resource type="AudioStream" uid="uid://b4xow51aff8sx" path="res://audio/vo/pie_2/parrot/Harry - parrot.mp3" id="6_kti5a"]
+[ext_resource type="AudioStream" uid="uid://dxffpfs71rj7m" path="res://audio/vo/pie_2/parrot/Jeremy - parrot.mp3" id="7_uit8u"]
+[ext_resource type="AudioStream" uid="uid://dq2v6rc5jnfh7" path="res://audio/vo/pie_2/parrot/Patrick - parrot.mp3" id="8_umfi2"]
+[ext_resource type="AudioStream" uid="uid://bqyclxobajlm8" path="res://audio/vo/pie_2/gag/Patrick - gag.mp3" id="9_6dvle"]
+[ext_resource type="AudioStream" uid="uid://bdhs5wl0dx2tv" path="res://audio/vo/pie_2/gag/Harry - gag.mp3" id="10_6soe1"]
+[ext_resource type="AudioStream" uid="uid://dejxqfi7lih88" path="res://audio/vo/pie_2/gag/Jeremy - gag.mp3" id="11_5dwek"]
+[ext_resource type="AudioStream" uid="uid://drrne3umv7a8c" path="res://audio/vo/pie_2/gag/Gigi - gag.mp3" id="12_b5w72"]
+[ext_resource type="AudioStream" uid="uid://b4l8fxoxcm01o" path="res://audio/vo/pie_2/gag/Freya - gag.mp3" id="13_85qmq"]
 
 [node name="speech_bubble_pie2" instance=ExtResource("1_1nq3g")]
 texture_right = ExtResource("2_t7uxq")
 texture_left = ExtResource("3_48p83")
 minigame = "pie"
+sound_left_1 = ExtResource("4_lnhqa")
+sound_left_2 = ExtResource("5_pic6n")
+sound_left_3 = ExtResource("6_kti5a")
+sound_left_4 = ExtResource("7_uit8u")
+sound_left_5 = ExtResource("8_umfi2")
+sound_right_1 = ExtResource("9_6dvle")
+sound_right_2 = ExtResource("10_6soe1")
+sound_right_3 = ExtResource("11_5dwek")
+sound_right_4 = ExtResource("12_b5w72")
+sound_right_5 = ExtResource("13_85qmq")
 
 [node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
 texture = ExtResource("2_t7uxq")

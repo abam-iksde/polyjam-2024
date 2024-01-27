@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://v4o2b1fyqte"
+path="res://.godot/imported/Gigi - boat.mp3-77796ef3b6de21b309121a61eef87c45.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Gigi/Gigi - boat.mp3"
+dest_files=["res://.godot/imported/Gigi - boat.mp3-77796ef3b6de21b309121a61eef87c45.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cfyolk5ps08tf"
+path="res://.godot/imported/Jeremy - turkey.mp3-c8301f6e6eeb29725b0a2e10309cd6b5.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - turkey.mp3"
+dest_files=["res://.godot/imported/Jeremy - turkey.mp3-c8301f6e6eeb29725b0a2e10309cd6b5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cavcmoqo585n0"
+path="res://.godot/imported/Jeremy - cow.mp3-e8a58c1dde1daa14fd8e599811dac7ab.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - cow.mp3"
+dest_files=["res://.godot/imported/Jeremy - cow.mp3-e8a58c1dde1daa14fd8e599811dac7ab.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

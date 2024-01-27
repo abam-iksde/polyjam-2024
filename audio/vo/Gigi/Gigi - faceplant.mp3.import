@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://x5cnd084vtou"
+path="res://.godot/imported/Gigi - faceplant.mp3-de04ea185d549a3a6df0a2317cd7bfa6.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Gigi/Gigi - faceplant.mp3"
+dest_files=["res://.godot/imported/Gigi - faceplant.mp3-de04ea185d549a3a6df0a2317cd7bfa6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

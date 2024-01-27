@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c3jecybyb7khv"
+path="res://.godot/imported/Freya - joke.mp3-a48b6181d23271febe722999e85f940d.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - joke.mp3"
+dest_files=["res://.godot/imported/Freya - joke.mp3-a48b6181d23271febe722999e85f940d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b7x46a4h41ij6"
+path="res://.godot/imported/Freya - Pete.mp3-403f6aae182d13b7a9ea8a99ef2fc501.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - Pete.mp3"
+dest_files=["res://.godot/imported/Freya - Pete.mp3-403f6aae182d13b7a9ea8a99ef2fc501.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,13 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://dmrrw22x3flhk"]
+[gd_scene load_steps=9 format=3 uid="uid://dmrrw22x3flhk"]
 
 [ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_v0htp"]
 [ext_resource type="Texture2D" uid="uid://d0qb60gt0qgrb" path="res://textures/speechbubbles/Bubbles right/Bub_pie_text_nr1l.png" id="2_y2t6a"]
 [ext_resource type="Texture2D" uid="uid://btnw70nlmw7fi" path="res://textures/speechbubbles/Bubbles left/Bub_pie_text_nr1(left).png" id="3_5jb1t"]
+[ext_resource type="AudioStream" uid="uid://umwvvludnm7e" path="res://audio/vo/pie_1/Harry - pie.mp3" id="4_3d484"]
+[ext_resource type="AudioStream" uid="uid://uechqhr8iri7" path="res://audio/vo/pie_1/Patrick - pie.mp3" id="5_jgdso"]
+[ext_resource type="AudioStream" uid="uid://cknw4hpmpaqhs" path="res://audio/vo/pie_1/Jeremy - pie.mp3" id="6_rtagp"]
+[ext_resource type="AudioStream" uid="uid://4cey720334do" path="res://audio/vo/pie_1/Gigi - pie.mp3" id="7_1ucm5"]
+[ext_resource type="AudioStream" uid="uid://b58m34ol4chr2" path="res://audio/vo/pie_1/Freya - pie.mp3" id="8_pc2ls"]
 
 [node name="speech_bubble_pie1" instance=ExtResource("1_v0htp")]
 texture_right = ExtResource("2_y2t6a")
 texture_left = ExtResource("3_5jb1t")
 minigame = "pie"
+sound_left_1 = ExtResource("4_3d484")
+sound_left_2 = ExtResource("5_jgdso")
+sound_left_3 = ExtResource("6_rtagp")
+sound_right_1 = ExtResource("7_1ucm5")
+sound_right_2 = ExtResource("8_pc2ls")
 
 [node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
 texture = ExtResource("2_y2t6a")

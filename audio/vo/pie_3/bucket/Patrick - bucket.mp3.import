@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8g6p8ynhm2x5"
+path="res://.godot/imported/Patrick - bucket.mp3-09ba1285946934feeee128de5d8de44e.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/pie_3/bucket/Patrick - bucket.mp3"
+dest_files=["res://.godot/imported/Patrick - bucket.mp3-09ba1285946934feeee128de5d8de44e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

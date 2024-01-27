@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bdhs5wl0dx2tv"
+path="res://.godot/imported/Harry - gag.mp3-955686f5657c642c86591b3c45cb3a77.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/pie_2/gag/Harry - gag.mp3"
+dest_files=["res://.godot/imported/Harry - gag.mp3-955686f5657c642c86591b3c45cb3a77.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

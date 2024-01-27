@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cvw3v4vx6dkmo"
+path="res://.godot/imported/Freya - cartoons.mp3-5bbef5c89f256a87771f912400407755.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - cartoons.mp3"
+dest_files=["res://.godot/imported/Freya - cartoons.mp3-5bbef5c89f256a87771f912400407755.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

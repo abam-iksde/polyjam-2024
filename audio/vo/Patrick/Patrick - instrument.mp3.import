@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://n7yj5dv4iqvi"
+path="res://.godot/imported/Patrick - instrument.mp3-054a2a2a233bfca250a3531fead7b8c3.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Patrick/Patrick - instrument.mp3"
+dest_files=["res://.godot/imported/Patrick - instrument.mp3-054a2a2a233bfca250a3531fead7b8c3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

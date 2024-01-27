@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bos566rfenck0"
+path="res://.godot/imported/Jeremy - corporations.mp3-6207b12a0f5347b5b6b9954fb9579cff.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - corporations.mp3"
+dest_files=["res://.godot/imported/Jeremy - corporations.mp3-6207b12a0f5347b5b6b9954fb9579cff.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
