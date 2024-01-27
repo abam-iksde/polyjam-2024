@@ -21,6 +21,7 @@ Sections="*res://scripts/sections.gd"
 Motion="*res://scripts/motion.gd"
 GameState="*res://scripts/game_state.gd"
 Audio="*res://scripts/audio.gd"
+MusicPlayer="*res://scripts/music_player.gd"
 
 [display]
 
