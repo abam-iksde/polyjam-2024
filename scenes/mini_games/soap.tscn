@@ -36,9 +36,23 @@ offset_right = 127.0
 offset_bottom = 43.0
 texture = ExtResource("2_om8xd")
 
+[node name="bounding_box" type="Control" parent="game/foot"]
+anchors_preset = 0
+offset_left = 21.0
+offset_top = 1.0
+offset_right = 111.0
+offset_bottom = 242.0
+
 [node name="soap" type="TextureRect" parent="game"]
 layout_mode = 0
 offset_top = 214.0
 offset_right = 89.0
 offset_bottom = 266.0
 texture = ExtResource("3_51jur")
+
+[node name="bounding_box" type="Control" parent="game/soap"]
+anchors_preset = 0
+offset_left = 4.0
+offset_top = 11.0
+offset_right = 80.0
+offset_bottom = 45.0
