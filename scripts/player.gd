@@ -25,6 +25,7 @@ func _ready():
 
 
 func _physics_process(delta: float) -> void:
+	delta = Motion.get_delta(delta)
 	y_velocity -= delta * GRAVITY
 	position.y += y_velocity * delta
 	if position.y <= ground_y:
