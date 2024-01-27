@@ -4,7 +4,6 @@
 [ext_resource type="Script" path="res://scripts/mini_games/dance/command.gd" id="2_hnwbm"]
 
 [node name="command" type="TextureRect"]
-modulate = Color(0.580392, 0, 0.0313726, 1)
 offset_right = 40.0
 offset_bottom = 40.0
 texture = ExtResource("1_0lr0d")

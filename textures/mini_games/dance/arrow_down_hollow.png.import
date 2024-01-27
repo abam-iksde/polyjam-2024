@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bylhgjqmyiic6"
-path="res://.godot/imported/soap.png-2d8b2583f0e6359e2bd10879816c6b06.ctex"
+uid="uid://dx2fl7kriudsw"
+path="res://.godot/imported/arrow_down_hollow.png-a79042bc18716b5407801318936b4613.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/mini_games/soap/soap.png"
-dest_files=["res://.godot/imported/soap.png-2d8b2583f0e6359e2bd10879816c6b06.ctex"]
+source_file="res://textures/mini_games/dance/arrow_down_hollow.png"
+dest_files=["res://.godot/imported/arrow_down_hollow.png-a79042bc18716b5407801318936b4613.ctex"]
 
 [params]
 

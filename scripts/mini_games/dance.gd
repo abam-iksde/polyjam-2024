@@ -50,12 +50,12 @@ var lane_cooldown = [0.0, 0.0, 0.0, 0.0]
 func get_lane_arrow_texture(lane: int) -> Texture:
 	match lane:
 		0:
-			return preload("res://textures/mini_games/dance/arrow_up.png")
+			return preload("res://textures/mini_games/dance/arrow_up_hollow.png")
 		1:
-			return preload("res://textures/mini_games/dance/arrow_left.png")
+			return preload("res://textures/mini_games/dance/arrow_left_hollow.png")
 		2:
-			return preload("res://textures/mini_games/dance/arrow_down.png")
-	return preload("res://textures/mini_games/dance/arrow_right.png")
+			return preload("res://textures/mini_games/dance/arrow_down_hollow.png")
+	return preload("res://textures/mini_games/dance/arrow_right_hollow.png")
 
 
 func _physics_process(delta: float) -> void:
@@ -90,7 +90,7 @@ func _physics_process(delta: float) -> void:
 		var arrows = arrows_per_lane[i]
 		for arrow in arrows:
 			if is_instance_valid(arrow) and Box.collides(arrow, lanes[i].get_node('target/box')):
-				arrow.modulate = Color(1.0, 0.0, 0.0, 1.0)
+				arrow.modulate = Color(0.6, 0.6, 0.6, 1.0)
 	
 	arrow_timeout -= delta
 	if arrow_timeout > 0.0:
