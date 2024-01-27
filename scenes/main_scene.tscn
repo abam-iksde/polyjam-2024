@@ -88,7 +88,6 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 grow_horizontal = 1
 grow_vertical = 1
-valid_thru = 1.0
 
 [node name="mini_game" type="Control" parent="."]
 clip_contents = true

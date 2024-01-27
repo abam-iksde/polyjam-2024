@@ -8,7 +8,6 @@
 texture_right = ExtResource("2_u1fto")
 texture_left = ExtResource("3_m2j74")
 minigame = "dance"
-valid_thru = 1.0
 
 [node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
 offset_left = -14.0

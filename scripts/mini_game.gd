@@ -28,10 +28,6 @@ func update_game_position():
 	if game:
 		game.position = Vector2(size.x/2.0 - size.x * BASE_SIZE.x * 0.5, size.y + size.y * view_position * 0.32)
 		game.scale = size/Vector2(1600.0, 900.0)
-		print(game.position)
-		print(game.size)
-		print(game.scale)
-		print('e')
 
 
 func _physics_process(delta: float) -> void:

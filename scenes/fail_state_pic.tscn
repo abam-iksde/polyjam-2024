@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scripts/fail_state_pic.gd" id="1_gyvbi"]
 [ext_resource type="ArrayMesh" uid="uid://d2hfeu6n14lak" path="res://meshes/transition.obj" id="2_t40np"]
 [ext_resource type="Script" path="res://scripts/transition.gd" id="3_h47yh"]
-[ext_resource type="Texture2D" uid="uid://c3s27c058v6k" path="res://textures/fail.png" id="4_mtklb"]
+[ext_resource type="Texture2D" uid="uid://bjtwpyr25k4w3" path="res://textures/Splashscreens/You lost.png" id="4_3wc5j"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sqh1v"]
 shading_mode = 0
@@ -14,7 +14,7 @@ size = Vector2(16, 9)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l25xb"]
 shading_mode = 0
-albedo_texture = ExtResource("4_mtklb")
+albedo_texture = ExtResource("4_3wc5j")
 
 [node name="fail_state_pic" type="Node3D"]
 script = ExtResource("1_gyvbi")
