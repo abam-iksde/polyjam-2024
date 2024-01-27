@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://dkgyd6gvbx4jc"]
 
 [ext_resource type="PackedScene" uid="uid://3ujdiolcynh8" path="res://scenes/ui_scene.tscn" id="1_hlkpq"]
-[ext_resource type="Texture2D" uid="uid://dcnvghpoo6l1" path="res://textures/Splashscreens/Credits.png" id="2_22pio"]
+[ext_resource type="Texture2D" uid="uid://vpiyhtkvtykw" path="res://textures/Splashscreens/Credits.png" id="2_22pio"]
 [ext_resource type="Script" path="res://scripts/credits.gd" id="2_rbkt4"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_hgc2b"]
