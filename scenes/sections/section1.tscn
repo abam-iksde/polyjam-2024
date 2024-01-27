@@ -1,14 +1,14 @@
 [gd_scene load_steps=5 format=3 uid="uid://ckku4hx20narw"]
 
 [ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_p1mhh"]
-[ext_resource type="Texture2D" uid="uid://cwnqgd8ngjv4n" path="res://textures/test_ground1.png" id="2_s04la"]
+[ext_resource type="Texture2D" uid="uid://qinpnnusthdq" path="res://textures/Section_1_Dirt_ground.png" id="2_yxprc"]
 [ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/obstacle_rep.tscn" id="3_qo0mj"]
 [ext_resource type="Texture2D" uid="uid://ci4txge240ekp" path="res://textures/stone.png" id="4_dngnc"]
 
 [node name="section" instance=ExtResource("1_p1mhh")]
 
 [node name="ground" parent="." index="0"]
-texture = ExtResource("2_s04la")
+texture = ExtResource("2_yxprc")
 
 [node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("3_qo0mj")]
 position = Vector2(776, 515)
