@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://djl2bvoktubb4"]
+[gd_scene load_steps=6 format=3 uid="uid://djl2bvoktubb4"]
 
 [ext_resource type="Script" path="res://scripts/speech_bubble.gd" id="1_wcywj"]
 [ext_resource type="Texture2D" uid="uid://b5iph37oxd2cn" path="res://textures/speechbubbles/Bubbles right/Bubl #@!!.png" id="2_nb8nd"]
+[ext_resource type="Script" path="res://scripts/flash.gd" id="3_3nqh6"]
 [ext_resource type="Texture2D" uid="uid://blv7bgpmy1ne8" path="res://textures/speechbubbles/Bubbles left/Bubl #@!!(left).png" id="3_6g5n4"]
 [ext_resource type="Texture2D" uid="uid://diwfjijou2h2k" path="res://textures/buttons/a.png" id="4_2d0jd"]
 
@@ -49,6 +50,7 @@ offset_top = -20.0
 offset_right = 57.0
 offset_bottom = 20.0
 texture = ExtResource("4_2d0jd")
+script = ExtResource("3_3nqh6")
 
 [node name="button_left" type="TextureRect" parent="."]
 visible = false
@@ -58,3 +60,4 @@ offset_top = -20.0
 offset_right = -17.0
 offset_bottom = 20.0
 texture = ExtResource("4_2d0jd")
+script = ExtResource("3_3nqh6")
