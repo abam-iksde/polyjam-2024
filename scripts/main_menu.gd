@@ -24,7 +24,7 @@ func _physics_process(delta):
 		GameState.main_menu_option -= 1
 	if Input.is_action_just_pressed("ui_down"):
 		GameState.main_menu_option += 1
-	GameState.main_menu_option = GameState.main_menu_option % len(options)
+	GameState.main_menu_option = wrap(GameState.main_menu_option, 0, len(options))
 	highlight_option(GameState.main_menu_option)
 	if Input.is_action_just_pressed('ui_accept'):
 		locked = true
@@ -43,7 +43,7 @@ func start_game():
 
 
 func goto_credits():
-	pass
+	get_tree().change_scene_to_file('res://scenes/credits.tscn')
 
 
 func exit():

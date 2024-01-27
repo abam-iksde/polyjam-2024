@@ -26,6 +26,7 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="game_viewport_container" type="SubViewportContainer" parent="."]
+layout_mode = 0
 offset_right = 930.0
 offset_bottom = 529.0
 stretch = true
