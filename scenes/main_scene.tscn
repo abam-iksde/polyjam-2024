@@ -40,3 +40,13 @@ clip_contents = true
 layout_mode = 2
 anchors_preset = 0
 script = ExtResource("3_h5qwk")
+
+[node name="people" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 970.0
+offset_bottom = 504.0
+
+[node name="texture" type="TextureRect" parent="people"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
