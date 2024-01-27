@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2orqd0uuitpm"]
+
+[ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_eofrw"]
+[ext_resource type="Texture2D" uid="uid://pkfe0at5olmd" path="res://textures/speechbubbles/Bubbles right/Bubl_dance_text_nr2.png" id="2_u1fto"]
+[ext_resource type="Texture2D" uid="uid://br873eerpwrqn" path="res://textures/speechbubbles/Bubbles left/Bubl_dance_text_nr2(left).png" id="3_m2j74"]
+
+[node name="speech_bubble" instance=ExtResource("1_eofrw")]
+texture_right = ExtResource("2_u1fto")
+texture_left = ExtResource("3_m2j74")
+minigame = "dance"
+valid_thru = 1.0
+
+[node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
+offset_left = -14.0
+offset_top = -264.0
+offset_right = 479.0
+offset_bottom = 71.0
+texture = ExtResource("2_u1fto")
+
+[node name="texture_left" parent="pivot_scale/pivot_rotation" index="1"]
+offset_left = -2.0
+offset_top = -265.0
+offset_right = 491.0
+offset_bottom = 70.0
+texture = ExtResource("3_m2j74")
+
+[node name="button_right" parent="." index="1"]
+visible = true
+
+[node name="button_left" parent="." index="2"]
+visible = true

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d24moccajn8nd"
-path="res://.godot/imported/Bubl_pie_text_nr2(left).png-44c96d643f95977ac64c88f819648bff.ctex"
+uid="uid://bbvuclhp2mn7d"
+path="res://.godot/imported/Bubl_dance_text_nr1.png-966d371d0ca1995ecf163ea7b831751c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/speechbubbles/Bubbles right/Bubl_pie_text_nr2(left).png"
-dest_files=["res://.godot/imported/Bubl_pie_text_nr2(left).png-44c96d643f95977ac64c88f819648bff.ctex"]
+source_file="res://textures/speechbubbles/Bubbles right/Bubl_dance_text_nr1.png"
+dest_files=["res://.godot/imported/Bubl_dance_text_nr1.png-966d371d0ca1995ecf163ea7b831751c.ctex"]
 
 [params]
 

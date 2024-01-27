@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://7bf3p2aae384"]
+[gd_scene load_steps=11 format=3 uid="uid://7bf3p2aae384"]
 
 [ext_resource type="Script" path="res://scripts/keep_aspect.gd" id="1_d586j"]
 [ext_resource type="PackedScene" uid="uid://dwpq5bji37inr" path="res://scenes/game_scene.tscn" id="1_toi7q"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://f54rc8irtkkv" path="res://textures/curtain1.png" id="4_nh5ru"]
 [ext_resource type="Script" path="res://scripts/people.gd" id="4_wrp1k"]
 [ext_resource type="Texture2D" uid="uid://dxxyja26q0q71" path="res://textures/Sillhouetes.png" id="5_viljx"]
+[ext_resource type="Script" path="res://scripts/keep_aspect_control.gd" id="7_06w7i"]
+[ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="8_uv83u"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_btefe"]
 shader = ExtResource("3_ns5cs")
@@ -73,8 +75,27 @@ offset_bottom = 230.0
 texture = ExtResource("5_viljx")
 expand_mode = 1
 
+[node name="speechbubbles" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+script = ExtResource("7_06w7i")
+
+[node name="speech_bubble" parent="speechbubbles" instance=ExtResource("8_uv83u")]
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+grow_horizontal = 1
+grow_vertical = 1
+valid_thru = 1.0
+
 [node name="mini_game" type="Control" parent="."]
 clip_contents = true
-layout_mode = 2
-anchors_preset = 0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 script = ExtResource("3_h5qwk")
