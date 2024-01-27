@@ -29,9 +29,9 @@ func update_game_position():
 func _physics_process(delta: float) -> void:
 	update_game_position()
 	if not game:
-		if Input.is_action_just_pressed('ui_up'):
+		if Input.is_key_pressed(KEY_0):
 			start_game('soap')
-		if Input.is_action_just_pressed('ui_left'):
+		if Input.is_key_pressed(KEY_9):
 			start_game('dance')
 		return
 	if game.state == 'started':
