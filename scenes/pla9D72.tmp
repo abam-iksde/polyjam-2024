@@ -14,7 +14,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0401001, 0)
 shape = SubResource("BoxShape3D_bq3sv")
 
 [node name="sprite" type="Sprite3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.108492, 0)
 pixel_size = 0.0025
 billboard = 1
 alpha_cut = 1

@@ -6,12 +6,15 @@ const HIT_COOLDOWN = 1.0
 const GRAVITY = 3.0
 const JUMP_FORCE = 1.5
 
+@onready var sprite := get_node('sprite') as Sprite3D
 @onready var ground_y := position.y
 var y_velocity := 0.0
 
 var on_ground := true
 
 var hit_cooldown := 0.0
+
+var animation_frame := 0.0
 
 
 func on_area_enter(area: Area3D) -> void:
@@ -45,3 +48,6 @@ func _physics_process(delta: float) -> void:
 	hit_cooldown -= delta
 	
 	Motion.movement_speed = min(Motion.movement_speed + delta*0.15, 0.3)
+	
+	animation_frame += delta * 12.0
+	sprite.frame = int(animation_frame) % sprite.hframes
