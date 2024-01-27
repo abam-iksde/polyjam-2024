@@ -18,6 +18,7 @@ shape = SubResource("BoxShape3D_i1rrn")
 [node name="sprite" type="Sprite3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
 custom_aabb = AABB(-10000, -10000, -10000, 20000, 200000, 20000)
+pixel_size = 0.0078
 billboard = 1
 texture = ExtResource("2_g71mr")
 script = ExtResource("3_x72b2")

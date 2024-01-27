@@ -55,6 +55,9 @@ func spawn_obstacles() -> void:
 		var shape := (obstacle_instance.get_node('collision_shape').shape as BoxShape3D).duplicate()
 		shape.size = obstacle.size
 		obstacle_instance.get_node('collision_shape').shape = shape
+		obstacle_instance.get_node('sprite').texture = obstacle.texture
+		obstacle_instance.get_node('sprite').pixel_size = obstacle.texture_scale * 0.0078125
+		obstacle_instance.get_node('sprite').position.y += obstacle.texture_z_offset
 		obstacles.add_child(obstacle_instance)
 		next_obstacles.pop_front()
 
@@ -67,6 +70,8 @@ func get_section_obstacles(section_name: String) -> Array:
 		var result_obstacle = {}
 		result_obstacle.texture = obstacle.texture
 		result_obstacle.position = Vector2((obstacle.position.x-512.0)/512.0 * 4.0, obstacle.position.y/1024.0)
-		result_obstacle.size = Vector3(obstacle.get_node('collision').size.x/512.0 * 4, obstacle.size.z, obstacle.get_node('collision').size.y/1024)
+		result_obstacle.size = Vector3(obstacle.size.x*2.0, obstacle.size.z, obstacle.get_node('collision').size.y/1024)
+		result_obstacle.texture_scale = obstacle.texture_scale
+		result_obstacle.texture_z_offset = obstacle.texture_z_offset
 		result.append(result_obstacle)
 	return result
