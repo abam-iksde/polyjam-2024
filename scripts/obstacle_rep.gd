@@ -8,10 +8,13 @@ extends Sprite2D
 		generate()
 
 
-@export var texture_scale = 1.0:
+@export var texture_scale := 1.0:
 	set(new_scale):
 		texture_scale = new_scale
 		generate()
+
+
+@export var texture_z_offset := 0.0
 
 
 func _ready() -> void:
