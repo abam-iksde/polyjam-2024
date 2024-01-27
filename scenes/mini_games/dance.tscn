@@ -1,0 +1,102 @@
+[gd_scene load_steps=6 format=3 uid="uid://8xo8qoe2psgp"]
+
+[ext_resource type="Texture2D" uid="uid://mjcfhkid2pwu" path="res://textures/mini_games/dance/arrow_up.png" id="1_8uhyv"]
+[ext_resource type="Script" path="res://scripts/mini_games/dance.gd" id="1_uv3ff"]
+[ext_resource type="Texture2D" uid="uid://cigjhi7h4000d" path="res://textures/mini_games/dance/arrow_left.png" id="2_bt28u"]
+[ext_resource type="Texture2D" uid="uid://d4k43rentwjon" path="res://textures/mini_games/dance/arrow_down.png" id="3_m4j7r"]
+[ext_resource type="Texture2D" uid="uid://cjqq4n00nbg45" path="res://textures/mini_games/dance/arrow_right.png" id="4_n3lt7"]
+
+[node name="dance" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uv3ff")
+
+[node name="game" type="Control" parent="."]
+clip_contents = true
+anchors_preset = 0
+offset_right = 480.0
+offset_bottom = 266.0
+
+[node name="background" type="ColorRect" parent="game"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0392157, 0.596078, 0.705882, 1)
+
+[node name="lane1" type="Control" parent="game"]
+anchors_preset = 0
+offset_left = 216.0
+offset_right = 481.0
+offset_bottom = 64.0
+
+[node name="target" type="TextureRect" parent="game/lane1"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_8uhyv")
+
+[node name="box" type="Control" parent="game/lane1/target"]
+anchors_preset = 0
+offset_right = 20.0
+offset_bottom = 40.0
+
+[node name="lane2" type="Control" parent="game"]
+anchors_preset = 0
+offset_left = 216.0
+offset_top = 65.0
+offset_right = 481.0
+offset_bottom = 129.0
+
+[node name="target" type="TextureRect" parent="game/lane2"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_bt28u")
+
+[node name="box" type="Control" parent="game/lane2/target"]
+anchors_preset = 0
+offset_right = 20.0
+offset_bottom = 40.0
+
+[node name="lane3" type="Control" parent="game"]
+anchors_preset = 0
+offset_left = 216.0
+offset_top = 130.0
+offset_right = 481.0
+offset_bottom = 194.0
+
+[node name="target" type="TextureRect" parent="game/lane3"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_m4j7r")
+
+[node name="box" type="Control" parent="game/lane3/target"]
+anchors_preset = 0
+offset_right = 20.0
+offset_bottom = 40.0
+
+[node name="lane4" type="Control" parent="game"]
+anchors_preset = 0
+offset_left = 216.0
+offset_top = 195.0
+offset_right = 481.0
+offset_bottom = 259.0
+
+[node name="target" type="TextureRect" parent="game/lane4"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_n3lt7")
+
+[node name="box" type="Control" parent="game/lane4/target"]
+anchors_preset = 0
+offset_right = 20.0
+offset_bottom = 40.0
