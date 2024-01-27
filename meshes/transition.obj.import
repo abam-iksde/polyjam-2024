@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d2hfeu6n14lak"
+path="res://.godot/imported/transition.obj-7043675a9a7e2bd3f9f0ad23f8c1f75c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/transition.obj-7043675a9a7e2bd3f9f0ad23f8c1f75c.mesh"]
+
+source_file="res://meshes/transition.obj"
+dest_files=["res://.godot/imported/transition.obj-7043675a9a7e2bd3f9f0ad23f8c1f75c.mesh", "res://.godot/imported/transition.obj-7043675a9a7e2bd3f9f0ad23f8c1f75c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

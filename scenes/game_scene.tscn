@@ -1,8 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwpq5bji37inr"]
+[gd_scene load_steps=10 format=3 uid="uid://dwpq5bji37inr"]
 
 [ext_resource type="Script" path="res://scripts/game_scene.gd" id="1_salqn"]
 [ext_resource type="ArrayMesh" uid="uid://b41r5iekmbsnj" path="res://meshes/ground.obj" id="1_w61uq"]
+[ext_resource type="ArrayMesh" uid="uid://d2hfeu6n14lak" path="res://meshes/transition.obj" id="3_65yr3"]
 [ext_resource type="PackedScene" uid="uid://chvr2qq4mcae" path="res://scenes/player.tscn" id="3_dgepj"]
+[ext_resource type="Script" path="res://scripts/transition.gd" id="4_s8vc4"]
 [ext_resource type="PackedScene" uid="uid://c36s17kr283aq" path="res://scenes/evil_face.tscn" id="4_wxxcx"]
 
 [sub_resource type="Shader" id="Shader_gqyho"]
@@ -70,6 +72,10 @@ shader_parameter/uv2_scale = Vector3(1, 1, 1)
 shader_parameter/uv2_offset = Vector3(0, 0, 0)
 shader_parameter/uv_shift = null
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sqh1v"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+
 [node name="game_scene" type="Node3D"]
 script = ExtResource("1_salqn")
 
@@ -82,6 +88,13 @@ surface_material_override/0 = SubResource("ShaderMaterial_4eamb")
 transform = Transform3D(1, 0, 0, 0, 0.991967, 0.126493, 0, -0.126493, 0.991967, 0, 2.2401, 5.26224)
 current = true
 fov = 35.0
+
+[node name="transition" type="MeshInstance3D" parent="camera"]
+unique_name_in_owner = true
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, -1)
+mesh = ExtResource("3_65yr3")
+surface_material_override/0 = SubResource("StandardMaterial3D_sqh1v")
+script = ExtResource("4_s8vc4")
 
 [node name="player" parent="." instance=ExtResource("3_dgepj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.349, 0.718)

@@ -19,6 +19,7 @@ config/icon="res://icon.svg"
 
 Sections="*res://scripts/sections.gd"
 Motion="*res://scripts/motion.gd"
+GameState="*res://scripts/game_state.gd"
 
 [display]
 
