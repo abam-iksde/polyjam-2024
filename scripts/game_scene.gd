@@ -65,6 +65,8 @@ func spawn_obstacles() -> void:
 		obstacle_instance.get_node('sprite').texture = obstacle.texture
 		obstacle_instance.get_node('sprite').pixel_size = obstacle.texture_scale * 0.0078125
 		obstacle_instance.get_node('sprite').position.y += obstacle.texture_z_offset
+		obstacle_instance.get_node('sprite').hframes = obstacle.n_frames
+		obstacle_instance.animation_speed = obstacle.animation_speed
 		obstacles.add_child(obstacle_instance)
 		next_obstacles.pop_front()
 
@@ -80,5 +82,7 @@ func get_section_obstacles(section_name: String) -> Array:
 		result_obstacle.size = Vector3(obstacle.size.x*2.0, obstacle.size.z, obstacle.get_node('collision').size.y/1024)
 		result_obstacle.texture_scale = obstacle.texture_scale
 		result_obstacle.texture_z_offset = obstacle.texture_z_offset
+		result_obstacle.n_frames = obstacle.hframes
+		result_obstacle.animation_speed = obstacle.animation_speed
 		result.append(result_obstacle)
 	return result

@@ -16,6 +16,8 @@ extends Sprite2D
 
 @export var texture_z_offset := 0.0
 
+@export var animation_speed := 12.0
+
 
 func _ready() -> void:
 	if not Engine.is_editor_hint():
