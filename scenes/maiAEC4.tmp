@@ -1,0 +1,57 @@
+[gd_scene load_steps=6 format=3 uid="uid://7bf3p2aae384"]
+
+[ext_resource type="Script" path="res://scripts/keep_aspect.gd" id="1_d586j"]
+[ext_resource type="PackedScene" uid="uid://dwpq5bji37inr" path="res://scenes/game_scene.tscn" id="1_toi7q"]
+[ext_resource type="Script" path="res://scripts/mini_game.gd" id="3_h5qwk"]
+[ext_resource type="Script" path="res://scripts/people.gd" id="4_wrp1k"]
+[ext_resource type="Texture2D" uid="uid://dxxyja26q0q71" path="res://textures/Sillhouetes.png" id="5_viljx"]
+
+[node name="main_scene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="background" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="game_viewport_container" type="SubViewportContainer" parent="."]
+layout_mode = 0
+offset_right = 930.0
+offset_bottom = 529.0
+stretch = true
+script = ExtResource("1_d586j")
+
+[node name="game_viewport" type="SubViewport" parent="game_viewport_container"]
+handle_input_locally = false
+size = Vector2i(930, 529)
+render_target_update_mode = 4
+
+[node name="game_scene" parent="game_viewport_container/game_viewport" instance=ExtResource("1_toi7q")]
+
+[node name="people" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 970.0
+offset_bottom = 504.0
+script = ExtResource("4_wrp1k")
+
+[node name="texture" type="TextureRect" parent="people"]
+layout_mode = 0
+offset_right = 1600.0
+offset_bottom = 230.0
+texture = ExtResource("5_viljx")
+expand_mode = 1
+
+[node name="mini_game" type="Control" parent="."]
+clip_contents = true
+layout_mode = 2
+anchors_preset = 0
+script = ExtResource("3_h5qwk")
