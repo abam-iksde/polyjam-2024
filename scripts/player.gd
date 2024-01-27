@@ -47,7 +47,7 @@ func _physics_process(delta: float) -> void:
 		
 	hit_cooldown -= delta
 	
-	Motion.movement_speed = lerp(Motion.movement_speed, 0.3, delta)
+	Motion.movement_speed = lerp(Motion.movement_speed, Motion.MOVEMENT_MAX_SPEED, delta)
 	
-	animation_frame += delta * 12.0 * (Motion.movement_speed/0.3)
+	animation_frame += delta * 12.0 * (Motion.movement_speed/Motion.MOVEMENT_MAX_SPEED)
 	sprite.frame = int(animation_frame) % sprite.hframes

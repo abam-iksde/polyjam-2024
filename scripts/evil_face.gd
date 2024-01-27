@@ -7,7 +7,7 @@ var proximity := 1.0
 
 func _physics_process(delta: float) -> void:
 	delta = Motion.get_delta(delta)
-	Motion.head_speed = lerpf(Motion.head_speed, 0.33, delta * 0.6)
+	Motion.head_speed = lerpf(Motion.head_speed, Motion.HEAD_MAX_SPEED, delta * 0.6)
 	proximity = min(proximity - (Motion.head_speed - Motion.movement_speed) * delta, 1.0)
 	if proximity < 0.0:
 		get_tree().reload_current_scene()
