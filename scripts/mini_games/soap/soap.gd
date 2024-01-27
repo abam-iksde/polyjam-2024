@@ -25,6 +25,7 @@ func _physics_process(delta: float) -> void:
 	foot.position += foot_velocity * delta
 	if box_collides(foot.get_node('bounding_box'), soap.get_node('bounding_box')):
 		state = 'won'
+		return
 	if foot.position.y >= 0.0:
 		foot.position.y = 0.0
 		state = 'lost'
