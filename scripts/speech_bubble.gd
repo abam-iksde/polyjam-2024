@@ -88,6 +88,9 @@ func _ready() -> void:
 	pivot_rotation.rotation_degrees = 180
 	used_texture_node.modulate.a = 0.0
 	
+	var modulation := 1.0 if minigame != '' else 0.6
+	used_texture_node.modulate = Color(modulation, modulation, modulation, 1.0)
+	
 	if minigame == '':
 		return
 	var activator = ACTIVATORS[randi() % len(ACTIVATORS)]
