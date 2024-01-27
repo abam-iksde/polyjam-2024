@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://3ujdiolcynh8"]
+[gd_scene load_steps=5 format=3 uid="uid://bc387eb0njapq"]
 
 [ext_resource type="Script" path="res://scripts/keep_aspect.gd" id="1_7wxgv"]
 [ext_resource type="ArrayMesh" uid="uid://d2hfeu6n14lak" path="res://meshes/transition.obj" id="2_m80hi"]

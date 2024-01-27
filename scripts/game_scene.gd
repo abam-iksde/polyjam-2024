@@ -43,6 +43,7 @@ func _physics_process(delta: float) -> void:
 
 
 func _ready() -> void:
+	MusicPlayer.play_song("res://audio/music/Mickey_Music.ogg")
 	setup_textures()
 	%transition.force_state(true)
 	%transition.target = false
