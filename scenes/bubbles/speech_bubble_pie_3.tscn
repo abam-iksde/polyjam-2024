@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://dseobys5kl2qp"]
+
+[ext_resource type="PackedScene" uid="uid://djl2bvoktubb4" path="res://scenes/speech_bubble.tscn" id="1_nd2ye"]
+[ext_resource type="Texture2D" uid="uid://df6esx1pngyef" path="res://textures/speechbubbles/Bubbles right/Bubl_pie_text_nr3.png" id="2_erhmh"]
+[ext_resource type="Texture2D" uid="uid://3o2w60xrn1m0" path="res://textures/speechbubbles/Bubbles left/Bubl_pie_text_nr3(left).png" id="3_d5rlm"]
+
+[node name="speech_bubble_pie3" instance=ExtResource("1_nd2ye")]
+texture_right = ExtResource("2_erhmh")
+texture_left = ExtResource("3_d5rlm")
+minigame = "pie"
+
+[node name="texture_right" parent="pivot_scale/pivot_rotation" index="0"]
+offset_left = -3.0
+offset_top = -269.0
+offset_right = 490.0
+offset_bottom = 66.0
+texture = ExtResource("2_erhmh")
+
+[node name="texture_left" parent="pivot_scale/pivot_rotation" index="1"]
+offset_left = -213.0
+offset_top = -280.0
+offset_right = 280.0
+offset_bottom = 55.0
+texture = ExtResource("3_d5rlm")
+
+[node name="button_right" parent="." index="1"]
+visible = true
+
+[node name="button_left" parent="." index="2"]
+visible = true
