@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://dwpq5bji37inr"]
+[gd_scene load_steps=13 format=3 uid="uid://dwpq5bji37inr"]
 
 [ext_resource type="Script" path="res://scripts/game_scene.gd" id="1_salqn"]
 [ext_resource type="ArrayMesh" uid="uid://b41r5iekmbsnj" path="res://meshes/ground.obj" id="1_w61uq"]
@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://chvr2qq4mcae" path="res://scenes/player.tscn" id="3_dgepj"]
 [ext_resource type="Script" path="res://scripts/transition.gd" id="4_s8vc4"]
 [ext_resource type="PackedScene" uid="uid://c36s17kr283aq" path="res://scenes/evil_face.tscn" id="4_wxxcx"]
+[ext_resource type="Texture2D" uid="uid://demp8q4oxam02" path="res://textures/tlo do gowy.png" id="7_qlw1r"]
 
 [sub_resource type="Shader" id="Shader_gqyho"]
 code = "// NOTE: Shader automatically converted from Godot Engine 4.2.1.stable's StandardMaterial3D.
@@ -76,6 +77,13 @@ shader_parameter/uv_shift = null
 shading_mode = 0
 albedo_color = Color(0, 0, 0, 1)
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_2dejr"]
+size = Vector2(19.2, 10.8)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7pqce"]
+shading_mode = 0
+albedo_texture = ExtResource("7_qlw1r")
+
 [node name="game_scene" type="Node3D"]
 script = ExtResource("1_salqn")
 
@@ -103,3 +111,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.349, 0.718)
 
 [node name="evil_face" parent="." instance=ExtResource("4_wxxcx")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.11866, -2.05686)
+
+[node name="background" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.0309049, -0.999522, 0, 0.999522, 0.0309049, -4.76837e-07, 1.0627, -11.201)
+mesh = SubResource("PlaneMesh_2dejr")
+surface_material_override/0 = SubResource("StandardMaterial3D_7pqce")
