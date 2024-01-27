@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://c6omngocq8vij"]
+[gd_scene load_steps=4 format=3 uid="uid://c6omngocq8vij"]
 
 [ext_resource type="Script" path="res://scripts/keep_aspect.gd" id="1_g11t0"]
 [ext_resource type="PackedScene" uid="uid://dvvpch5h0enu2" path="res://scenes/fail_state_pic.tscn" id="2_d1dd6"]
+[ext_resource type="Script" path="res://scripts/score_summary.gd" id="4_prhqt"]
 
 [node name="lost_scene" type="Control"]
 layout_mode = 3
@@ -21,15 +22,30 @@ grow_vertical = 2
 color = Color(0, 0, 0, 1)
 
 [node name="game_viewport_container" type="SubViewportContainer" parent="."]
-layout_mode = 0
-offset_right = 930.0
-offset_bottom = 529.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 stretch = true
 script = ExtResource("1_g11t0")
 
 [node name="game_viewport" type="SubViewport" parent="game_viewport_container"]
 handle_input_locally = false
-size = Vector2i(930, 529)
+size = Vector2i(1600, 900)
 render_target_update_mode = 4
 
 [node name="fail_state_pic" parent="game_viewport_container/game_viewport" instance=ExtResource("2_d1dd6")]
+
+[node name="score_summary" type="Label" parent="."]
+layout_mode = 0
+offset_left = 847.0
+offset_top = 57.0
+offset_right = 1539.0
+offset_bottom = 243.0
+text = "DISTANCE SCORE 
+plus STREAK SCORE
+plus NOTE SCORE
+is SCORE"
+script = ExtResource("4_prhqt")
