@@ -12,6 +12,8 @@ func on_size_changed():
 	else:
 		size = Vector2(viewport_size.y/aspect_components.y * aspect_components.x, viewport_size.y)
 	position = (Vector2(viewport_size) - size)/2.0
+	
+	get_node('mini_game').size = size
 
 
 func _ready():

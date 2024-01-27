@@ -29,6 +29,7 @@ func go_next_section() -> void:
 
 
 func _physics_process(delta: float) -> void:
+	delta = Motion.get_delta(delta)
 	section_progress += delta * Motion.movement_speed
 	if section_progress >= 1.0:
 		go_next_section()
