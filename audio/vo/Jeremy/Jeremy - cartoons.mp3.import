@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cs4v1377bwlrl"
+path="res://.godot/imported/Jeremy - cartoons.mp3-1245a5293c8fe16d0712f8c71d8b0535.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - cartoons.mp3"
+dest_files=["res://.godot/imported/Jeremy - cartoons.mp3-1245a5293c8fe16d0712f8c71d8b0535.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

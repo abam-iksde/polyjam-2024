@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://htumeb4u8iq8"
+path="res://.godot/imported/Freya - gag.mp3-79f327098f391f5a01c36aa16d9cd55d.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - gag.mp3"
+dest_files=["res://.godot/imported/Freya - gag.mp3-79f327098f391f5a01c36aa16d9cd55d.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

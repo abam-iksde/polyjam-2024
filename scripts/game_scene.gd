@@ -1,6 +1,6 @@
 extends Node3D
 
-
+@onready var music = preload("res://audio/music/Mickey_Music.wav")
 @onready var ground := get_node('ground') as MeshInstance3D
 
 var this_section := 's0'

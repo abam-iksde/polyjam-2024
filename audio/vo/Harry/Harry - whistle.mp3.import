@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cpm8x2j4ef3hn"
+path="res://.godot/imported/Harry - whistle.mp3-a0455f6a1f0e55294b0e24a814e604a2.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Harry/Harry - whistle.mp3"
+dest_files=["res://.godot/imported/Harry - whistle.mp3-a0455f6a1f0e55294b0e24a814e604a2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

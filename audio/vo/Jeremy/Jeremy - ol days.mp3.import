@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cam78tcyawme0"
+path="res://.godot/imported/Jeremy - ol days.mp3-046ea439215b907d45fbc8fa40e29aa9.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - ol days.mp3"
+dest_files=["res://.godot/imported/Jeremy - ol days.mp3-046ea439215b907d45fbc8fa40e29aa9.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

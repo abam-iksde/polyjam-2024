@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4xow51aff8sx"
+path="res://.godot/imported/Harry - parrot.mp3-5b5951e80964e8939e9916d683047d45.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/pie_2/parrot/Harry - parrot.mp3"
+dest_files=["res://.godot/imported/Harry - parrot.mp3-5b5951e80964e8939e9916d683047d45.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4xgbsng1ngxk"
+path="res://.godot/imported/Patrick - faceplant.mp3-9b92388c2183faa70392e1826dc5071b.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Patrick/Patrick - faceplant.mp3"
+dest_files=["res://.godot/imported/Patrick - faceplant.mp3-9b92388c2183faa70392e1826dc5071b.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

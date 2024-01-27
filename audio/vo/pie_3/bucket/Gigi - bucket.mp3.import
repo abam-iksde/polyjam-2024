@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://eofucob6s06s"
+path="res://.godot/imported/Gigi - bucket.mp3-36aed8a6974adc426773d80f2214eb81.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/pie_3/bucket/Gigi - bucket.mp3"
+dest_files=["res://.godot/imported/Gigi - bucket.mp3-36aed8a6974adc426773d80f2214eb81.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

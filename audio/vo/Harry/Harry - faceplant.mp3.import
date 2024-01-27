@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c6b5s2m7w1db5"
+path="res://.godot/imported/Harry - faceplant.mp3-8fe3a5727f90db945da2e7a700e96277.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Harry/Harry - faceplant.mp3"
+dest_files=["res://.godot/imported/Harry - faceplant.mp3-8fe3a5727f90db945da2e7a700e96277.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

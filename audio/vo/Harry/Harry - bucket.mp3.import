@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bslultp8v1w01"
+path="res://.godot/imported/Harry - bucket.mp3-241f6fc97bb873b981d0ea42cf419e59.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Harry/Harry - bucket.mp3"
+dest_files=["res://.godot/imported/Harry - bucket.mp3-241f6fc97bb873b981d0ea42cf419e59.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

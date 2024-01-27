@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://btxq10ua540gj"
+path="res://.godot/imported/Freya - hurt.mp3-3f860c0f2df56824f11dd2cb258841d3.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya - hurt.mp3"
+dest_files=["res://.godot/imported/Freya - hurt.mp3-3f860c0f2df56824f11dd2cb258841d3.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqyclxobajlm8"
+path="res://.godot/imported/Patrick - gag.mp3-6d6332a62e612d098fe7d13096dd86f6.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/pie_2/gag/Patrick - gag.mp3"
+dest_files=["res://.godot/imported/Patrick - gag.mp3-6d6332a62e612d098fe7d13096dd86f6.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

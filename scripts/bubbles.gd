@@ -2,7 +2,7 @@ extends KeepAspectControl
 
 
 const BUBBLES = [
-	preload('res://scenes/speech_bubble.tscn'),
+	preload('res://scenes/bubbles/speech_bubble_flavor1.tscn'),
 	preload('res://scenes/bubbles/speech_bubble_frick.tscn'),
 ]
 

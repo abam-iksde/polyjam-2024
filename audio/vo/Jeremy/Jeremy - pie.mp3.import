@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bvqynlfs73tii"
+path="res://.godot/imported/Jeremy - pie.mp3-f4769985b0a40df275f544917b5b3588.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Jeremy/Jeremy - pie.mp3"
+dest_files=["res://.godot/imported/Jeremy - pie.mp3-f4769985b0a40df275f544917b5b3588.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

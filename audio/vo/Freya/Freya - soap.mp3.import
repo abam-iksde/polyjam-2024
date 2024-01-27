@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://brgdchlpt3kh4"
+path="res://.godot/imported/Freya - soap.mp3-fc2afb2806059498b11728942d7e6349.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - soap.mp3"
+dest_files=["res://.godot/imported/Freya - soap.mp3-fc2afb2806059498b11728942d7e6349.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

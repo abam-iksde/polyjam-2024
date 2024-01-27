@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bqkcxvtnj7ja8"
+path="res://.godot/imported/Patrick - soap.mp3-60b7708b0c5788109a2f49fdabc354fd.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Patrick/Patrick - soap.mp3"
+dest_files=["res://.godot/imported/Patrick - soap.mp3-60b7708b0c5788109a2f49fdabc354fd.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

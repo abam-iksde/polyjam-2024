@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c64orhcpv6llg"
+path="res://.godot/imported/Freya - cow.mp3-8bf8514adc5588cb48ea0d804386cb20.mp3str"
+
+[deps]
+
+source_file="res://audio/vo/Freya/Freya - cow.mp3"
+dest_files=["res://.godot/imported/Freya - cow.mp3-8bf8514adc5588cb48ea0d804386cb20.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
