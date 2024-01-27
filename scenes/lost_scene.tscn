@@ -1,17 +1,7 @@
-[gd_scene load_steps=9 format=3 uid="uid://c6omngocq8vij"]
+[gd_scene load_steps=3 format=3 uid="uid://c6omngocq8vij"]
 
 [ext_resource type="Script" path="res://scripts/keep_aspect.gd" id="1_g11t0"]
 [ext_resource type="PackedScene" uid="uid://dvvpch5h0enu2" path="res://scenes/fail_state_pic.tscn" id="2_d1dd6"]
-[ext_resource type="Shader" path="res://shaders/film_grain.gdshader" id="3_xh27h"]
-[ext_resource type="Texture2D" uid="uid://f54rc8irtkkv" path="res://textures/curtain1.png" id="4_k0mf6"]
-[ext_resource type="Script" path="res://scripts/people.gd" id="5_tcsre"]
-[ext_resource type="Texture2D" uid="uid://dxxyja26q0q71" path="res://textures/Sillhouetes.png" id="6_kl3on"]
-[ext_resource type="Script" path="res://scripts/mini_game.gd" id="7_1cwr8"]
-
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_btefe"]
-shader = ExtResource("3_xh27h")
-shader_parameter/projector_power = 0.05
-shader_parameter/vignette_param = 20.0
 
 [node name="lost_scene" type="Control"]
 layout_mode = 3
@@ -43,38 +33,3 @@ size = Vector2i(930, 529)
 render_target_update_mode = 4
 
 [node name="fail_state_pic" parent="game_viewport_container/game_viewport" instance=ExtResource("2_d1dd6")]
-
-[node name="film_grain" type="ColorRect" parent="."]
-visible = false
-material = SubResource("ShaderMaterial_btefe")
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("1_g11t0")
-
-[node name="curtain" type="TextureRect" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
-texture = ExtResource("4_k0mf6")
-expand_mode = 1
-script = ExtResource("1_g11t0")
-
-[node name="people" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 970.0
-offset_bottom = 504.0
-script = ExtResource("5_tcsre")
-
-[node name="texture" type="TextureRect" parent="people"]
-layout_mode = 0
-offset_right = 1600.0
-offset_bottom = 230.0
-texture = ExtResource("6_kl3on")
-expand_mode = 1
-
-[node name="mini_game" type="Control" parent="."]
-clip_contents = true
-layout_mode = 2
-anchors_preset = 0
-script = ExtResource("7_1cwr8")

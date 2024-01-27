@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bjtwpyr25k4w3"
-path.s3tc="res://.godot/imported/You lost.png-2605069d506196f7ebea3cd476545948.s3tc.ctex"
+path="res://.godot/imported/You lost.png-2605069d506196f7ebea3cd476545948.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
 source_file="res://textures/Splashscreens/You lost.png"
-dest_files=["res://.godot/imported/You lost.png-2605069d506196f7ebea3cd476545948.s3tc.ctex"]
+dest_files=["res://.godot/imported/You lost.png-2605069d506196f7ebea3cd476545948.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1

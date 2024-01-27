@@ -21,6 +21,7 @@ var on_ground := true
 var hit_cooldown := 0.0
 
 var animation_frame := 0.0
+var score_accumulator := 0.0
 
 
 func on_area_enter(area: Area3D) -> void:
@@ -68,3 +69,8 @@ func _physics_process(delta: float) -> void:
 	
 	animation_frame += delta * (12.0 if on_ground else 4.0) * (Motion.movement_speed/Motion.MOVEMENT_MAX_SPEED)
 	sprite.frame = int(animation_frame) % sprite.hframes
+	score_accumulator += delta * Motion.movement_speed * 60.0
+	print(score_accumulator)
+	while score_accumulator >= 1.0:
+		GameState.score += 1
+		score_accumulator -= 1.0
