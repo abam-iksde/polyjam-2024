@@ -2,6 +2,7 @@ extends Control
 
 
 var state := 'started'
+var score := 0.0
 
 
 @onready var view := get_node('game') as Control
@@ -25,6 +26,7 @@ func _physics_process(delta: float) -> void:
 	foot.position += foot_velocity * delta
 	if box_collides(foot.get_node('bounding_box'), soap.get_node('bounding_box')):
 		state = 'won'
+		score = 1.0
 		return
 	if foot.position.y >= 0.0:
 		foot.position.y = 0.0
@@ -33,6 +35,6 @@ func _physics_process(delta: float) -> void:
 
 func box_collides(a: Control, b: Control) -> bool:
 	return (
-		a.global_position.x + a.size.x >= b.global_position.x and a.global_position.x < b.global_position.x + b.size.x and
-		a.global_position.y + a.size.y >= b.global_position.y and a.global_position.y < b.global_position.y + b.size.y
+		a.global_position.x + a.get_global_rect().size.x >= b.global_position.x and a.global_position.x < b.global_position.x + b.get_global_rect().size.x and
+		a.global_position.y + a.get_global_rect().size.y >= b.global_position.y and a.global_position.y < b.global_position.y + b.get_global_rect().size.y
 	)
