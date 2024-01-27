@@ -1,0 +1,37 @@
+[gd_scene load_steps=8 format=3 uid="uid://dvvpch5h0enu2"]
+
+[ext_resource type="Script" path="res://scripts/fail_state_pic.gd" id="1_gyvbi"]
+[ext_resource type="ArrayMesh" uid="uid://d2hfeu6n14lak" path="res://meshes/transition.obj" id="2_t40np"]
+[ext_resource type="Script" path="res://scripts/transition.gd" id="3_h47yh"]
+[ext_resource type="Texture2D" uid="uid://c3s27c058v6k" path="res://textures/fail.png" id="4_mtklb"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sqh1v"]
+shading_mode = 0
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_y4wrh"]
+size = Vector2(16, 9)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_l25xb"]
+shading_mode = 0
+albedo_texture = ExtResource("4_mtklb")
+
+[node name="fail_state_pic" type="Node3D"]
+script = ExtResource("1_gyvbi")
+
+[node name="camera" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+current = true
+fov = 35.0
+
+[node name="transition" type="MeshInstance3D" parent="camera"]
+unique_name_in_owner = true
+transform = Transform3D(0.7, 0, 0, 0, 0.7, 0, 0, 0, 0.7, 0, 0, -1)
+mesh = ExtResource("2_t40np")
+surface_material_override/0 = SubResource("StandardMaterial3D_sqh1v")
+script = ExtResource("3_h47yh")
+
+[node name="screen" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -14.1883)
+mesh = SubResource("PlaneMesh_y4wrh")
+surface_material_override/0 = SubResource("StandardMaterial3D_l25xb")
