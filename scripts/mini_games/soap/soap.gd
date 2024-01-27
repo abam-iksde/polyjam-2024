@@ -2,7 +2,7 @@ extends Control
 
 
 var state := 'started'
-var score := 0.0
+var score := 0.4
 
 
 @onready var view := get_node('game') as Control
@@ -26,7 +26,6 @@ func _physics_process(delta: float) -> void:
 	foot.position += foot_velocity * delta
 	if Box.collides(foot.get_node('bounding_box'), soap.get_node('bounding_box')):
 		state = 'won'
-		score = 1.0
 		return
 	if foot.position.y >= 0.0:
 		foot.position.y = 0.0
