@@ -11,7 +11,11 @@ var head_speed := HEAD_MAX_SPEED
 var time_scale := 1.0
 
 
-func get_delta(from: float):
+# i hate myself for doing this
+var minigame = null
+
+
+func get_delta(from: float) -> float:
 	return from * time_scale
 
 

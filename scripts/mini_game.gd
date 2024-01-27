@@ -14,6 +14,10 @@ var view_position := 0.0
 var game = null
 
 
+func _ready():
+	Motion.minigame = self
+
+
 func start_game(name_: String) -> void:
 	game = GAMES[name_].instantiate()
 	add_child(game)
@@ -24,15 +28,19 @@ func update_game_position():
 	if game:
 		game.position = Vector2(size.x/2.0 - size.x * BASE_SIZE.x * 0.5, size.y + size.y * view_position * 0.32)
 		game.scale = size/Vector2(1600.0, 900.0)
+		print(game.position)
+		print(game.size)
+		print(game.scale)
+		print('e')
 
 
 func _physics_process(delta: float) -> void:
 	update_game_position()
 	if not game:
-		if Input.is_key_pressed(KEY_0):
-			start_game('soap')
-		if Input.is_key_pressed(KEY_9):
-			start_game('dance')
+		#if Input.is_key_pressed(KEY_0):
+			#start_game('soap')
+		#if Input.is_key_pressed(KEY_9):
+			#start_game('dance')
 		return
 	if game.state == 'started':
 		view_position -= delta * 2.0

@@ -12,7 +12,7 @@ func _ready():
 
 
 func _physics_process(delta: float):
-	if Input.is_action_just_pressed('ui_accept'):
+	if Input.is_action_just_pressed('start'):
 		%transition.target = true
 		accepted = true
 	if %transition.hidden and accepted:

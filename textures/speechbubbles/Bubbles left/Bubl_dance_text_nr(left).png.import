@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbvuclhp2mn7d"
-path="res://.godot/imported/Bubl_dance_text_nr1.png-5cb7d3e0fc7998621ad229e3325efe42.ctex"
+uid="uid://ceev1xwqsj2vy"
+path="res://.godot/imported/Bubl_dance_text_nr(left).png-479d7518b54e23018849220dcecce680.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/speechbubbles/Bubbles left/Bubl_dance_text_nr1.png"
-dest_files=["res://.godot/imported/Bubl_dance_text_nr1.png-5cb7d3e0fc7998621ad229e3325efe42.ctex"]
+source_file="res://textures/speechbubbles/Bubbles left/Bubl_dance_text_nr(left).png"
+dest_files=["res://.godot/imported/Bubl_dance_text_nr(left).png-479d7518b54e23018849220dcecce680.ctex"]
 
 [params]
 
