@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://7bf3p2aae384"]
+[gd_scene load_steps=9 format=3 uid="uid://7bf3p2aae384"]
 
 [ext_resource type="Script" path="res://scripts/keep_aspect.gd" id="1_d586j"]
 [ext_resource type="PackedScene" uid="uid://dwpq5bji37inr" path="res://scenes/game_scene.tscn" id="1_toi7q"]
 [ext_resource type="Script" path="res://scripts/mini_game.gd" id="3_h5qwk"]
 [ext_resource type="Shader" path="res://shaders/film_grain.gdshader" id="3_ns5cs"]
+[ext_resource type="Texture2D" uid="uid://f54rc8irtkkv" path="res://textures/curtain1.png" id="4_nh5ru"]
 [ext_resource type="Script" path="res://scripts/people.gd" id="4_wrp1k"]
 [ext_resource type="Texture2D" uid="uid://dxxyja26q0q71" path="res://textures/Sillhouetes.png" id="5_viljx"]
 
@@ -49,6 +50,14 @@ material = SubResource("ShaderMaterial_btefe")
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_d586j")
+
+[node name="curtain" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_nh5ru")
+expand_mode = 1
 script = ExtResource("1_d586j")
 
 [node name="people" type="Control" parent="."]

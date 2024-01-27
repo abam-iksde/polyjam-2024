@@ -39,7 +39,7 @@ func _physics_process(delta: float) -> void:
 		return
 	if game.state == 'done' or game.state == 'lost' or game.state == 'won':
 		if game.state == 'won':
-			Motion.head_speed = 0.2
+			Motion.head_speed = 0.2 * game.score
 		game.state = 'done'
 		view_position += delta * 2.0
 		if view_position >= 0.0:

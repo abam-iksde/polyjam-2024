@@ -1,17 +1,17 @@
 [gd_scene load_steps=5 format=3 uid="uid://ckku4hx20narw"]
 
 [ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_p1mhh"]
-[ext_resource type="Texture2D" uid="uid://qinpnnusthdq" path="res://textures/Section_1_Dirt_ground.png" id="2_yxprc"]
+[ext_resource type="Texture2D" uid="uid://dxchlx1eumlsb" path="res://textures/ground2.png" id="2_48dxk"]
 [ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/obstacle_rep.tscn" id="3_qo0mj"]
 [ext_resource type="Texture2D" uid="uid://c4n0oemhxq3pb" path="res://textures/Obstacle_music_notes.png" id="4_mn7ai"]
 
 [node name="section" instance=ExtResource("1_p1mhh")]
 
 [node name="ground" parent="." index="0"]
-texture = ExtResource("2_yxprc")
+texture = ExtResource("2_48dxk")
 
 [node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("3_qo0mj")]
-position = Vector2(776, 515)
+position = Vector2(683, 533)
 scale = Vector2(0.2, 0.2)
 texture = ExtResource("4_mn7ai")
 size = Vector3(0.5, 0.2, 0.2)

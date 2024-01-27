@@ -1,7 +1,7 @@
 extends Area3D
 
 
-const POSITION_LIMIT = 2.0
+const POSITION_LIMIT = 1.5
 const HIT_COOLDOWN = 1.0
 const GRAVITY = 3.0
 const JUMP_FORCE = 1.5
