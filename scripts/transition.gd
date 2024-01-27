@@ -7,10 +7,9 @@ var hidden := false
 
 
 func _physics_process(delta: float) -> void:
+	hidden = abs(scale.x-scale_range.x) < 0.001
 	if target:
-		var new_scale = Motion.interpolate(scale.x, scale_range.x, delta)
-		if abs(new_scale-scale_range.x) < 0.001:
-			hidden = true
+		var new_scale = Motion.interpolate(scale.x, scale_range.x, delta * 1.5)
 		scale = Vector3(new_scale, new_scale, new_scale)
 		return
 	var new_scale = Motion.interpolate(scale.x, scale_range.y, delta * 1.5)
