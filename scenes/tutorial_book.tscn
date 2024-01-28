@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://dfm0cmssvrsh8"]
+[gd_scene load_steps=10 format=3 uid="uid://dfm0cmssvrsh8"]
 
 [ext_resource type="Script" path="res://scripts/tutorial_book.gd" id="1_p6plg"]
 [ext_resource type="FontFile" uid="uid://ta70m3hrqwfv" path="res://fonts/WickedMouse-aGoK.ttf" id="2_7e36o"]
 [ext_resource type="Texture2D" uid="uid://b06cg3p3iyxcm" path="res://textures/buttons/Tutorial.A.png" id="3_lv882"]
 [ext_resource type="Texture2D" uid="uid://denjgh2io638p" path="res://textures/buttons/TutoriaDl.png" id="4_t2qdw"]
 [ext_resource type="Texture2D" uid="uid://exg5p35fa2rw" path="res://textures/buttons/Tutorial I.png" id="5_cnlvf"]
+[ext_resource type="Texture2D" uid="uid://bx0ikxgo7c2kc" path="res://textures/buttons/Tutorial W.png" id="5_rq57f"]
 [ext_resource type="Texture2D" uid="uid://svye3mt7fsbc" path="res://textures/buttons/Tutorial J.png" id="6_rqqeh"]
 [ext_resource type="Texture2D" uid="uid://dy5c6wrx3qaht" path="res://textures/buttons/Tutorial K.png" id="7_go1qh"]
 [ext_resource type="Texture2D" uid="uid://bldfocoxamo5l" path="res://textures/buttons/TutoriaL.png" id="8_qiqwk"]
@@ -115,7 +116,17 @@ theme_override_fonts/font = ExtResource("2_7e36o")
 theme_override_font_sizes/font_size = 32
 text = "this is an obstacle.
 mickey can avoid obstacles by either running next to, or jumping over
-them."
+them using the                    button."
+
+[node name="texture_rect" type="TextureRect" parent="obstacle"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 688.0
+offset_right = 520.0
+offset_bottom = 751.0
+texture = ExtResource("5_rq57f")
+expand_mode = 1
+stretch_mode = 4
 
 [node name="useless_bubble" type="Control" parent="."]
 visible = false

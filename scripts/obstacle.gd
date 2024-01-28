@@ -13,7 +13,7 @@ var type := 'Obstacle'
 func _physics_process(delta: float) -> void:
 	delta = Motion.get_delta(delta)
 	rot -= delta * 2*PI * Motion.movement_speed
-	if rot <= -1.75 * PI:
+	if rot <= -1.75 * PI and rot >= -2.0 * PI and not Motion.minigame.game:
 		Tutorial.discover('obstacle' if type == 'Obstacle' else 'collectibles')
 	if rot < -3.0 * PI:
 		queue_free()
