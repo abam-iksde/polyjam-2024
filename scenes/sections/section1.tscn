@@ -1,10 +1,9 @@
-[gd_scene load_steps=8 format=3 uid="uid://ckku4hx20narw"]
+[gd_scene load_steps=7 format=3 uid="uid://ckku4hx20narw"]
 
 [ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_p1mhh"]
 [ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_cf547"]
 [ext_resource type="PackedScene" uid="uid://bsls4cspa2h48" path="res://scenes/Obstacles/obstacle_potato_bin.tscn" id="3_3oatj"]
-[ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/Obstacles/obstacle_rep.tscn" id="3_4dwc3"]
-[ext_resource type="Texture2D" uid="uid://df3y6oprqdudv" path="res://textures/Obstacles/Obstacle_music_notes.png" id="5_dnyu1"]
+[ext_resource type="PackedScene" uid="uid://dq2jj7mkg4vx2" path="res://scenes/Obstacles/obstacle_collectible_music_notes.tscn" id="6_nrxon"]
 [ext_resource type="PackedScene" uid="uid://dwu0y5ywr023y" path="res://scenes/Obstacles/obstacle_cow_stand.tscn" id="7_n3s01"]
 [ext_resource type="PackedScene" uid="uid://bd07q4us81d6e" path="res://scenes/Obstacles/obstacle_goat_sleep.tscn" id="8_ekm4g"]
 
@@ -16,28 +15,21 @@ texture = ExtResource("2_cf547")
 [node name="obstacle_rep2" parent="obstacles" index="0" instance=ExtResource("3_3oatj")]
 position = Vector2(709.52, 379.52)
 
-[node name="obstacle_rep" parent="obstacles" index="1" instance=ExtResource("3_4dwc3")]
-position = Vector2(201, 776)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("5_dnyu1")
-hframes = 30
-size = Vector3(0.5, 0.495, 0.2)
-texture_scale = 0.25
-texture_z_offset = 0.7
-type = "Collectible"
-
-[node name="obstacle_rep4" parent="obstacles" index="2" instance=ExtResource("7_n3s01")]
-position = Vector2(853, 226)
+[node name="obstacle_rep4" parent="obstacles" index="1" instance=ExtResource("7_n3s01")]
+position = Vector2(907, 377)
 size = Vector3(0.705, 0.5, 1)
 
-[node name="obstacle_rep7" parent="obstacles" index="3" instance=ExtResource("7_n3s01")]
+[node name="obstacle_rep7" parent="obstacles" index="2" instance=ExtResource("7_n3s01")]
 position = Vector2(202.52, 377.52)
 size = Vector3(0.705, 0.5, 1)
 
-[node name="obstacle_rep5" parent="obstacles" index="4" instance=ExtResource("8_ekm4g")]
-position = Vector2(559.52, 491.04)
+[node name="obstacle_rep5" parent="obstacles" index="3" instance=ExtResource("8_ekm4g")]
+position = Vector2(556.68, 498.68)
 texture_z_offset = 0.55
 
-[node name="obstacle_rep6" parent="obstacles" index="5" instance=ExtResource("8_ekm4g")]
-position = Vector2(423.52, 491.04)
+[node name="obstacle_rep6" parent="obstacles" index="4" instance=ExtResource("8_ekm4g")]
+position = Vector2(407.68, 499.68)
 texture_z_offset = 0.55
+
+[node name="obstacle_rep" parent="obstacles" index="5" instance=ExtResource("6_nrxon")]
+position = Vector2(480, 690)

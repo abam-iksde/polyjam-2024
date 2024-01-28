@@ -5,16 +5,17 @@
 
 [node name="obstacle_rep" instance=ExtResource("1_fw8vi")]
 position = Vector2(2, 0)
-scale = Vector2(0.42, 0.42)
+scale = Vector2(0.39, 0.39)
 texture = ExtResource("2_q7061")
 hframes = 30
 size = Vector3(0.73, 0.2, 0.2)
-texture_scale = 0.42
+texture_scale = 0.39
 texture_z_offset = 0.8
+animation_speed = 30.0
 
 [node name="collision" parent="." index="0"]
-offset_left = -222.476
-offset_top = -60.9524
-offset_right = -35.5962
-offset_bottom = -9.75238
-scale = Vector2(2.38095, 2.38095)
+offset_left = -239.59
+offset_top = -65.641
+offset_right = -52.7097
+offset_bottom = -14.441
+scale = Vector2(2.5641, 2.5641)

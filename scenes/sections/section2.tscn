@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://bsppk8h2jd3h"]
+[gd_scene load_steps=5 format=3 uid="uid://bsppk8h2jd3h"]
 
 [ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_cpddn"]
 [ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_n6bto"]
 [ext_resource type="PackedScene" uid="uid://bsls4cspa2h48" path="res://scenes/Obstacles/obstacle_potato_bin.tscn" id="3_pjvfw"]
+[ext_resource type="PackedScene" uid="uid://dq2jj7mkg4vx2" path="res://scenes/Obstacles/obstacle_collectible_music_notes.tscn" id="4_tu4u7"]
 
 [node name="section" instance=ExtResource("1_cpddn")]
 
@@ -13,16 +14,31 @@ texture = ExtResource("2_n6bto")
 position = Vector2(70, 152)
 
 [node name="obstacle_rep2" parent="obstacles" index="1" instance=ExtResource("3_pjvfw")]
-position = Vector2(200, 278)
+position = Vector2(162, 201)
 
 [node name="obstacle_rep3" parent="obstacles" index="2" instance=ExtResource("3_pjvfw")]
-position = Vector2(326, 406)
+position = Vector2(216, 286)
 
 [node name="obstacle_rep4" parent="obstacles" index="3" instance=ExtResource("3_pjvfw")]
-position = Vector2(452, 533)
+position = Vector2(279, 366)
 
 [node name="obstacle_rep5" parent="obstacles" index="4" instance=ExtResource("3_pjvfw")]
-position = Vector2(580, 660)
+position = Vector2(340, 439)
 
 [node name="obstacle_rep6" parent="obstacles" index="5" instance=ExtResource("3_pjvfw")]
-position = Vector2(708, 787)
+position = Vector2(377, 520)
+
+[node name="obstacle_rep7" parent="obstacles" index="6" instance=ExtResource("3_pjvfw")]
+position = Vector2(436, 585)
+
+[node name="obstacle_rep8" parent="obstacles" index="7" instance=ExtResource("3_pjvfw")]
+position = Vector2(480, 661)
+
+[node name="obstacle_rep9" parent="obstacles" index="8" instance=ExtResource("3_pjvfw")]
+position = Vector2(520, 735)
+
+[node name="obstacle_rep10" parent="obstacles" index="9" instance=ExtResource("3_pjvfw")]
+position = Vector2(563, 803)
+
+[node name="obstacle_rep11" parent="obstacles" index="10" instance=ExtResource("4_tu4u7")]
+position = Vector2(690, 613)

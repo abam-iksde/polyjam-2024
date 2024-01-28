@@ -10,6 +10,8 @@ texture = ExtResource("2_865ok")
 hframes = 30
 size = Vector3(0.5, 0.21, 0.28)
 texture_scale = 0.28
+texture_z_offset = 0.55
+animation_speed = 30.0
 
 [node name="collision" parent="." index="0"]
 offset_left = -228.571
