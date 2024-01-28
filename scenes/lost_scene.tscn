@@ -1,8 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://c6omngocq8vij"]
+[gd_scene load_steps=6 format=3 uid="uid://c6omngocq8vij"]
 
 [ext_resource type="Script" path="res://scripts/keep_aspect.gd" id="1_g11t0"]
 [ext_resource type="PackedScene" uid="uid://dvvpch5h0enu2" path="res://scenes/fail_state_pic.tscn" id="2_d1dd6"]
+[ext_resource type="FontFile" uid="uid://ta70m3hrqwfv" path="res://fonts/WickedMouse-aGoK.ttf" id="3_xg0y4"]
 [ext_resource type="Script" path="res://scripts/score_summary.gd" id="4_prhqt"]
+
+[sub_resource type="GDScript" id="GDScript_15otb"]
+script/source = "extends Label
+
+
+func _physics_process(delta):
+	if Input.is_action_just_pressed('ui_accept'):
+		visible = false
+		get_node('../score_summary').visible = false
+"
 
 [node name="lost_scene" type="Control"]
 layout_mode = 3
@@ -44,8 +55,21 @@ offset_left = 847.0
 offset_top = 57.0
 offset_right = 1539.0
 offset_bottom = 243.0
+theme_override_fonts/font = ExtResource("3_xg0y4")
+theme_override_font_sizes/font_size = 36
 text = "DISTANCE SCORE 
 plus STREAK SCORE
 plus NOTE SCORE
 is SCORE"
 script = ExtResource("4_prhqt")
+
+[node name="enter_to_menu" type="Label" parent="."]
+layout_mode = 0
+offset_left = 1056.0
+offset_top = 798.0
+offset_right = 1550.0
+offset_bottom = 851.0
+theme_override_fonts/font = ExtResource("3_xg0y4")
+theme_override_font_sizes/font_size = 24
+text = "press enter to get back to menu"
+script = SubResource("GDScript_15otb")

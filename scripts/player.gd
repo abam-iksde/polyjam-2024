@@ -27,9 +27,14 @@ var score_accumulator := 0.0
 
 
 func on_area_enter(area: Area3D) -> void:
-	if area is Obstacle and hit_cooldown <= 0.0:
-		hit_cooldown = HIT_COOLDOWN
-		Motion.movement_speed = 0.1
+	if area is Obstacle:
+		if area.type == 'Obstacle' and hit_cooldown <= 0.0:
+			hit_cooldown = HIT_COOLDOWN
+			Motion.movement_speed = 0.1
+		elif area.type == 'Collectible':
+			# PLAY COLLECT SOUND EFFECT
+			area.queue_free()
+			GameState.score += 5
 
 
 func _ready():
@@ -72,7 +77,7 @@ func _physics_process(delta: float) -> void:
 	
 	animation_frame += delta * (12.0 if on_ground else 4.0) * (Motion.movement_speed/Motion.MOVEMENT_MAX_SPEED)
 	sprite.frame = int(animation_frame) % sprite.hframes
-	score_accumulator += delta * Motion.movement_speed * 60.0
+	score_accumulator += delta * Motion.movement_speed * 30.0
 	while score_accumulator >= 1.0:
 		GameState.score += 1
 		score_accumulator -= 1.0
