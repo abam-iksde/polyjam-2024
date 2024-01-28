@@ -37,9 +37,3 @@ offset_top = -264.0
 offset_right = 495.0
 offset_bottom = 71.0
 texture = ExtResource("3_1y6u1")
-
-[node name="button_right" parent="." index="1"]
-visible = true
-
-[node name="button_left" parent="." index="2"]
-visible = true
