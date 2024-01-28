@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bsppk8h2jd3h"]
+
+[ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_cpddn"]
+[ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_n6bto"]
+[ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/obstacle_rep.tscn" id="3_5m7x6"]
+[ext_resource type="Texture2D" uid="uid://qwb1yrf5u0rw" path="res://textures/Obstacles/Obstacle_potato_Bin.png" id="4_8jwq7"]
+
+[node name="section" instance=ExtResource("1_cpddn")]
+
+[node name="ground" parent="." index="0"]
+texture = ExtResource("2_n6bto")
+
+[node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("3_5m7x6")]
+position = Vector2(683, 533)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_8jwq7")
+size = Vector3(0.5, 0.2, 0.2)
+texture_scale = 0.25
+texture_z_offset = 0.5
+type = "Collectible"
