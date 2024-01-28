@@ -109,7 +109,7 @@ surface_material_override/0 = SubResource("StandardMaterial3D_rtnc0")
 
 [node name="restart_tutorial" type="Node3D" parent="game_viewport_container/game_viewport/world" index="6"]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.28307, 0.312756, -14.2979)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.96706, 0.391435, -14.2979)
 script = ExtResource("8_14va7")
 
 [node name="restart_tutorial_icon" type="MeshInstance3D" parent="game_viewport_container/game_viewport/world/restart_tutorial" index="0"]
