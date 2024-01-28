@@ -32,7 +32,8 @@ func on_area_enter(area: Area3D) -> void:
 			hit_cooldown = HIT_COOLDOWN
 			Motion.movement_speed = 0.1
 		elif area.type == 'Collectible':
-			# PLAY COLLECT SOUND EFFECT
+			if area.sound_effect:
+				Audio.spawn_sound_effect("SFX", area.sound_effect)
 			area.queue_free()
 			GameState.note_score += 5
 
