@@ -9,6 +9,7 @@ var score := 0.0
 
 var _state := 0
 
+@export var creampie = preload("res://audio/sfx/cream_pie_sfx.wav")
 
 @onready var marker := get_node('game/marker') as ColorRect
 @onready var sweet_spot: Array[ColorRect] = [
@@ -43,6 +44,7 @@ func _physics_process(delta: float) -> void:
 		marker.position.x = 470.0
 		direction = -1.0
 	if Input.is_action_just_pressed("mg_activate_1"):
+		Audio.spawn_sound_effect( "SFX" , creampie ,[18] )
 		stopped = true
 		var distance_between := sweet_spot[1].position.x - sweet_spot[0].position.x
 		var marker_relative := marker.position.x - sweet_spot[0].position.x

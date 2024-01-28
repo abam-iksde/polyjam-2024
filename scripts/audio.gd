@@ -1,7 +1,7 @@
 extends Node
 
 
-func spawn_sound_effect(bus: String, effect: Resource, pitch_range: Array[int] = [], boost: float = 0.0) -> void:
+func spawn_sound_effect(bus: String, effect: Resource, pitch_range: Array[int] = [], boost: float = 0.0) -> Node:
 	var new_sound_effect := AudioStreamPlayer.new()
 	
 	new_sound_effect.bus = bus
@@ -16,3 +16,4 @@ func spawn_sound_effect(bus: String, effect: Resource, pitch_range: Array[int] =
 	
 	add_child(new_sound_effect)
 	new_sound_effect.play()
+	return new_sound_effect

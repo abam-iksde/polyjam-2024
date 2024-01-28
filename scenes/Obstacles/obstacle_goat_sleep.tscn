@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bd07q4us81d6e"]
+[gd_scene load_steps=4 format=3 uid="uid://bd07q4us81d6e"]
 
 [ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/Obstacles/obstacle_rep.tscn" id="1_5chfv"]
 [ext_resource type="Texture2D" uid="uid://b41li1mbd6oyt" path="res://textures/Obstacles/Obstacle_goat_sleeping.png" id="2_865ok"]
+[ext_resource type="AudioStream" uid="uid://bnvgc8r3jqq7s" path="res://audio/sfx/GOAT.wav" id="3_7tlpa"]
 
 [node name="obstacle_rep" instance=ExtResource("1_5chfv")]
 position = Vector2(1, 0)
@@ -12,6 +13,7 @@ size = Vector3(0.5, 0.21, 0.28)
 texture_scale = 0.28
 texture_z_offset = 0.55
 animation_speed = 30.0
+sound_effect = ExtResource("3_7tlpa")
 
 [node name="collision" parent="." index="0"]
 offset_left = -228.571

@@ -1,11 +1,25 @@
 extends Node3D
 
 
+var sounds = [
+	preload("res://audio/head/head_1.wav"),
+	preload("res://audio/head/head_2.wav"),
+	preload("res://audio/head/head_3.wav"),
+	preload("res://audio/head/head_4.wav"),
+	preload("res://audio/head/head_5.wav"),
+	preload("res://audio/head/head_6.wav"),
+]
+
+var sound_now = null
+
+
 @onready var sprite := get_node('sprite') as Sprite3D
 var proximity := 1.0
 
 
 func _physics_process(delta: float) -> void:
+	if not is_instance_valid(sound_now):
+		sound_now = Audio.spawn_sound_effect("SFX", sounds[randi() % len(sounds)])
 	delta = Motion.get_delta(delta)
 	Motion.head_speed = lerpf(Motion.head_speed, Motion.HEAD_MAX_SPEED, delta * 0.6)
 	proximity = min(proximity - (Motion.head_speed - Motion.movement_speed) * delta, 1.0)

@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dwu0y5ywr023y"]
+[gd_scene load_steps=4 format=3 uid="uid://dwu0y5ywr023y"]
 
 [ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/Obstacles/obstacle_rep.tscn" id="1_tco3t"]
 [ext_resource type="Texture2D" uid="uid://v0w0xrlj7miy" path="res://textures/Obstacles/Obstacle_cow_standing.png" id="2_vvqxc"]
+[ext_resource type="AudioStream" uid="uid://o37y7pwgl7v7" path="res://audio/sfx/cow.wav" id="3_qhw2g"]
 
 [node name="obstacle_rep" instance=ExtResource("1_tco3t")]
 position = Vector2(0, 1)
@@ -12,6 +13,7 @@ size = Vector3(0.615, 0.26, 1.5)
 texture_scale = 0.42
 texture_z_offset = 0.55
 animation_speed = 30.0
+sound_effect = ExtResource("3_qhw2g")
 
 [node name="collision" parent="." index="0"]
 offset_left = -187.429
