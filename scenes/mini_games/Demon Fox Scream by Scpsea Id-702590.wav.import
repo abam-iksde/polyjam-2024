@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ypht77wetrbt"
+path="res://.godot/imported/Demon Fox Scream by Scpsea Id-702590.wav-6ac31dcc4d017c91f907a30765c814b4.sample"
+
+[deps]
+
+source_file="res://scenes/mini_games/Demon Fox Scream by Scpsea Id-702590.wav"
+dest_files=["res://.godot/imported/Demon Fox Scream by Scpsea Id-702590.wav-6ac31dcc4d017c91f907a30765c814b4.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

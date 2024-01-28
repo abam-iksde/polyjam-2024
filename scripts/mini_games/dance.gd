@@ -1,5 +1,7 @@
 extends Control
 
+@export var correct_ui = preload("res://audio/sfx/CORRECT_UI.wav")
+@export var invalid_ui = preload("res://audio/sfx/INVALID_UI.wav")
 
 const SUCCESSFUL_SPRITES = [
 	preload('res://textures/mini_games/dance/dance1.png'),
@@ -70,6 +72,7 @@ func _physics_process(delta: float) -> void:
 			continue
 		
 		if Input.is_action_just_pressed(lane_buttons[i]):
+			Audio.spawn_sound_effect( "SFX" , correct_ui ,[18] )
 			var hit := false
 			for arrow in arrows_per_lane[i]:
 				if not is_instance_valid(arrow):
@@ -83,6 +86,8 @@ func _physics_process(delta: float) -> void:
 				lane_cooldown[i] = 1.0
 				lanes[i].get_node('target').modulate = Color(0.5, 0.5, 0.5, 1.0)
 				get_node('game/mouse').texture = FAILED_SPRITES[i]
+				
+				
 			else:
 				get_node('game/mouse').texture = SUCCESSFUL_SPRITES[i]
 	
