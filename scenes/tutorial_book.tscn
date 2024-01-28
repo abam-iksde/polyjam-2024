@@ -1,14 +1,8 @@
-[gd_scene load_steps=10 format=3 uid="uid://dfm0cmssvrsh8"]
+[gd_scene load_steps=4 format=3 uid="uid://dfm0cmssvrsh8"]
 
 [ext_resource type="Script" path="res://scripts/tutorial_book.gd" id="1_p6plg"]
 [ext_resource type="FontFile" uid="uid://ta70m3hrqwfv" path="res://fonts/WickedMouse-aGoK.ttf" id="2_7e36o"]
-[ext_resource type="Texture2D" uid="uid://b06cg3p3iyxcm" path="res://textures/buttons/Tutorial.A.png" id="3_lv882"]
-[ext_resource type="Texture2D" uid="uid://denjgh2io638p" path="res://textures/buttons/TutoriaDl.png" id="4_t2qdw"]
-[ext_resource type="Texture2D" uid="uid://exg5p35fa2rw" path="res://textures/buttons/Tutorial I.png" id="5_cnlvf"]
-[ext_resource type="Texture2D" uid="uid://bx0ikxgo7c2kc" path="res://textures/buttons/Tutorial W.png" id="5_rq57f"]
-[ext_resource type="Texture2D" uid="uid://svye3mt7fsbc" path="res://textures/buttons/Tutorial J.png" id="6_rqqeh"]
-[ext_resource type="Texture2D" uid="uid://dy5c6wrx3qaht" path="res://textures/buttons/Tutorial K.png" id="7_go1qh"]
-[ext_resource type="Texture2D" uid="uid://bldfocoxamo5l" path="res://textures/buttons/TutoriaL.png" id="8_qiqwk"]
+[ext_resource type="PackedScene" uid="uid://ct1kw6ie06g7j" path="res://scenes/button_contextual.tscn" id="3_yc1tw"]
 
 [node name="tutorial_book" type="Control"]
 process_mode = 3
@@ -46,25 +40,32 @@ text = "this is mickey, you can control him
 using directional controls                  and
 "
 
-[node name="texture_rect" type="TextureRect" parent="mickey"]
+[node name="button_contextual" parent="mickey" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 661.0
-offset_top = 638.0
-offset_right = 792.0
-offset_bottom = 760.0
-texture = ExtResource("3_lv882")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 667.0
+offset_top = 639.0
+offset_right = 667.0
+offset_bottom = 639.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
 
-[node name="texture_rect2" type="TextureRect" parent="mickey"]
+[node name="button_contextual2" parent="mickey" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 886.0
-offset_top = 637.0
-offset_right = 1017.0
-offset_bottom = 759.0
-texture = ExtResource("4_t2qdw")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 893.0
+offset_top = 638.0
+offset_right = 893.0
+offset_bottom = 638.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "move_right"
 
 [node name="face" type="Control" parent="."]
 visible = false
@@ -126,17 +127,21 @@ theme_override_fonts/font = ExtResource("2_7e36o")
 theme_override_font_sizes/font_size = 32
 text = "this is an obstacle.
 mickey can avoid obstacles by either running next to, or jumping over
-them using the                    button."
+them using "
 
-[node name="texture_rect" type="TextureRect" parent="obstacle"]
+[node name="button_contextual3" parent="obstacle" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 375.0
-offset_top = 688.0
-offset_right = 520.0
-offset_bottom = 751.0
-texture = ExtResource("5_rq57f")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 307.0
+offset_top = 698.0
+offset_right = 307.0
+offset_bottom = 698.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "jump"
 
 [node name="useless_bubble" type="Control" parent="."]
 visible = false
@@ -190,45 +195,61 @@ mickey. by entertaining the crowd mickey can slow down the
 abomination chasing him. choose to participate in a stunt by pressing
 the button displayed next to the bubble, which can be one of"
 
-[node name="texture_rect3" type="TextureRect" parent="useful_bubble"]
+[node name="button_contextual3" parent="useful_bubble" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 445.0
-offset_top = 542.0
-offset_right = 576.0
-offset_bottom = 664.0
-texture = ExtResource("5_cnlvf")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 472.0
+offset_top = 551.0
+offset_right = 472.0
+offset_bottom = 551.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "mg_left"
 
-[node name="texture_rect4" type="TextureRect" parent="useful_bubble"]
+[node name="button_contextual4" parent="useful_bubble" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 598.0
-offset_top = 546.0
-offset_right = 729.0
-offset_bottom = 668.0
-texture = ExtResource("6_rqqeh")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 605.0
+offset_top = 554.0
+offset_right = 605.0
+offset_bottom = 554.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "mg_right"
 
-[node name="texture_rect5" type="TextureRect" parent="useful_bubble"]
+[node name="button_contextual5" parent="useful_bubble" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 747.0
-offset_top = 543.0
-offset_right = 878.0
-offset_bottom = 665.0
-texture = ExtResource("7_go1qh")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 749.0
+offset_top = 554.0
+offset_right = 749.0
+offset_bottom = 554.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "mg_up"
 
-[node name="texture_rect6" type="TextureRect" parent="useful_bubble"]
+[node name="button_contextual6" parent="useful_bubble" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 911.0
-offset_top = 548.0
-offset_right = 1042.0
-offset_bottom = 670.0
-texture = ExtResource("8_qiqwk")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 887.0
+offset_top = 551.0
+offset_right = 887.0
+offset_bottom = 551.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "mg_down"
 
 [node name="collectibles" type="Control" parent="."]
 visible = false
@@ -281,25 +302,33 @@ theme_override_font_sizes/font_size = 32
 text = "in this minigame, mickey has to step on a soap to entertain the crowd.
 he may do so by aiming his foot with              and              buttons."
 
-[node name="texture_rect" type="TextureRect" parent="soap"]
+[node name="button_contextual3" parent="soap" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 814.0
-offset_top = 372.0
-offset_right = 925.0
-offset_bottom = 455.0
-texture = ExtResource("6_rqqeh")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 816.0
+offset_top = 374.0
+offset_right = 816.0
+offset_bottom = 374.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.38, 0.38)
+button = "mg_left"
 
-[node name="texture_rect2" type="TextureRect" parent="soap"]
+[node name="button_contextual4" parent="soap" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 1009.0
-offset_top = 372.0
-offset_right = 1120.0
-offset_bottom = 455.0
-texture = ExtResource("8_qiqwk")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1013.0
+offset_top = 374.0
+offset_right = 1013.0
+offset_bottom = 374.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.38, 0.38)
+button = "mg_right"
 
 [node name="pie" type="Control" parent="."]
 visible = false
@@ -327,15 +356,19 @@ text = "in this minigame, mickey has to hit a picture of his face with pie to
 entertain the crowd. he may do so by pressing the                 button when
 the marker is in the sweet spot in the middle."
 
-[node name="texture_rect2" type="TextureRect" parent="pie"]
+[node name="button_contextual3" parent="pie" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 1087.0
-offset_top = 368.0
-offset_right = 1207.0
-offset_bottom = 459.0
-texture = ExtResource("7_go1qh")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 1092.0
+offset_top = 369.0
+offset_right = 1092.0
+offset_bottom = 369.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "mg_down"
 
 [node name="dance" type="Control" parent="."]
 visible = false
@@ -363,42 +396,58 @@ text = "in this minigame, mickey has to dance to entertain the crowd. he can
 do so by pressing directional buttons when incoming arrow
 symbols intersect with the still ones."
 
-[node name="texture_rect2" type="TextureRect" parent="dance"]
+[node name="button_contextual4" parent="dance" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 751.0
-offset_top = 548.0
-offset_right = 871.0
-offset_bottom = 639.0
-texture = ExtResource("7_go1qh")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 736.0
+offset_top = 479.0
+offset_right = 736.0
+offset_bottom = 479.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "mg_up"
 
-[node name="texture_rect4" type="TextureRect" parent="dance"]
+[node name="button_contextual5" parent="dance" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 751.0
-offset_top = 486.0
-offset_right = 871.0
-offset_bottom = 577.0
-texture = ExtResource("5_cnlvf")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 734.0
+offset_top = 530.0
+offset_right = 734.0
+offset_bottom = 530.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "mg_down"
 
-[node name="texture_rect3" type="TextureRect" parent="dance"]
+[node name="button_contextual6" parent="dance" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 844.0
-offset_top = 516.0
-offset_right = 964.0
-offset_bottom = 607.0
-texture = ExtResource("8_qiqwk")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 628.0
+offset_top = 501.0
+offset_right = 628.0
+offset_bottom = 501.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "mg_left"
 
-[node name="texture_rect5" type="TextureRect" parent="dance"]
+[node name="button_contextual7" parent="dance" instance=ExtResource("3_yc1tw")]
 layout_mode = 0
-offset_left = 661.0
-offset_top = 516.0
-offset_right = 781.0
-offset_bottom = 607.0
-texture = ExtResource("6_rqqeh")
-expand_mode = 1
-stretch_mode = 4
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 849.0
+offset_top = 503.0
+offset_right = 849.0
+offset_bottom = 503.0
+grow_horizontal = 1
+grow_vertical = 1
+scale = Vector2(0.445, 0.445)
+button = "mg_right"
