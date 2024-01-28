@@ -92,6 +92,16 @@ text = "Mickey is being chased by the personification of the public's neediness
 and greed. It will will slowly get closer to Mickey until it catches him
 and the game ends."
 
+[node name="label2" type="Label" parent="face"]
+layout_mode = 0
+offset_left = 1273.0
+offset_top = 557.0
+offset_right = 1330.0
+offset_bottom = 673.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = ","
+
 [node name="obstacle" type="Control" parent="."]
 visible = false
 anchors_preset = 0
@@ -269,24 +279,24 @@ offset_bottom = 429.0
 theme_override_fonts/font = ExtResource("2_7e36o")
 theme_override_font_sizes/font_size = 32
 text = "in this minigame, mickey has to step on a soap to entertain the crowd.
-he may do so by aiming his feet with              and              buttons."
+he may do so by aiming his foot with              and              buttons."
 
 [node name="texture_rect" type="TextureRect" parent="soap"]
 layout_mode = 0
-offset_left = 799.0
-offset_top = 371.0
-offset_right = 910.0
-offset_bottom = 454.0
+offset_left = 814.0
+offset_top = 372.0
+offset_right = 925.0
+offset_bottom = 455.0
 texture = ExtResource("6_rqqeh")
 expand_mode = 1
 stretch_mode = 4
 
 [node name="texture_rect2" type="TextureRect" parent="soap"]
 layout_mode = 0
-offset_left = 990.0
-offset_top = 371.0
-offset_right = 1101.0
-offset_bottom = 454.0
+offset_left = 1009.0
+offset_top = 372.0
+offset_right = 1120.0
+offset_bottom = 455.0
 texture = ExtResource("8_qiqwk")
 expand_mode = 1
 stretch_mode = 4
