@@ -23,6 +23,7 @@ var verdict_countdown := 2.0
 func _physics_process(delta: float) -> void:
 	if state != 'going':
 		return
+	Tutorial.discover('pie')
 	if stopped:
 		verdict_countdown -= delta
 		if verdict_countdown > 0.0:

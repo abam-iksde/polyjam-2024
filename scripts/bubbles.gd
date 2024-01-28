@@ -18,7 +18,9 @@ const MINIGAME_BUBBLES = [
 ]
 
 
-var time = 0.0
+var time = -6.0
+
+var next := randi() % 6
 
 
 func _physics_process(delta):

@@ -24,6 +24,7 @@ func _ready():
 func _physics_process(delta: float) -> void:
 	if state != 'going':
 		return
+	Tutorial.discover('soap')
 	foot_velocity.x += delta * Input.get_axis('mg_left', 'mg_right') * 1024.0
 	foot_velocity.y += delta * 480.0
 	foot.position += foot_velocity * delta

@@ -2,9 +2,6 @@ class_name KeepAspectControl
 extends Control
 
 
-var next := randi() % 6
-
-
 func on_size_changed():
 	var viewport_size := Vector2(get_viewport().size)
 	var new_scale := viewport_size.x / size.x

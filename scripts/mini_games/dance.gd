@@ -64,6 +64,8 @@ func _physics_process(delta: float) -> void:
 	if state != 'going':
 		return
 	
+	Tutorial.discover('dance')
+	
 	for i in range(len(lanes)):
 		if lane_cooldown[i] > 0.0:
 			lane_cooldown[i] -= delta
@@ -86,8 +88,6 @@ func _physics_process(delta: float) -> void:
 				lane_cooldown[i] = 1.0
 				lanes[i].get_node('target').modulate = Color(0.5, 0.5, 0.5, 1.0)
 				get_node('game/mouse').texture = FAILED_SPRITES[i]
-				
-				
 			else:
 				get_node('game/mouse').texture = SUCCESSFUL_SPRITES[i]
 	

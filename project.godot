@@ -22,6 +22,7 @@ Motion="*res://scripts/motion.gd"
 GameState="*res://scripts/game_state.gd"
 Audio="*res://scripts/audio.gd"
 MusicPlayer="*res://scripts/music_player.gd"
+Tutorial="*res://scripts/tutorial.gd"
 
 [display]
 
@@ -102,3 +103,7 @@ start={
 [physics]
 
 common/physics_ticks_per_second=120
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"

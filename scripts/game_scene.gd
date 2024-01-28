@@ -47,6 +47,8 @@ func _ready() -> void:
 	setup_textures()
 	%transition.force_state(true)
 	%transition.target = false
+	
+	get_tree().create_timer(2.0).connect('timeout', func(): Tutorial.discover('mickey'))
 
 
 func get_section_ground_texture(section_name: String) -> Texture:
