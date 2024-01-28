@@ -34,7 +34,7 @@ func on_area_enter(area: Area3D) -> void:
 		elif area.type == 'Collectible':
 			# PLAY COLLECT SOUND EFFECT
 			area.queue_free()
-			GameState.score += 5
+			GameState.note_score += 5
 
 
 func _ready():

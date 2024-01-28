@@ -12,6 +12,6 @@ func _ready():
 	text = SCORE_SUMMARY_FORMAT.format({
 		base = GameState.score,
 		streak = streak,
-		notes = '0',
+		notes = GameState.note_score,
 		sum = GameState.score + streak * 100,
 	})
