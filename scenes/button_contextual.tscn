@@ -1,0 +1,137 @@
+[gd_scene load_steps=15 format=3 uid="uid://ct1kw6ie06g7j"]
+
+[ext_resource type="Script" path="res://scripts/button_contextual.gd" id="1_mqfuo"]
+[ext_resource type="Texture2D" uid="uid://c36ed0rhcwefs" path="res://textures/Tutorial/buttons_pad_LS.png" id="2_vhmm4"]
+[ext_resource type="Texture2D" uid="uid://cvu101p5xee0m" path="res://textures/Tutorial/buttons_pad_LB.png" id="3_akc41"]
+[ext_resource type="Texture2D" uid="uid://ds206kowaf0td" path="res://textures/Tutorial/buttons_pad_X.png" id="4_cesp4"]
+[ext_resource type="Texture2D" uid="uid://bmd7gsoi2whh4" path="res://textures/Tutorial/buttons_pad_B.png" id="5_cn1kn"]
+[ext_resource type="Texture2D" uid="uid://bf23ur7kl4cfy" path="res://textures/Tutorial/buttons_pad_Y.png" id="6_d0kvj"]
+[ext_resource type="Texture2D" uid="uid://dogwg7ukwxob5" path="res://textures/Tutorial/buttons_pad_A.png" id="7_l3wut"]
+[ext_resource type="Texture2D" uid="uid://b06cg3p3iyxcm" path="res://textures/buttons/Tutorial.A.png" id="8_payuf"]
+[ext_resource type="Texture2D" uid="uid://denjgh2io638p" path="res://textures/buttons/TutoriaDl.png" id="9_eb6gv"]
+[ext_resource type="Texture2D" uid="uid://bx0ikxgo7c2kc" path="res://textures/buttons/Tutorial W.png" id="10_qjjkx"]
+[ext_resource type="Texture2D" uid="uid://svye3mt7fsbc" path="res://textures/buttons/Tutorial J.png" id="11_bmg62"]
+[ext_resource type="Texture2D" uid="uid://bldfocoxamo5l" path="res://textures/buttons/TutoriaL.png" id="12_i1py2"]
+[ext_resource type="Texture2D" uid="uid://exg5p35fa2rw" path="res://textures/buttons/Tutorial I.png" id="13_8awv6"]
+[ext_resource type="Texture2D" uid="uid://dy5c6wrx3qaht" path="res://textures/buttons/Tutorial K.png" id="14_wa2us"]
+
+[node name="button_contextual" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1325.0
+offset_bottom = -786.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mqfuo")
+
+[node name="move_left_gamepad" type="Control" parent="."]
+clip_contents = true
+anchors_preset = 0
+offset_right = 200.0
+offset_bottom = 97.0
+
+[node name="texture_rect" type="TextureRect" parent="move_left_gamepad"]
+layout_mode = 0
+offset_right = 280.0
+offset_bottom = 100.0
+texture = ExtResource("2_vhmm4")
+
+[node name="move_right_gamepad" type="Control" parent="."]
+clip_contents = true
+anchors_preset = 0
+offset_left = 73.0
+offset_right = 277.0
+offset_bottom = 97.0
+
+[node name="texture_rect" type="TextureRect" parent="move_right_gamepad"]
+layout_mode = 0
+offset_left = -73.0
+offset_top = 1.0
+offset_right = 207.0
+offset_bottom = 101.0
+texture = ExtResource("2_vhmm4")
+
+[node name="jump_gamepad" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("3_akc41")
+
+[node name="gamepad_minigame_left" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("4_cesp4")
+
+[node name="gamepad_minigame_right" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("5_cn1kn")
+
+[node name="gamepad_minigame_up" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("6_d0kvj")
+
+[node name="gamepad_minigame_down" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("7_l3wut")
+
+[node name="move_left_keyboard" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("8_payuf")
+
+[node name="move_right_keyboard" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -13.0
+offset_right = 263.0
+offset_bottom = 99.0
+texture = ExtResource("9_eb6gv")
+
+[node name="jump_keyboard" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -4.0
+offset_top = -12.0
+offset_right = 272.0
+offset_bottom = 100.0
+texture = ExtResource("10_qjjkx")
+
+[node name="keyboard_minigame_left" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -11.0
+offset_top = -3.0
+offset_right = 268.0
+offset_bottom = 109.0
+texture = ExtResource("11_bmg62")
+
+[node name="keyboard_minigame_right" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -11.0
+offset_top = -3.0
+offset_right = 268.0
+offset_bottom = 109.0
+texture = ExtResource("12_i1py2")
+
+[node name="keyboard_minigame_up" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -15.0
+offset_top = -19.0
+offset_right = 271.0
+offset_bottom = 103.0
+texture = ExtResource("13_8awv6")
+
+[node name="keyboard_minigame_down" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -14.0
+offset_top = -6.0
+offset_right = 266.0
+offset_bottom = 103.0
+texture = ExtResource("14_wa2us")
