@@ -2,10 +2,10 @@
 
 [ext_resource type="PackedScene" uid="uid://bc387eb0njapq" path="res://scenes/ui_scene.tscn" id="1_gib3a"]
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="2_knfle"]
-[ext_resource type="Texture2D" uid="uid://dhllsjl70vy81" path="res://textures/Splashscreens/Introoff.png" id="3_nk4c3"]
-[ext_resource type="Texture2D" uid="uid://dvx3nyd3i5bpt" path="res://textures/Splashscreens/Intro_start.png" id="4_24xt1"]
-[ext_resource type="Texture2D" uid="uid://dn6013v6ugisl" path="res://textures/Splashscreens/Intro_credits.png" id="5_f08nl"]
-[ext_resource type="Texture2D" uid="uid://b2w30hd3w2mcw" path="res://textures/Splashscreens/Intro_exit.png" id="6_d58kf"]
+[ext_resource type="Texture2D" uid="uid://23nyjq16jr2l" path="res://textures/Splashscreens/Menu.png" id="3_nk4c3"]
+[ext_resource type="Texture2D" uid="uid://bfgrpioyr77fp" path="res://textures/Splashscreens/menu_start.png" id="4_24xt1"]
+[ext_resource type="Texture2D" uid="uid://mcs6ppsq2k6n" path="res://textures/Splashscreens/menu_credits.png" id="5_f08nl"]
+[ext_resource type="Texture2D" uid="uid://dp778mlqs3t23" path="res://textures/Splashscreens/menu_exit.png" id="6_d58kf"]
 [ext_resource type="Shader" path="res://shaders/film_grain.gdshader" id="7_e1ras"]
 [ext_resource type="Script" path="res://scripts/keep_aspect_control.gd" id="7_uuih3"]
 
