@@ -8,6 +8,7 @@ var page
 
 
 func _ready():
+	super._ready()
 	Tutorial.ui = self
 
 

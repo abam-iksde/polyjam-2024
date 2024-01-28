@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://cfyvkq6qklwnv"]
+[gd_scene load_steps=15 format=3 uid="uid://cfyvkq6qklwnv"]
 
 [ext_resource type="PackedScene" uid="uid://bc387eb0njapq" path="res://scenes/ui_scene.tscn" id="1_gib3a"]
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="2_knfle"]
@@ -7,6 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://dn6013v6ugisl" path="res://textures/Splashscreens/Intro_credits.png" id="5_f08nl"]
 [ext_resource type="Texture2D" uid="uid://b2w30hd3w2mcw" path="res://textures/Splashscreens/Intro_exit.png" id="6_d58kf"]
 [ext_resource type="Shader" path="res://shaders/film_grain.gdshader" id="7_e1ras"]
+[ext_resource type="Script" path="res://scripts/keep_aspect_control.gd" id="7_uuih3"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_uur46"]
 size = Vector2(16, 9)
@@ -82,12 +83,10 @@ mesh = SubResource("PlaneMesh_uur46")
 surface_material_override/0 = SubResource("StandardMaterial3D_rtnc0")
 
 [node name="overlay" type="Control" parent="." index="2"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+script = ExtResource("7_uuih3")
 
 [node name="grain" type="ColorRect" parent="overlay" index="0"]
 material = SubResource("ShaderMaterial_wi2tv")

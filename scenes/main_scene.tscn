@@ -35,7 +35,14 @@ grow_vertical = 2
 
 [node name="tutorial_book" parent="." instance=ExtResource("12_3dee1")]
 z_index = 1
-layout_mode = 1
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 1600.0
+offset_bottom = 900.0
+grow_horizontal = 1
+grow_vertical = 1
 world_path = NodePath("../game_viewport_container/game_viewport/game_scene")
 
 [node name="background" type="ColorRect" parent="."]
