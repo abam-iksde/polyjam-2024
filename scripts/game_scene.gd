@@ -78,7 +78,7 @@ func spawn_obstacles() -> void:
 func get_section_obstacles(section_name: String) -> Array:
 	var result := []
 	var obstacles = Sections.SECTIONS[section_name].section.get_node('obstacles').get_children()
-	obstacles.sort_custom(func(a, b): return a.position.y > b.position.y)
+	obstacles.sort_custom(func(a, b): return a.position.y < b.position.y)
 	for obstacle in obstacles:
 		var result_obstacle = {}
 		result_obstacle.texture = obstacle.texture
