@@ -1,13 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dp3aqeeppkdst"]
+[gd_scene load_steps=3 format=3 uid="uid://dp3aqeeppkdst"]
 
 [ext_resource type="PackedScene" uid="uid://45f3fw7yhrgc" path="res://scenes/video_scene.tscn" id="1_4qttv"]
 [ext_resource type="PackedScene" uid="uid://cfyvkq6qklwnv" path="res://scenes/main_menu.tscn" id="2_j3v1o"]
 
-[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_xjon2"]
-file = "res://video/intro1.ogg"
-
 [node name="intro_fmv" instance=ExtResource("1_4qttv")]
 next_scene = ExtResource("2_j3v1o")
-
-[node name="video_stream_player" parent="." index="0"]
-stream = SubResource("VideoStreamTheora_xjon2")
+frame_base_path = "res://Video/intro1/video/ezgif-frame-"
+n_frames = 60

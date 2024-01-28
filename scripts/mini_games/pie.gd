@@ -7,6 +7,8 @@ const MARKER_SPEED = 900.0
 var state := 'started'
 var score := 0.0
 
+var _state := 0
+
 
 @onready var marker := get_node('game/marker') as ColorRect
 @onready var sweet_spot: Array[ColorRect] = [
@@ -28,15 +30,10 @@ func _physics_process(delta: float) -> void:
 		verdict_countdown -= delta
 		if verdict_countdown > 0.0:
 			return
-		var distance_between := sweet_spot[1].position.x - sweet_spot[0].position.x
-		var marker_relative := marker.position.x - sweet_spot[0].position.x
-		var distance_to_center := distance_between/2.0
-		var marker_distance = abs(distance_to_center - marker_relative)
-		score = 0.4 + ((distance_to_center-marker_distance)/distance_to_center) * 0.6
-		if score < 0.4:
+		if _state == 1:
 			state = 'lost'
-			return
-		state = 'won'
+		else:
+			state = 'won'
 		return
 	marker.position.x += direction * MARKER_SPEED * delta
 	if marker.position.x <= 0.0:
@@ -47,3 +44,14 @@ func _physics_process(delta: float) -> void:
 		direction = -1.0
 	if Input.is_action_just_pressed("mg_activate_1"):
 		stopped = true
+		var distance_between := sweet_spot[1].position.x - sweet_spot[0].position.x
+		var marker_relative := marker.position.x - sweet_spot[0].position.x
+		var distance_to_center := distance_between/2.0
+		var marker_distance = abs(distance_to_center - marker_relative)
+		score = 0.4 + ((distance_to_center-marker_distance)/distance_to_center) * 0.6
+		if score < 0.4:
+			_state = 1
+			get_node('game/background2').texture = preload('res://textures/mini_games/Pie/pie2.png')
+			return
+		_state = 2
+		get_node('game/background2').texture = preload('res://textures/mini_games/Pie/pie1.png')

@@ -1,13 +1,16 @@
-[gd_scene load_steps=15 format=3 uid="uid://cfyvkq6qklwnv"]
+[gd_scene load_steps=21 format=3 uid="uid://cfyvkq6qklwnv"]
 
 [ext_resource type="PackedScene" uid="uid://bc387eb0njapq" path="res://scenes/ui_scene.tscn" id="1_gib3a"]
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="2_knfle"]
-[ext_resource type="Texture2D" uid="uid://dhllsjl70vy81" path="res://textures/Splashscreens/Introoff.png" id="3_nk4c3"]
-[ext_resource type="Texture2D" uid="uid://dvx3nyd3i5bpt" path="res://textures/Splashscreens/Intro_start.png" id="4_24xt1"]
-[ext_resource type="Texture2D" uid="uid://dn6013v6ugisl" path="res://textures/Splashscreens/Intro_credits.png" id="5_f08nl"]
-[ext_resource type="Texture2D" uid="uid://b2w30hd3w2mcw" path="res://textures/Splashscreens/Intro_exit.png" id="6_d58kf"]
+[ext_resource type="Texture2D" uid="uid://23nyjq16jr2l" path="res://textures/Splashscreens/Menu.png" id="3_nk4c3"]
+[ext_resource type="Texture2D" uid="uid://bfgrpioyr77fp" path="res://textures/Splashscreens/menu_start.png" id="4_24xt1"]
+[ext_resource type="Texture2D" uid="uid://mcs6ppsq2k6n" path="res://textures/Splashscreens/menu_credits.png" id="5_f08nl"]
+[ext_resource type="Texture2D" uid="uid://b8keio5e0cyyt" path="res://textures/Splashscreens/menu_restart.png" id="5_xvedy"]
+[ext_resource type="Texture2D" uid="uid://dp778mlqs3t23" path="res://textures/Splashscreens/menu_exit.png" id="6_d58kf"]
 [ext_resource type="Shader" path="res://shaders/film_grain.gdshader" id="7_e1ras"]
 [ext_resource type="Script" path="res://scripts/keep_aspect_control.gd" id="7_uuih3"]
+[ext_resource type="Texture2D" uid="uid://dr4r3yc3nj6a3" path="res://textures/Splashscreens/back.png" id="8_0ujsm"]
+[ext_resource type="Script" path="res://scripts/restart_tutorial_icon.gd" id="8_14va7"]
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_uur46"]
 size = Vector2(16, 9)
@@ -24,6 +27,12 @@ transparency = 1
 shading_mode = 0
 albedo_texture = ExtResource("4_24xt1")
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_oa0lo"]
+render_priority = 2
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("5_xvedy")
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8ityx"]
 render_priority = 2
 transparency = 1
@@ -35,6 +44,15 @@ render_priority = 2
 transparency = 1
 shading_mode = 0
 albedo_texture = ExtResource("6_d58kf")
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_bgoex"]
+size = Vector2(3, 1.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xp8gs"]
+render_priority = 2
+transparency = 1
+shading_mode = 0
+albedo_texture = ExtResource("8_0ujsm")
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_wi2tv"]
 shader = ExtResource("7_e1ras")
@@ -68,19 +86,37 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 
 mesh = SubResource("PlaneMesh_uur46")
 surface_material_override/0 = SubResource("StandardMaterial3D_stc1v")
 
-[node name="menu_credits" type="MeshInstance3D" parent="game_viewport_container/game_viewport/world" index="3"]
+[node name="menu_restart_tutorial" type="MeshInstance3D" parent="game_viewport_container/game_viewport/world" index="3"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -14.225)
+visible = false
+mesh = SubResource("PlaneMesh_uur46")
+surface_material_override/0 = SubResource("StandardMaterial3D_oa0lo")
+
+[node name="menu_credits" type="MeshInstance3D" parent="game_viewport_container/game_viewport/world" index="4"]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -14.225)
 visible = false
 mesh = SubResource("PlaneMesh_uur46")
 surface_material_override/0 = SubResource("StandardMaterial3D_8ityx")
 
-[node name="menu_exit" type="MeshInstance3D" parent="game_viewport_container/game_viewport/world" index="4"]
+[node name="menu_exit" type="MeshInstance3D" parent="game_viewport_container/game_viewport/world" index="5"]
 unique_name_in_owner = true
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, -14.225)
 visible = false
 mesh = SubResource("PlaneMesh_uur46")
 surface_material_override/0 = SubResource("StandardMaterial3D_rtnc0")
+
+[node name="restart_tutorial" type="Node3D" parent="game_viewport_container/game_viewport/world" index="6"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.28307, 0.312756, -14.2979)
+script = ExtResource("8_14va7")
+
+[node name="restart_tutorial_icon" type="MeshInstance3D" parent="game_viewport_container/game_viewport/world/restart_tutorial" index="0"]
+transform = Transform3D(-0.655479, 3.30114e-08, 0.755213, 0.755213, 2.86519e-08, 0.655479, -3.38764e-15, 1, -4.37114e-08, -0.0955901, 0.00145555, 0.0729132)
+mesh = SubResource("PlaneMesh_bgoex")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_xp8gs")
 
 [node name="overlay" type="Control" parent="." index="2"]
 anchors_preset = 0
