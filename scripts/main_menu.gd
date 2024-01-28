@@ -8,6 +8,7 @@ var locked := false
 
 @onready var options = [
 	{ visual = %menu_start, go = start_game },
+	{ visual = %menu_restart_tutorial, go = restart_tutorial, dont = true },
 	{ visual = %menu_credits, go = goto_credits },
 	{ visual = %menu_exit, go = exit },
 ]
@@ -34,6 +35,9 @@ func _physics_process(delta):
 	highlight_option(GameState.main_menu_option)
 	if Input.is_action_just_pressed('ui_accept'):
 		Audio.spawn_sound_effect( "SFX" , ui_button ,[18] )
+		if options[GameState.main_menu_option].has('dont'):
+			options[GameState.main_menu_option].go.call()
+			return
 		locked = true
 		%transition.target = true
 
@@ -47,6 +51,11 @@ func start_game():
 	GameState.restart()
 	Motion.reset()
 	get_tree().change_scene_to_file('res://scenes/cutscene_fmv.tscn')
+
+
+func restart_tutorial():
+	%restart_tutorial.rot = 2.0*PI
+	Tutorial.restart()
 
 
 func goto_credits():

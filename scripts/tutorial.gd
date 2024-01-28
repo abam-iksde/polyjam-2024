@@ -20,3 +20,8 @@ func discover(what: String, where=null) -> void:
 	roadmap.save('tutorial.ini')
 	if ui:
 		ui.show_tutorial_page(what, where)
+
+
+func restart():
+	roadmap = ConfigFile.new()
+	roadmap.save('tutorial.ini')
