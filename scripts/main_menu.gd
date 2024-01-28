@@ -46,7 +46,7 @@ func highlight_option(index: int):
 func start_game():
 	GameState.restart()
 	Motion.reset()
-	get_tree().change_scene_to_file('res://scenes/main_scene.tscn')
+	get_tree().change_scene_to_file('res://scenes/cutscene_fmv.tscn')
 
 
 func goto_credits():
