@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cm10st7pilwfj"]
+
+[ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_t0vwh"]
+[ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_1u3cn"]
+[ext_resource type="PackedScene" uid="uid://bsls4cspa2h48" path="res://scenes/Obstacles/obstacle_potato_bin.tscn" id="3_2gs8r"]
+[ext_resource type="PackedScene" uid="uid://b6kbiy2u75ngm" path="res://scenes/Obstacles/obstacle_cow_sleep.tscn" id="3_mh050"]
+
+[node name="section2" instance=ExtResource("1_t0vwh")]
+
+[node name="ground" parent="." index="0"]
+texture = ExtResource("2_1u3cn")
+
+[node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("3_mh050")]
+position = Vector2(204, 337)
+
+[node name="obstacle_rep2" parent="obstacles" index="1" instance=ExtResource("3_2gs8r")]
+position = Vector2(355, 653)
+
+[node name="obstacle_rep3" parent="obstacles" index="2" instance=ExtResource("3_mh050")]
+position = Vector2(813, 613)

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwu0y5ywr023y"]
+
+[ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/Obstacles/obstacle_rep.tscn" id="1_tco3t"]
+[ext_resource type="Texture2D" uid="uid://v0w0xrlj7miy" path="res://textures/Obstacles/Obstacle_cow_standing.png" id="2_vvqxc"]
+
+[node name="obstacle_rep" instance=ExtResource("1_tco3t")]
+position = Vector2(0, 1)
+scale = Vector2(0.42, 0.42)
+texture = ExtResource("2_vvqxc")
+hframes = 30
+size = Vector3(0.705, 0.5, 1.5)
+texture_scale = 0.42
+texture_z_offset = 0.55
+
+[node name="collision" parent="." index="0"]
+offset_left = -214.857
+offset_top = -152.381
+offset_right = -34.3771
+offset_bottom = -24.381
+scale = Vector2(2.38095, 2.38095)

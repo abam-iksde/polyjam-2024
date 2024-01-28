@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bd07q4us81d6e"]
+
+[ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/Obstacles/obstacle_rep.tscn" id="1_5chfv"]
+[ext_resource type="Texture2D" uid="uid://b41li1mbd6oyt" path="res://textures/Obstacles/Obstacle_goat_sleeping.png" id="2_865ok"]
+
+[node name="obstacle_rep" instance=ExtResource("1_5chfv")]
+position = Vector2(1, 0)
+scale = Vector2(0.28, 0.28)
+texture = ExtResource("2_865ok")
+hframes = 30
+size = Vector3(0.5, 0.21, 0.28)
+texture_scale = 0.28
+
+[node name="collision" parent="." index="0"]
+offset_left = -228.571
+offset_top = -96.0
+offset_right = -100.571
+offset_bottom = -42.24
+scale = Vector2(3.57143, 3.57143)

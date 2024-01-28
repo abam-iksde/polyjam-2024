@@ -1,0 +1,35 @@
+[gd_scene load_steps=7 format=3 uid="uid://bbcaeqex2bgp2"]
+
+[ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_n5cpy"]
+[ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_fyir3"]
+[ext_resource type="PackedScene" uid="uid://dwu0y5ywr023y" path="res://scenes/Obstacles/obstacle_cow_stand.tscn" id="3_3yoby"]
+[ext_resource type="PackedScene" uid="uid://bd07q4us81d6e" path="res://scenes/Obstacles/obstacle_goat_sleep.tscn" id="4_k1kl1"]
+[ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/Obstacles/obstacle_rep.tscn" id="5_e4h0d"]
+[ext_resource type="Texture2D" uid="uid://df3y6oprqdudv" path="res://textures/Obstacles/Obstacle_music_notes.png" id="6_k0m6d"]
+
+[node name="section2" instance=ExtResource("1_n5cpy")]
+
+[node name="ground" parent="." index="0"]
+texture = ExtResource("2_fyir3")
+
+[node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("3_3yoby")]
+position = Vector2(492, 209)
+
+[node name="obstacle_rep2" parent="obstacles" index="1" instance=ExtResource("3_3yoby")]
+position = Vector2(498, 470)
+
+[node name="obstacle_rep3" parent="obstacles" index="2" instance=ExtResource("3_3yoby")]
+position = Vector2(499, 739)
+
+[node name="obstacle_rep4" parent="obstacles" index="3" instance=ExtResource("4_k1kl1")]
+position = Vector2(189, 642)
+
+[node name="obstacle_rep5" parent="obstacles" index="4" instance=ExtResource("5_e4h0d")]
+position = Vector2(830, 526)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("6_k0m6d")
+hframes = 30
+size = Vector3(0.5, 0.495, 0.2)
+texture_scale = 0.25
+texture_z_offset = 0.7
+type = "Collectible"

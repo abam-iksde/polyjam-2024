@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bsls4cspa2h48"]
+
+[ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/Obstacles/obstacle_rep.tscn" id="1_17inw"]
+[ext_resource type="Texture2D" uid="uid://qwb1yrf5u0rw" path="res://textures/Obstacles/Obstacle_potato_Bin.png" id="2_ity32"]
+
+[node name="obstacle_rep" instance=ExtResource("1_17inw")]
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("2_ity32")
+size = Vector3(0.5, 0.495, 0.3)
+texture_scale = 0.25
+texture_z_offset = 0.35
+
+[node name="collision" parent="." index="0"]
+offset_left = -256.0
+offset_top = -253.44
+offset_right = -128.0
+offset_bottom = -126.72
+scale = Vector2(4, 4)

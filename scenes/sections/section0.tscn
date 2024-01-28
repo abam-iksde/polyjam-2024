@@ -1,38 +1,16 @@
-[gd_scene load_steps=6 format=3 uid="uid://b580b578u1v3c"]
+[gd_scene load_steps=4 format=3 uid="uid://b580b578u1v3c"]
 
 [ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_rdk24"]
 [ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_gyvb7"]
-[ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/obstacle_rep.tscn" id="2_n5nr2"]
-[ext_resource type="Texture2D" uid="uid://qwb1yrf5u0rw" path="res://textures/Obstacles/Obstacle_potato_Bin.png" id="4_hrviq"]
-[ext_resource type="Texture2D" uid="uid://v0w0xrlj7miy" path="res://textures/Obstacles/Obstacle_cow_standing.png" id="5_ul177"]
+[ext_resource type="PackedScene" uid="uid://dwu0y5ywr023y" path="res://scenes/Obstacles/obstacle_cow_stand.tscn" id="3_etg4d"]
 
 [node name="section2" instance=ExtResource("1_rdk24")]
 
 [node name="ground" parent="." index="0"]
 texture = ExtResource("2_gyvb7")
 
-[node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("2_n5nr2")]
-position = Vector2(440, 669)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("4_hrviq")
-size = Vector3(0.5, 0.2, 0.2)
-texture_scale = 0.25
-texture_z_offset = 0.5
+[node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("3_etg4d")]
+position = Vector2(307, 315)
 
-[node name="obstacle_rep2" parent="obstacles" index="1" instance=ExtResource("2_n5nr2")]
-position = Vector2(689, 554)
-scale = Vector2(0.42, 0.42)
-texture = ExtResource("5_ul177")
-hframes = 30
-size = Vector3(0.8, 0.2, 0.2)
-texture_scale = 0.42
-texture_z_offset = 0.7
-animation_speed = 30.0
-
-[node name="obstacle_rep3" parent="obstacles" index="2" instance=ExtResource("2_n5nr2")]
-position = Vector2(216, 262)
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("4_hrviq")
-size = Vector3(0.5, 0.2, 0.2)
-texture_scale = 0.25
-texture_z_offset = 0.5
+[node name="obstacle_rep2" parent="obstacles" index="1" instance=ExtResource("3_etg4d")]
+position = Vector2(654, 582)

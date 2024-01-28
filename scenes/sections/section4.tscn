@@ -1,0 +1,74 @@
+[gd_scene load_steps=5 format=3 uid="uid://crkb3jadsvgqt"]
+
+[ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_84v10"]
+[ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_uidhl"]
+[ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/Obstacles/obstacle_rep.tscn" id="3_cx6te"]
+[ext_resource type="Texture2D" uid="uid://qwb1yrf5u0rw" path="res://textures/Obstacles/Obstacle_potato_Bin.png" id="4_p460t"]
+
+[node name="section2" instance=ExtResource("1_84v10")]
+
+[node name="ground" parent="." index="0"]
+texture = ExtResource("2_uidhl")
+
+[node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("3_cx6te")]
+position = Vector2(947, 153)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_p460t")
+size = Vector3(0.5, 0.2, 0.2)
+texture_scale = 0.25
+texture_z_offset = 0.5
+type = "Collectible"
+
+[node name="obstacle_rep2" parent="obstacles" index="1" instance=ExtResource("3_cx6te")]
+position = Vector2(825, 258)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_p460t")
+size = Vector3(0.5, 0.2, 0.2)
+texture_scale = 0.25
+texture_z_offset = 0.5
+type = "Collectible"
+
+[node name="obstacle_rep3" parent="obstacles" index="2" instance=ExtResource("3_cx6te")]
+position = Vector2(718, 371)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_p460t")
+size = Vector3(0.5, 0.2, 0.2)
+texture_scale = 0.25
+texture_z_offset = 0.5
+type = "Collectible"
+
+[node name="obstacle_rep4" parent="obstacles" index="3" instance=ExtResource("3_cx6te")]
+position = Vector2(628, 488)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_p460t")
+size = Vector3(0.5, 0.2, 0.2)
+texture_scale = 0.25
+texture_z_offset = 0.5
+type = "Collectible"
+
+[node name="obstacle_rep5" parent="obstacles" index="4" instance=ExtResource("3_cx6te")]
+position = Vector2(555, 606)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_p460t")
+size = Vector3(0.5, 0.2, 0.2)
+texture_scale = 0.25
+texture_z_offset = 0.5
+type = "Collectible"
+
+[node name="obstacle_rep6" parent="obstacles" index="5" instance=ExtResource("3_cx6te")]
+position = Vector2(431, 714)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_p460t")
+size = Vector3(0.5, 0.2, 0.2)
+texture_scale = 0.25
+texture_z_offset = 0.5
+type = "Collectible"
+
+[node name="obstacle_rep7" parent="obstacles" index="6" instance=ExtResource("3_cx6te")]
+position = Vector2(304, 820)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("4_p460t")
+size = Vector3(0.5, 0.2, 0.2)
+texture_scale = 0.25
+texture_z_offset = 0.5
+type = "Collectible"
