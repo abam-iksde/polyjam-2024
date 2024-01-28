@@ -7,7 +7,13 @@ var score := 0:
 	set(new_score):
 		score = new_score
 		if is_instance_valid(score_label):
-			score_label.text = 'SCORE   %s' % [str(score)]
+			score_label.text = 'SCORE   %s' % [str(score + note_score)]
+
+var note_score := 0:
+	set(new_score):
+		note_score = new_score
+		if is_instance_valid(score_label):
+			score_label.text = 'SCORE   %s' % [str(score + note_score)]
 
 var score_label: Label = null
 
