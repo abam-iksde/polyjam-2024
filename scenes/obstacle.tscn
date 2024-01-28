@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0osy4hw52ob4"]
+
+[ext_resource type="Script" path="res://scripts/obstacle.gd" id="1_ysrwq"]
+[ext_resource type="Texture2D" uid="uid://b8elqdvletl1u" path="res://textures/Crate.png" id="2_xanj6"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_i1rrn"]
+size = Vector3(1, 0.2, 0.5)
+
+[node name="obstacle" type="Area3D"]
+transform = Transform3D(1, 0, 0, 0, -1, 8.74228e-08, 0, -8.74228e-08, -1, 0, 0, 0)
+script = ExtResource("1_ysrwq")
+
+[node name="collision_shape" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+shape = SubResource("BoxShape3D_i1rrn")
+
+[node name="sprite" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+custom_aabb = AABB(-10000, -10000, -10000, 20000, 200000, 20000)
+billboard = 1
+alpha_cut = 1
+texture = ExtResource("2_xanj6")

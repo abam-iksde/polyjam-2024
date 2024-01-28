@@ -23,6 +23,7 @@ GameState="*res://scripts/game_state.gd"
 Audio="*res://scripts/audio.gd"
 MusicPlayer="*res://scripts/music_player.gd"
 Tutorial="*res://scripts/tutorial.gd"
+LastInput="*res://last_input.gd"
 
 [display]
 

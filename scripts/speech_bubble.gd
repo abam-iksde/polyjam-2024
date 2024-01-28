@@ -2,14 +2,6 @@
 extends Control
 
 
-const ACTIVATORS = {
-	'mg_up': preload('res://textures/buttons/Tutorial I.png'),
-	'mg_down': preload('res://textures/buttons/Tutorial K.png'),
-	'mg_left': preload('res://textures/buttons/Tutorial J.png'),
-	'mg_right': preload('res://textures/buttons/TutoriaL.png'),
-}
-
-
 @export var texture_right := preload('res://textures/speechbubbles/Bubbles right/Bubl_soap_text_nr3.png'):
 	set(new_texture):
 		texture_right = new_texture
@@ -22,8 +14,8 @@ const ACTIVATORS = {
 
 @onready var texture_right_node = get_node('pivot_scale/pivot_rotation/texture_right') as TextureRect
 @onready var texture_left_node = get_node('pivot_scale/pivot_rotation/texture_left') as TextureRect
-@onready var texture_right_button = get_node('button_right') as TextureRect
-@onready var texture_left_button = get_node('button_left') as TextureRect
+@onready var texture_right_button = get_node('button_right') as Control
+@onready var texture_left_button = get_node('button_left') as Control
 
 @onready var pivot_scale := get_node('pivot_scale') as Control
 @onready var pivot_rotation := get_node('pivot_scale/pivot_rotation') as Control
@@ -130,9 +122,9 @@ func _ready() -> void:
 	#var activator = ACTIVATORS[randi() % len(ACTIVATORS)]
 	#activate_action = activator.action
 	activate_action = GameState.available_activators.pop_at(randi() % len(GameState.available_activators))
-	var activator_texture = ACTIVATORS[activate_action]
-	texture_right_button.texture = activator_texture
-	texture_left_button.texture = activator_texture
+	#var activator_texture = ACTIVATORS[activate_action]
+	texture_right_button.get_node('button').button = activate_action
+	texture_left_button.get_node('button').button = activate_action
 
 
 func generate():
