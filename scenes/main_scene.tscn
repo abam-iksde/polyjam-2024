@@ -10,7 +10,7 @@
 [ext_resource type="Script" path="res://scripts/keep_aspect_control.gd" id="7_06w7i"]
 [ext_resource type="Script" path="res://scripts/bubbles.gd" id="7_fo324"]
 [ext_resource type="FontFile" uid="uid://ta70m3hrqwfv" path="res://fonts/WickedMouse-aGoK.ttf" id="9_8j41q"]
-[ext_resource type="PackedScene" uid="uid://dfm0cmssvrsh8" path="res://scenes/tutorial_book.tscn" id="12_3dee1"]
+[ext_resource type="PackedScene" path="res://scenes/tutorial_book.tscn" id="12_3dee1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_btefe"]
 shader = ExtResource("3_ns5cs")

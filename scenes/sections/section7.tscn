@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=3 uid="uid://dwr7qiycg827d"]
+
+[ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_gm17p"]
+[ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_omkac"]
+[ext_resource type="PackedScene" uid="uid://b6kbiy2u75ngm" path="res://scenes/Obstacles/obstacle_cow_sleep.tscn" id="3_d2xwr"]
+[ext_resource type="PackedScene" uid="uid://bsls4cspa2h48" path="res://scenes/Obstacles/obstacle_potato_bin.tscn" id="4_val4q"]
+[ext_resource type="PackedScene" uid="uid://dwu0y5ywr023y" path="res://scenes/Obstacles/obstacle_cow_stand.tscn" id="5_xuunn"]
+[ext_resource type="PackedScene" uid="uid://bd07q4us81d6e" path="res://scenes/Obstacles/obstacle_goat_sleep.tscn" id="6_81cpx"]
+[ext_resource type="PackedScene" uid="uid://dq2jj7mkg4vx2" path="res://scenes/Obstacles/obstacle_collectible_music_notes.tscn" id="7_5d7py"]
+
+[node name="section2" instance=ExtResource("1_gm17p")]
+
+[node name="ground" parent="." index="0"]
+texture = ExtResource("2_omkac")
+
+[node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("3_d2xwr")]
+position = Vector2(526, 56)
+
+[node name="obstacle_rep2" parent="obstacles" index="1" instance=ExtResource("4_val4q")]
+position = Vector2(720, 424)
+
+[node name="obstacle_rep4" parent="obstacles" index="2" instance=ExtResource("4_val4q")]
+position = Vector2(305, 724)
+
+[node name="obstacle_rep3" parent="obstacles" index="3" instance=ExtResource("3_d2xwr")]
+position = Vector2(523, 814)
+
+[node name="obstacle_rep5" parent="obstacles" index="4" instance=ExtResource("5_xuunn")]
+position = Vector2(558, 475)
+
+[node name="obstacle_rep6" parent="obstacles" index="5" instance=ExtResource("6_81cpx")]
+position = Vector2(347, 503)
+
+[node name="obstacle_rep7" parent="obstacles" index="6" instance=ExtResource("7_5d7py")]
+position = Vector2(354, 271)

@@ -60,7 +60,7 @@ func spawn_obstacles() -> void:
 		var obstacle = next_obstacles[0]
 		if obstacle.position.y > section_progress:
 			return
-		var obstacle_instance = preload('res://scenes/obstacle.tscn').instantiate()
+		var obstacle_instance = preload('res://scenes/Obstacles/obstacle.tscn').instantiate()
 		obstacle_instance.position.x = obstacle.position.x
 		var shape := (obstacle_instance.get_node('collision_shape').shape as BoxShape3D).duplicate()
 		shape.size = obstacle.size

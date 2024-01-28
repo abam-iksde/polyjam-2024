@@ -1,0 +1,69 @@
+[gd_scene load_steps=6 format=3 uid="uid://dc2o6ia72hmqb"]
+
+[ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_g5ny7"]
+[ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_7fiwj"]
+[ext_resource type="PackedScene" uid="uid://dq2jj7mkg4vx2" path="res://scenes/Obstacles/obstacle_collectible_music_notes.tscn" id="4_e7w8r"]
+[ext_resource type="PackedScene" uid="uid://bsls4cspa2h48" path="res://scenes/Obstacles/obstacle_potato_bin.tscn" id="4_uf567"]
+[ext_resource type="PackedScene" uid="uid://bd07q4us81d6e" path="res://scenes/Obstacles/obstacle_goat_sleep.tscn" id="5_vtp2x"]
+
+[node name="section2" instance=ExtResource("1_g5ny7")]
+
+[node name="ground" parent="." index="0"]
+texture = ExtResource("2_7fiwj")
+
+[node name="obstacle_rep" parent="obstacles" index="0" instance=ExtResource("4_uf567")]
+position = Vector2(66, 65)
+
+[node name="obstacle_rep15" parent="obstacles" index="1" instance=ExtResource("4_uf567")]
+position = Vector2(955, 65)
+
+[node name="obstacle_rep16" parent="obstacles" index="2" instance=ExtResource("4_uf567")]
+position = Vector2(855, 138)
+
+[node name="obstacle_rep17" parent="obstacles" index="3" instance=ExtResource("4_uf567")]
+position = Vector2(768, 225)
+
+[node name="obstacle_rep18" parent="obstacles" index="4" instance=ExtResource("4_uf567")]
+position = Vector2(716, 306)
+
+[node name="obstacle_rep19" parent="obstacles" index="5" instance=ExtResource("4_uf567")]
+position = Vector2(661, 407)
+
+[node name="obstacle_rep2" parent="obstacles" index="6" instance=ExtResource("4_uf567")]
+position = Vector2(158, 156)
+
+[node name="obstacle_rep3" parent="obstacles" index="7" instance=ExtResource("4_uf567")]
+position = Vector2(233, 252)
+
+[node name="obstacle_rep4" parent="obstacles" index="8" instance=ExtResource("4_uf567")]
+position = Vector2(286, 345)
+
+[node name="obstacle_rep6" parent="obstacles" index="9" instance=ExtResource("4_uf567")]
+position = Vector2(321, 539)
+
+[node name="obstacle_rep11" parent="obstacles" index="10" instance=ExtResource("4_uf567")]
+position = Vector2(652, 539)
+
+[node name="obstacle_rep12" parent="obstacles" index="11" instance=ExtResource("4_uf567")]
+position = Vector2(649, 640)
+
+[node name="obstacle_rep13" parent="obstacles" index="12" instance=ExtResource("4_uf567")]
+position = Vector2(650, 731)
+
+[node name="obstacle_rep14" parent="obstacles" index="13" instance=ExtResource("4_uf567")]
+position = Vector2(641, 831)
+
+[node name="obstacle_rep7" parent="obstacles" index="14" instance=ExtResource("4_uf567")]
+position = Vector2(332, 637)
+
+[node name="obstacle_rep8" parent="obstacles" index="15" instance=ExtResource("4_uf567")]
+position = Vector2(347, 721)
+
+[node name="obstacle_rep9" parent="obstacles" index="16" instance=ExtResource("4_uf567")]
+position = Vector2(341, 838)
+
+[node name="obstacle_rep5" parent="obstacles" index="17" instance=ExtResource("4_e7w8r")]
+position = Vector2(139, 659)
+
+[node name="obstacle_rep10" parent="obstacles" index="18" instance=ExtResource("5_vtp2x")]
+position = Vector2(497, 625)

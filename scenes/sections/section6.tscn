@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://673h1g83m3cu"]
+
+[ext_resource type="PackedScene" uid="uid://dxuwadbymmeay" path="res://scenes/section.tscn" id="1_ynbpc"]
+[ext_resource type="Texture2D" uid="uid://catajss52khef" path="res://textures/Section_2_planks_ground.png" id="2_kue0t"]
+[ext_resource type="PackedScene" uid="uid://bd07q4us81d6e" path="res://scenes/Obstacles/obstacle_goat_sleep.tscn" id="3_hemp1"]
+[ext_resource type="PackedScene" uid="uid://dq2jj7mkg4vx2" path="res://scenes/Obstacles/obstacle_collectible_music_notes.tscn" id="4_nbktl"]
+
+[node name="section2" instance=ExtResource("1_ynbpc")]
+
+[node name="ground" parent="." index="0"]
+texture = ExtResource("2_kue0t")
+
+[node name="obstacle_rep" parent="." index="2" instance=ExtResource("3_hemp1")]
+position = Vector2(397, 420)
+
+[node name="obstacle_rep4" parent="." index="3" instance=ExtResource("3_hemp1")]
+position = Vector2(550, 304)
+
+[node name="obstacle_rep6" parent="." index="4" instance=ExtResource("3_hemp1")]
+position = Vector2(399.68, 183.68)
+
+[node name="obstacle_rep5" parent="." index="5" instance=ExtResource("3_hemp1")]
+position = Vector2(562.68, 791.68)
+
+[node name="obstacle_rep2" parent="." index="6" instance=ExtResource("3_hemp1")]
+position = Vector2(567, 545)
+
+[node name="obstacle_rep3" parent="." index="7" instance=ExtResource("3_hemp1")]
+position = Vector2(405, 680)
+
+[node name="obstacle_rep7" parent="." index="8" instance=ExtResource("4_nbktl")]
+position = Vector2(405, 321)
+
+[node name="obstacle_rep8" parent="." index="9" instance=ExtResource("4_nbktl")]
+position = Vector2(567, 694)
