@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://d2i7tjfwu4jhr"]
+
+[ext_resource type="PackedScene" uid="uid://45f3fw7yhrgc" path="res://scenes/video_scene.tscn" id="1_w2sxh"]
+[ext_resource type="PackedScene" uid="uid://7bf3p2aae384" path="res://scenes/main_scene.tscn" id="2_amq21"]
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_3s47v"]
+file = "res://video/intro2.ogg"
+
+[node name="cutscene_fmv" instance=ExtResource("1_w2sxh")]
+next_scene = ExtResource("2_amq21")
+
+[node name="video_stream_player" parent="." index="0"]
+stream = SubResource("VideoStreamTheora_3s47v")
