@@ -2,7 +2,7 @@ extends AudioStreamPlayer
 
 
 func set_volume(volume: float) -> void:
-	volume_db = -(1.0-volume) * 20.0
+	volume_db = -(1.0-volume) * 30.0
 
 
 
