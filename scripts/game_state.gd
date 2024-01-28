@@ -14,7 +14,26 @@ var score_label: Label = null
 
 var main_menu_option := 0
 
+var streak := 0
+var max_streak := 0
+
+
+var available_activators := [
+	'mg_up',
+	'mg_down',
+	'mg_left',
+	'mg_right',
+]
+
 
 func restart():
 	score = 0
 	lost = false
+	available_activators = [
+		'mg_up',
+		'mg_down',
+		'mg_left',
+		'mg_right',
+	]
+	streak = 0
+	max_streak = 0

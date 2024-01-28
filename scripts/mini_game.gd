@@ -34,8 +34,8 @@ func update_game_position():
 func _physics_process(delta: float) -> void:
 	update_game_position()
 	if not game:
-		if Input.is_key_pressed(KEY_0):
-			start_game('soap')
+		#if Input.is_key_pressed(KEY_0):
+			#start_game('soap')
 		#if Input.is_key_pressed(KEY_9):
 			#start_game('dance')
 		#if Input.is_key_pressed(KEY_0):
@@ -49,7 +49,10 @@ func _physics_process(delta: float) -> void:
 		return
 	if game.state == 'done' or game.state == 'lost' or game.state == 'won':
 		if game.state == 'won':
+			GameState.streak += 1
 			Motion.head_speed = Motion.HEAD_HANDICAPPED_SPEED - (Motion.HEAD_HANDICAPPED_SPEED * 0.5 * game.score)
+		elif game.state == 'lost':
+			GameState.max_streak = maxf(GameState.streak, GameState.max_streak)
 		game.state = 'done'
 		view_position += delta * 2.0
 		if view_position >= 0.0:

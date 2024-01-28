@@ -2,10 +2,12 @@
 extends Control
 
 
-const ACTIVATORS = [
-	{ action = 'mg_activate_1', texture = preload('res://textures/buttons/a.png') },
-	{ action = 'mg_activate_2', texture = preload('res://textures/buttons/b.png') },
-]
+const ACTIVATORS = {
+	'mg_up': preload('res://textures/buttons/Tutorial I.png'),
+	'mg_down': preload('res://textures/buttons/Tutorial K.png'),
+	'mg_left': preload('res://textures/buttons/Tutorial J.png'),
+	'mg_right': preload('res://textures/buttons/TutoriaL.png'),
+}
 
 
 @export var texture_right := preload('res://textures/speechbubbles/Bubbles right/Bubl_soap_text_nr3.png'):
@@ -81,6 +83,8 @@ func _physics_process(delta: float) -> void:
 	pivot_rotation.rotation_degrees = rotation_
 	used_texture_node.modulate.a = 1.0 - last_animation_stage * 4.0
 	if rotation_ >= 180.0:
+		if activate_action != '':
+			GameState.available_activators.push_back(activate_action)
 		queue_free()
 
 
@@ -120,10 +124,12 @@ func _ready() -> void:
 	
 	if minigame == '':
 		return
-	var activator = ACTIVATORS[randi() % len(ACTIVATORS)]
-	activate_action = activator.action
-	texture_right_button.texture = activator.texture
-	texture_left_button.texture = activator.texture
+	#var activator = ACTIVATORS[randi() % len(ACTIVATORS)]
+	#activate_action = activator.action
+	activate_action = GameState.available_activators.pop_at(randi() % len(GameState.available_activators))
+	var activator_texture = ACTIVATORS[activate_action]
+	texture_right_button.texture = activator_texture
+	texture_left_button.texture = activator_texture
 
 
 func generate():
