@@ -1,10 +1,13 @@
 extends Node3D
 
+@export var trombka = preload("res://audio/sfx/trombka.wav")
 
 var accepted := false
 
 
 func _ready():
+	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("LAUGH"), -100.0)
+	Audio.spawn_sound_effect( "SFX" , trombka ,[18] )
 	%transition.force_state(true)
 	%transition.target = false
 	GameState.lost = false
