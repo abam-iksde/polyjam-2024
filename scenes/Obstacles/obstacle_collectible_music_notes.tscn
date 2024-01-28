@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://dq2jj7mkg4vx2"]
+[gd_scene load_steps=4 format=3 uid="uid://dq2jj7mkg4vx2"]
 
 [ext_resource type="PackedScene" uid="uid://banp62cnhxxme" path="res://scenes/Obstacles/obstacle_rep.tscn" id="1_ai3xx"]
 [ext_resource type="Texture2D" uid="uid://df3y6oprqdudv" path="res://textures/Obstacles/Obstacle_music_notes.png" id="2_o6xxi"]
+[ext_resource type="AudioStream" uid="uid://do4xllmm42ywi" path="res://audio/sfx/notes.wav" id="3_uhi1w"]
 
 [node name="obstacle_rep" instance=ExtResource("1_ai3xx")]
 scale = Vector2(0.25, 0.25)
@@ -12,6 +13,7 @@ texture_scale = 0.25
 texture_z_offset = 0.4
 animation_speed = 30.0
 type = "Collectible"
+sound_effect = ExtResource("3_uhi1w")
 
 [node name="collision" parent="." index="0"]
 offset_left = -253.44
