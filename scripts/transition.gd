@@ -7,6 +7,7 @@ var hidden := false
 
 
 func _physics_process(delta: float) -> void:
+	MusicPlayer.set_volume((scale.x - scale_range.x) / (scale_range.y - scale_range.x))
 	hidden = abs(scale.x-scale_range.x) < 0.001
 	if target:
 		var new_scale = Motion.interpolate(scale.x, scale_range.x, delta * 1.5)
