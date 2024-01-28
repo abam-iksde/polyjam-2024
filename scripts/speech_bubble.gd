@@ -76,6 +76,9 @@ func _physics_process(delta: float) -> void:
 	pivot_rotation.rotation_degrees = 180.0 - 180.0 * 4.0 * init_animation_stage
 	used_texture_node.modulate.a = init_animation_stage * 4.0
 	
+	if time_elapsed > 0.25 and time_elapsed < 0.25+valid_thru and not Motion.minigame.game:
+		Tutorial.discover('useful_bubble' if minigame != '' else 'useless_bubble')
+	
 	var last_animation_stage := time_elapsed - 0.25 - valid_thru
 	if last_animation_stage <= 0.0:
 		return

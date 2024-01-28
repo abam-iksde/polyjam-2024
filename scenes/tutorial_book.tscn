@@ -1,0 +1,394 @@
+[gd_scene load_steps=10 format=3 uid="uid://dfm0cmssvrsh8"]
+
+[ext_resource type="Script" path="res://scripts/tutorial_book.gd" id="1_p6plg"]
+[ext_resource type="FontFile" uid="uid://ta70m3hrqwfv" path="res://fonts/WickedMouse-aGoK.ttf" id="2_7e36o"]
+[ext_resource type="Texture2D" uid="uid://b06cg3p3iyxcm" path="res://textures/buttons/Tutorial.A.png" id="3_lv882"]
+[ext_resource type="Texture2D" uid="uid://denjgh2io638p" path="res://textures/buttons/TutoriaDl.png" id="4_t2qdw"]
+[ext_resource type="Texture2D" uid="uid://exg5p35fa2rw" path="res://textures/buttons/Tutorial I.png" id="5_cnlvf"]
+[ext_resource type="Texture2D" uid="uid://bx0ikxgo7c2kc" path="res://textures/buttons/Tutorial W.png" id="5_rq57f"]
+[ext_resource type="Texture2D" uid="uid://svye3mt7fsbc" path="res://textures/buttons/Tutorial J.png" id="6_rqqeh"]
+[ext_resource type="Texture2D" uid="uid://dy5c6wrx3qaht" path="res://textures/buttons/Tutorial K.png" id="7_go1qh"]
+[ext_resource type="Texture2D" uid="uid://bldfocoxamo5l" path="res://textures/buttons/TutoriaL.png" id="8_qiqwk"]
+
+[node name="tutorial_book" type="Control"]
+process_mode = 3
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_p6plg")
+
+[node name="mickey" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="color_rect" type="ColorRect" parent="mickey"]
+layout_mode = 0
+offset_left = 73.0
+offset_top = 579.0
+offset_right = 1029.0
+offset_bottom = 695.0
+color = Color(0, 0, 0, 0.396078)
+
+[node name="label" type="Label" parent="mickey"]
+layout_mode = 0
+offset_left = 82.0
+offset_top = 578.0
+offset_right = 882.0
+offset_bottom = 687.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = "this is mickey, you can control him
+using directional controls                  and
+"
+
+[node name="texture_rect" type="TextureRect" parent="mickey"]
+layout_mode = 0
+offset_left = 661.0
+offset_top = 638.0
+offset_right = 792.0
+offset_bottom = 760.0
+texture = ExtResource("3_lv882")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="texture_rect2" type="TextureRect" parent="mickey"]
+layout_mode = 0
+offset_left = 886.0
+offset_top = 637.0
+offset_right = 1017.0
+offset_bottom = 759.0
+texture = ExtResource("4_t2qdw")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="face" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="color_rect" type="ColorRect" parent="face"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 584.0
+offset_right = 1539.0
+offset_bottom = 745.0
+color = Color(0, 0, 0, 0.396078)
+
+[node name="label" type="Label" parent="face"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 583.0
+offset_right = 1531.0
+offset_bottom = 748.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = "Mickey is being chased by the personification of the public's neediness
+and greed. It will will slowly get closer to Mickey until it catches him
+and the game ends."
+
+[node name="obstacle" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="color_rect" type="ColorRect" parent="obstacle"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 584.0
+offset_right = 1539.0
+offset_bottom = 754.0
+color = Color(0, 0, 0, 0.396078)
+
+[node name="label" type="Label" parent="obstacle"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 583.0
+offset_right = 1531.0
+offset_bottom = 699.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = "this is an obstacle.
+mickey can avoid obstacles by either running next to, or jumping over
+them using the                    button."
+
+[node name="texture_rect" type="TextureRect" parent="obstacle"]
+layout_mode = 0
+offset_left = 375.0
+offset_top = 688.0
+offset_right = 520.0
+offset_bottom = 751.0
+texture = ExtResource("5_rq57f")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="useless_bubble" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="color_rect" type="ColorRect" parent="useless_bubble"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 401.0
+offset_right = 1539.0
+offset_bottom = 520.0
+color = Color(0, 0, 0, 0.396078)
+
+[node name="label" type="Label" parent="useless_bubble"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 400.0
+offset_right = 1531.0
+offset_bottom = 516.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = "Sometimes, the crowd will scream nonsense at mickey, to which he
+does not need to pay any mind."
+
+[node name="useful_bubble" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="color_rect" type="ColorRect" parent="useful_bubble"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 314.0
+offset_right = 1539.0
+offset_bottom = 614.0
+color = Color(0, 0, 0, 0.396078)
+
+[node name="label" type="Label" parent="useful_bubble"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 313.0
+offset_right = 1531.0
+offset_bottom = 534.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = "Sometimes, the crowd will demand various slapstick stunts from
+mickey. by entertaining the crowd mickey can slow down the
+abomination chasing him. choose to participate in a stunt by pressing
+the button displayed next to the bubble, which can be one of"
+
+[node name="texture_rect3" type="TextureRect" parent="useful_bubble"]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 542.0
+offset_right = 576.0
+offset_bottom = 664.0
+texture = ExtResource("5_cnlvf")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="texture_rect4" type="TextureRect" parent="useful_bubble"]
+layout_mode = 0
+offset_left = 598.0
+offset_top = 546.0
+offset_right = 729.0
+offset_bottom = 668.0
+texture = ExtResource("6_rqqeh")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="texture_rect5" type="TextureRect" parent="useful_bubble"]
+layout_mode = 0
+offset_left = 747.0
+offset_top = 543.0
+offset_right = 878.0
+offset_bottom = 665.0
+texture = ExtResource("7_go1qh")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="texture_rect6" type="TextureRect" parent="useful_bubble"]
+layout_mode = 0
+offset_left = 911.0
+offset_top = 548.0
+offset_right = 1042.0
+offset_bottom = 670.0
+texture = ExtResource("8_qiqwk")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="collectibles" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="color_rect" type="ColorRect" parent="collectibles"]
+layout_mode = 0
+offset_left = 61.0
+offset_top = 527.0
+offset_right = 1545.0
+offset_bottom = 701.0
+color = Color(0, 0, 0, 0.396078)
+
+[node name="label" type="Label" parent="collectibles"]
+layout_mode = 0
+offset_left = 70.0
+offset_top = 526.0
+offset_right = 1554.0
+offset_bottom = 691.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = "those notes are pickups. mickey can collect pickups to boost his score,
+which is also raised by maintaing a long minigame win streak, or
+running long distances."
+
+[node name="soap" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="color_rect" type="ColorRect" parent="soap"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 310.0
+offset_right = 1539.0
+offset_bottom = 427.0
+color = Color(0, 0, 0, 0.396078)
+
+[node name="label" type="Label" parent="soap"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 309.0
+offset_right = 1548.0
+offset_bottom = 429.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = "in this minigame, mickey has to step on a soap to entertain the crowd.
+he may do so by aiming his feet with              and              buttons."
+
+[node name="texture_rect" type="TextureRect" parent="soap"]
+layout_mode = 0
+offset_left = 799.0
+offset_top = 371.0
+offset_right = 910.0
+offset_bottom = 454.0
+texture = ExtResource("6_rqqeh")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="texture_rect2" type="TextureRect" parent="soap"]
+layout_mode = 0
+offset_left = 990.0
+offset_top = 371.0
+offset_right = 1101.0
+offset_bottom = 454.0
+texture = ExtResource("8_qiqwk")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="pie" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="color_rect" type="ColorRect" parent="pie"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 310.0
+offset_right = 1539.0
+offset_bottom = 486.0
+color = Color(0, 0, 0, 0.396078)
+
+[node name="label" type="Label" parent="pie"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 309.0
+offset_right = 1548.0
+offset_bottom = 429.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = "in this minigame, mickey has to hit a picture of his face with pie to
+entertain the crowd. he may do so by pressing the                 button when
+the marker is in the sweet spot in the middle."
+
+[node name="texture_rect2" type="TextureRect" parent="pie"]
+layout_mode = 0
+offset_left = 1087.0
+offset_top = 368.0
+offset_right = 1207.0
+offset_bottom = 459.0
+texture = ExtResource("7_go1qh")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="dance" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 1600.0
+offset_bottom = 900.0
+
+[node name="color_rect" type="ColorRect" parent="dance"]
+layout_mode = 0
+offset_left = 55.0
+offset_top = 310.0
+offset_right = 1539.0
+offset_bottom = 612.0
+color = Color(0, 0, 0, 0.396078)
+
+[node name="label" type="Label" parent="dance"]
+layout_mode = 0
+offset_left = 64.0
+offset_top = 309.0
+offset_right = 1548.0
+offset_bottom = 429.0
+theme_override_fonts/font = ExtResource("2_7e36o")
+theme_override_font_sizes/font_size = 32
+text = "in this minigame, mickey has to dance to entertain the crowd. he can 
+do so by pressing directional buttons when incoming arrow
+symbols intersect with the still ones."
+
+[node name="texture_rect2" type="TextureRect" parent="dance"]
+layout_mode = 0
+offset_left = 751.0
+offset_top = 548.0
+offset_right = 871.0
+offset_bottom = 639.0
+texture = ExtResource("7_go1qh")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="texture_rect4" type="TextureRect" parent="dance"]
+layout_mode = 0
+offset_left = 751.0
+offset_top = 486.0
+offset_right = 871.0
+offset_bottom = 577.0
+texture = ExtResource("5_cnlvf")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="texture_rect3" type="TextureRect" parent="dance"]
+layout_mode = 0
+offset_left = 844.0
+offset_top = 516.0
+offset_right = 964.0
+offset_bottom = 607.0
+texture = ExtResource("8_qiqwk")
+expand_mode = 1
+stretch_mode = 4
+
+[node name="texture_rect5" type="TextureRect" parent="dance"]
+layout_mode = 0
+offset_left = 661.0
+offset_top = 516.0
+offset_right = 781.0
+offset_bottom = 607.0
+texture = ExtResource("6_rqqeh")
+expand_mode = 1
+stretch_mode = 4

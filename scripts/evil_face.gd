@@ -9,6 +9,8 @@ func _physics_process(delta: float) -> void:
 	delta = Motion.get_delta(delta)
 	Motion.head_speed = lerpf(Motion.head_speed, Motion.HEAD_MAX_SPEED, delta * 0.6)
 	proximity = min(proximity - (Motion.head_speed - Motion.movement_speed) * delta, 1.0)
+	if proximity < 0.9:
+		Tutorial.discover('face')
 	if proximity < 0.0:
 		GameState.lost = true
 	var one_minus_proximity := (1.0-proximity)

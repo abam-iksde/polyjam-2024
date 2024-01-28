@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://dxxyja26q0q71" path="res://textures/Sillhouetes.png" id="5_viljx"]
 [ext_resource type="Script" path="res://scripts/keep_aspect_control.gd" id="7_06w7i"]
 [ext_resource type="Script" path="res://scripts/bubbles.gd" id="7_fo324"]
-[ext_resource type="PackedScene" path="res://scenes/speech_bubble.tscn" id="8_uv83u"]
 [ext_resource type="FontFile" uid="uid://ta70m3hrqwfv" path="res://fonts/WickedMouse-aGoK.ttf" id="9_8j41q"]
+[ext_resource type="PackedScene" uid="uid://dfm0cmssvrsh8" path="res://scenes/tutorial_book.tscn" id="12_3dee1"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_btefe"]
 shader = ExtResource("3_ns5cs")
@@ -32,6 +32,18 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="tutorial_book" parent="." instance=ExtResource("12_3dee1")]
+z_index = 1
+layout_mode = 0
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_right = 1600.0
+offset_bottom = 900.0
+grow_horizontal = 1
+grow_vertical = 1
+world_path = NodePath("../game_viewport_container/game_viewport/game_scene")
 
 [node name="background" type="ColorRect" parent="."]
 layout_mode = 1
@@ -89,14 +101,6 @@ anchors_preset = 0
 offset_right = 1600.0
 offset_bottom = 900.0
 script = ExtResource("7_fo324")
-
-[node name="speech_bubble" parent="speechbubbles" instance=ExtResource("8_uv83u")]
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-grow_horizontal = 1
-grow_vertical = 1
 
 [node name="score" type="Control" parent="."]
 anchors_preset = 0
