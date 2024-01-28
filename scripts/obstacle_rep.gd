@@ -18,6 +18,8 @@ extends Sprite2D
 
 @export var animation_speed := 12.0
 
+@export_enum("Obstacle", "Collectible") var type := "Obstacle"
+
 
 func _ready() -> void:
 	if not Engine.is_editor_hint():

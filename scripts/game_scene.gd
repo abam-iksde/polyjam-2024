@@ -68,6 +68,7 @@ func spawn_obstacles() -> void:
 		obstacle_instance.get_node('sprite').position.y += obstacle.texture_z_offset
 		obstacle_instance.get_node('sprite').hframes = obstacle.n_frames
 		obstacle_instance.animation_speed = obstacle.animation_speed
+		obstacle_instance.type = obstacle.type
 		obstacles.add_child(obstacle_instance)
 		next_obstacles.pop_front()
 
@@ -85,5 +86,6 @@ func get_section_obstacles(section_name: String) -> Array:
 		result_obstacle.texture_z_offset = obstacle.texture_z_offset
 		result_obstacle.n_frames = obstacle.hframes
 		result_obstacle.animation_speed = obstacle.animation_speed
+		result_obstacle.type = obstacle.type
 		result.append(result_obstacle)
 	return result

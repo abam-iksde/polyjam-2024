@@ -7,6 +7,9 @@ var animation_speed := 0.0
 var animation_frame := 0.0
 
 
+var type := 'Obstacle'
+
+
 func _physics_process(delta: float) -> void:
 	delta = Motion.get_delta(delta)
 	rot -= delta * 2*PI * Motion.movement_speed
