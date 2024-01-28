@@ -71,6 +71,7 @@ func spawn_obstacles() -> void:
 		obstacle_instance.get_node('sprite').hframes = obstacle.n_frames
 		obstacle_instance.animation_speed = obstacle.animation_speed
 		obstacle_instance.type = obstacle.type
+		obstacle_instance.sound_effect = obstacle.sound_effect
 		obstacles.add_child(obstacle_instance)
 		next_obstacles.pop_front()
 
@@ -89,5 +90,6 @@ func get_section_obstacles(section_name: String) -> Array:
 		result_obstacle.n_frames = obstacle.hframes
 		result_obstacle.animation_speed = obstacle.animation_speed
 		result_obstacle.type = obstacle.type
+		result_obstacle.sound_effect = obstacle.sound_effect
 		result.append(result_obstacle)
 	return result

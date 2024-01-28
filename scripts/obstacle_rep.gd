@@ -20,6 +20,8 @@ extends Sprite2D
 
 @export_enum("Obstacle", "Collectible") var type := "Obstacle"
 
+@export var sound_effect: Resource
+
 
 func _ready() -> void:
 	if not Engine.is_editor_hint():
