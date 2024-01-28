@@ -2,3 +2,4 @@
 .godot/
 *.tmp
 tutorial.ini
+.DS_Store
