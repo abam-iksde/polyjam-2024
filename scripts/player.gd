@@ -35,7 +35,7 @@ func on_area_enter(area: Area3D) -> void:
 			if area.sound_effect:
 				Audio.spawn_sound_effect("SFX", area.sound_effect)
 			area.queue_free()
-			GameState.note_score += 5
+			GameState.note_score += 50
 
 
 func _ready():

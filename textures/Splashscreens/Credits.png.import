@@ -3,20 +3,19 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://vpiyhtkvtykw"
-path.s3tc="res://.godot/imported/credits.png-b06d6ddb14caa8b24d274bbf3971f7d6.s3tc.ctex"
+path="res://.godot/imported/Credits.png-4bfb3c919ee3a03ed01c783d2eed31ab.ctex"
 metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
+"vram_texture": false
 }
 
 [deps]
 
-source_file="res://textures/Splashscreens/credits.png"
-dest_files=["res://.godot/imported/credits.png-b06d6ddb14caa8b24d274bbf3971f7d6.s3tc.ctex"]
+source_file="res://textures/Splashscreens/Credits.png"
+dest_files=["res://.godot/imported/Credits.png-4bfb3c919ee3a03ed01c783d2eed31ab.ctex"]
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
