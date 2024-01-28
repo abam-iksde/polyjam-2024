@@ -1,17 +1,6 @@
 extends Node
 
 
-# mickey
-# face
-# obstacle
-# collectible
-# mini_soap
-# mini_pie
-# mini_dance
-# message_flavor
-# message_minigame
-
-
 var ui
 
 
@@ -19,8 +8,7 @@ var roadmap = ConfigFile.new()
 
 
 func _ready():
-	#roadmap.load('tutorial.ini')
-	pass
+	roadmap.load('tutorial.ini')
 
 
 func discover(what: String, where=null) -> void:
