@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://c6omngocq8vij"]
+[gd_scene load_steps=7 format=3 uid="uid://c6omngocq8vij"]
 
 [ext_resource type="Script" path="res://scripts/keep_aspect.gd" id="1_g11t0"]
+[ext_resource type="Script" path="res://scripts/keep_aspect_control.gd" id="1_rsjsm"]
 [ext_resource type="PackedScene" uid="uid://dvvpch5h0enu2" path="res://scenes/fail_state_pic.tscn" id="2_d1dd6"]
 [ext_resource type="FontFile" uid="uid://ta70m3hrqwfv" path="res://fonts/WickedMouse-aGoK.ttf" id="3_xg0y4"]
 [ext_resource type="Script" path="res://scripts/score_summary.gd" id="4_prhqt"]
@@ -49,12 +50,18 @@ render_target_update_mode = 4
 
 [node name="fail_state_pic" parent="game_viewport_container/game_viewport" instance=ExtResource("2_d1dd6")]
 
-[node name="score_summary" type="Label" parent="."]
+[node name="control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 1594.0
+offset_bottom = 889.0
+script = ExtResource("1_rsjsm")
+
+[node name="score_summary" type="Label" parent="control"]
 layout_mode = 0
 offset_left = 847.0
 offset_top = 57.0
 offset_right = 1539.0
-offset_bottom = 243.0
+offset_bottom = 306.0
 theme_override_fonts/font = ExtResource("3_xg0y4")
 theme_override_font_sizes/font_size = 36
 text = "DISTANCE SCORE 
@@ -63,7 +70,7 @@ plus NOTE SCORE
 is SCORE"
 script = ExtResource("4_prhqt")
 
-[node name="enter_to_menu" type="Label" parent="."]
+[node name="enter_to_menu" type="Label" parent="control"]
 layout_mode = 0
 offset_left = 1056.0
 offset_top = 798.0

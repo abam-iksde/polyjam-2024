@@ -2,9 +2,9 @@ extends Label
 
 
 const SCORE_SUMMARY_FORMAT = """DISTANCE SCORE    {base}
-plus STREAK SCORE    {streak} x 100
-plus NOTE SCORE    {notes}
-is SCORE    {sum}"""
+STREAK SCORE    {streak} x 100
+NOTE SCORE    {notes}
+TOTAL SCORE    {sum}"""
 
 
 func _ready():
@@ -13,5 +13,5 @@ func _ready():
 		base = GameState.score,
 		streak = streak,
 		notes = GameState.note_score,
-		sum = GameState.score + streak * 100,
+		sum = GameState.score + GameState.note_score + streak * 100,
 	})
